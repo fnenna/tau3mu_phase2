@@ -1,0 +1,1327 @@
+DEBUG 2025-02-01 08:47:50.484 UTC: 	 CRAB Client version: v3.241125
+DEBUG 2025-02-01 08:47:50.484 UTC: 	 Running on: Linux ui02.recas.ba.infn.it 3.10.0-1160.80.1.el7.x86_64 #1 SMP Tue Nov 8 15:48:59 UTC 2022 x86_64 x86_64 x86_64 GNU/Linux
+DEBUG 2025-02-01 08:47:50.485 UTC: 	 Not using Singularity
+DEBUG 2025-02-01 08:47:50.485 UTC: 	 Operating System: CentOS Linux 7 (Core)
+DEBUG 2025-02-01 08:47:50.485 UTC: 	 Executing command: 'status'
+DEBUG 2025-02-01 08:47:50.485 UTC: 	 Found CRAB cache file /lustrehome/felicenenna/.crab3
+ERROR 2025-02-01 08:47:50.486 UTC: 	 Error: crab_projects/crab_140X_mcRun4_DsTau3Mu_RECO_RECOSIM_PAT_VALIDATION_DQ is not a valid CRAB project directory.
+ERROR 2025-02-01 08:47:50.486 UTC: 	 Caught ClientException exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.241125.00/bin/crab.py", line 157, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.241125.00/bin/crab.py", line 135, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])  # the crab command to be executed
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.241125.00/lib/CRABClient/Commands/status.py", line 48, in __init__
+    SubCommand.__init__(self, logger, cmdargs)
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.241125.00/lib/CRABClient/Commands/SubCommand.py", line 281, in __init__
+    SubCommand.validateOptions(self)
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.241125.00/lib/CRABClient/Commands/SubCommand.py", line 691, in validateOptions
+    raise ConfigurationException(msg)
+CRABClient.ClientExceptions.ConfigurationException: [91mError[0m: crab_projects/crab_140X_mcRun4_DsTau3Mu_RECO_RECOSIM_PAT_VALIDATION_DQ is not a valid CRAB project directory.
+INFO 2025-02-01 08:47:50.490 UTC: 	 Log file is /lustrehome/felicenenna/tau3mu/CMSSW_14_0_17/src/Utilities/run_the_matrix/29621.0_TenMuE_0_200+2026D110/DsTau3Mu/crab.log
+DEBUG 2025-02-02 19:19:37.892 UTC: 	 CRAB Client version: v3.241125
+DEBUG 2025-02-02 19:19:37.892 UTC: 	 Running on: Linux ui02.recas.ba.infn.it 3.10.0-1160.80.1.el7.x86_64 #1 SMP Tue Nov 8 15:48:59 UTC 2022 x86_64 x86_64 x86_64 GNU/Linux
+DEBUG 2025-02-02 19:19:37.892 UTC: 	 Not using Singularity
+DEBUG 2025-02-02 19:19:37.892 UTC: 	 Operating System: CentOS Linux 7 (Core)
+DEBUG 2025-02-02 19:19:37.892 UTC: 	 Executing command: 'submit'
+DEBUG 2025-02-02 19:19:37.892 UTC: 	 Found CRAB cache file /lustrehome/felicenenna/.crab3
+INFO 2025-02-02 19:19:37.893 UTC: 	 Will use CRAB configuration file crab_DsTau3Mu_GEN_Phase2.py
+DEBUG 2025-02-02 19:19:37.893 UTC: 	 Loading CRAB configuration file.
+DEBUG 2025-02-02 19:19:37.894 UTC: 	 Will use CRAB plugin PRIVATEMC (i.e. will run an a MC generation job type).
+ERROR 2025-02-02 19:19:37.894 UTC: 	 Working area '/lustrehome/felicenenna/tau3mu/CMSSW_14_0_17/src/Utilities/run_the_matrix/29621.0_TenMuE_0_200+2026D110/DsTau3Mu/crab_projects/crab_140X_mcPhase2_DsTau3Mu_GEN-SIM' already exists 
+Please change the requestName in the config file
+ERROR 2025-02-02 19:19:37.894 UTC: 	 Caught ClientException exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.241125.00/bin/crab.py", line 157, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.241125.00/bin/crab.py", line 135, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])  # the crab command to be executed
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.241125.00/lib/CRABClient/Commands/submit.py", line 37, in __init__
+    SubCommand.__init__(self, logger, cmdargs, disable_interspersed_args=True)
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.241125.00/lib/CRABClient/Commands/SubCommand.py", line 328, in __init__
+    self.requestarea, self.requestname, self.logfile = createWorkArea(
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.241125.00/lib/CRABClient/ClientUtilities.py", line 392, in createWorkArea
+    raise ConfigException("Working area '%s' already exists \nPlease change the requestName in the config file" % fullpath)
+CRABClient.ClientExceptions.ConfigException: Working area '/lustrehome/felicenenna/tau3mu/CMSSW_14_0_17/src/Utilities/run_the_matrix/29621.0_TenMuE_0_200+2026D110/DsTau3Mu/crab_projects/crab_140X_mcPhase2_DsTau3Mu_GEN-SIM' already exists 
+Please change the requestName in the config file
+INFO 2025-02-02 19:19:37.899 UTC: 	 Log file is /lustrehome/felicenenna/tau3mu/CMSSW_14_0_17/src/Utilities/run_the_matrix/29621.0_TenMuE_0_200+2026D110/DsTau3Mu/crab.log
+DEBUG 2025-02-05 23:16:47.308 UTC: 	 CRAB Client version: v3.241125
+DEBUG 2025-02-05 23:16:47.308 UTC: 	 Running on: Linux ui02.recas.ba.infn.it 3.10.0-1160.80.1.el7.x86_64 #1 SMP Tue Nov 8 15:48:59 UTC 2022 x86_64 x86_64 x86_64 GNU/Linux
+DEBUG 2025-02-05 23:16:47.308 UTC: 	 Not using Singularity
+DEBUG 2025-02-05 23:16:47.308 UTC: 	 Operating System: CentOS Linux 7 (Core)
+DEBUG 2025-02-05 23:16:47.308 UTC: 	 Executing command: 'status'
+DEBUG 2025-02-05 23:16:47.320 UTC: 	 Found CRAB cache file /lustrehome/felicenenna/.crab3
+ERROR 2025-02-05 23:16:47.332 UTC: 	 Error: --long is not a valid CRAB project directory.
+ERROR 2025-02-05 23:16:47.332 UTC: 	 Caught ClientException exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.241125.00/bin/crab.py", line 157, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.241125.00/bin/crab.py", line 135, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])  # the crab command to be executed
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.241125.00/lib/CRABClient/Commands/status.py", line 48, in __init__
+    SubCommand.__init__(self, logger, cmdargs)
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.241125.00/lib/CRABClient/Commands/SubCommand.py", line 281, in __init__
+    SubCommand.validateOptions(self)
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.241125.00/lib/CRABClient/Commands/SubCommand.py", line 691, in validateOptions
+    raise ConfigurationException(msg)
+CRABClient.ClientExceptions.ConfigurationException: [91mError[0m: --long is not a valid CRAB project directory.
+INFO 2025-02-05 23:16:47.422 UTC: 	 Log file is /lustrehome/felicenenna/tau3mu/CMSSW_14_0_17/src/Utilities/run_the_matrix/29621.0_TenMuE_0_200+2026D110/DsTau3Mu/crab.log
+DEBUG 2025-02-06 08:36:34.421 UTC: 	 CRAB Client version: v3.241125
+DEBUG 2025-02-06 08:36:34.421 UTC: 	 Running on: Linux ui02.recas.ba.infn.it 3.10.0-1160.80.1.el7.x86_64 #1 SMP Tue Nov 8 15:48:59 UTC 2022 x86_64 x86_64 x86_64 GNU/Linux
+DEBUG 2025-02-06 08:36:34.421 UTC: 	 Not using Singularity
+DEBUG 2025-02-06 08:36:34.422 UTC: 	 Operating System: CentOS Linux 7 (Core)
+DEBUG 2025-02-06 08:36:34.422 UTC: 	 Executing command: 'submit'
+DEBUG 2025-02-06 08:36:34.422 UTC: 	 Found CRAB cache file /lustrehome/felicenenna/.crab3
+INFO 2025-02-06 08:36:34.422 UTC: 	 Will use CRAB configuration file crab_DsTau3Mu_Phase2_step2_cfg.py
+DEBUG 2025-02-06 08:36:34.423 UTC: 	 Loading CRAB configuration file.
+DEBUG 2025-02-06 08:36:34.424 UTC: 	 Will use CRAB plugin ANALYSIS (i.e. will run an analysis job type).
+ERROR 2025-02-06 08:36:34.425 UTC: 	 Working area '/lustrehome/felicenenna/tau3mu/CMSSW_14_0_17/src/Utilities/run_the_matrix/29621.0_TenMuE_0_200+2026D110/DsTau3Mu/crab_projects/crab_140X_mcPhase2_DsTau3Mu_RECO_RECOSIM_PAT_VALIDATION_DQM' already exists 
+Please change the requestName in the config file
+ERROR 2025-02-06 08:36:34.425 UTC: 	 Caught ClientException exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.241125.00/bin/crab.py", line 157, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.241125.00/bin/crab.py", line 135, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])  # the crab command to be executed
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.241125.00/lib/CRABClient/Commands/submit.py", line 37, in __init__
+    SubCommand.__init__(self, logger, cmdargs, disable_interspersed_args=True)
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.241125.00/lib/CRABClient/Commands/SubCommand.py", line 328, in __init__
+    self.requestarea, self.requestname, self.logfile = createWorkArea(
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.241125.00/lib/CRABClient/ClientUtilities.py", line 392, in createWorkArea
+    raise ConfigException("Working area '%s' already exists \nPlease change the requestName in the config file" % fullpath)
+CRABClient.ClientExceptions.ConfigException: Working area '/lustrehome/felicenenna/tau3mu/CMSSW_14_0_17/src/Utilities/run_the_matrix/29621.0_TenMuE_0_200+2026D110/DsTau3Mu/crab_projects/crab_140X_mcPhase2_DsTau3Mu_RECO_RECOSIM_PAT_VALIDATION_DQM' already exists 
+Please change the requestName in the config file
+INFO 2025-02-06 08:36:34.461 UTC: 	 Log file is /lustrehome/felicenenna/tau3mu/CMSSW_14_0_17/src/Utilities/run_the_matrix/29621.0_TenMuE_0_200+2026D110/DsTau3Mu/crab.log
+DEBUG 2025-02-06 13:18:19.406 UTC: 	 CRAB Client version: v3.241125
+DEBUG 2025-02-06 13:18:19.406 UTC: 	 Running on: Linux ui02.recas.ba.infn.it 3.10.0-1160.80.1.el7.x86_64 #1 SMP Tue Nov 8 15:48:59 UTC 2022 x86_64 x86_64 x86_64 GNU/Linux
+DEBUG 2025-02-06 13:18:19.406 UTC: 	 Not using Singularity
+DEBUG 2025-02-06 13:18:19.407 UTC: 	 Operating System: CentOS Linux 7 (Core)
+DEBUG 2025-02-06 13:18:19.407 UTC: 	 Executing command: 'kill'
+DEBUG 2025-02-06 13:18:19.407 UTC: 	 Found CRAB cache file /lustrehome/felicenenna/.crab3
+DEBUG 2025-02-06 13:24:49.957 UTC: 	 CRAB Client version: v3.241125
+DEBUG 2025-02-06 13:24:49.957 UTC: 	 Running on: Linux ui02.recas.ba.infn.it 3.10.0-1160.80.1.el7.x86_64 #1 SMP Tue Nov 8 15:48:59 UTC 2022 x86_64 x86_64 x86_64 GNU/Linux
+DEBUG 2025-02-06 13:24:49.957 UTC: 	 Not using Singularity
+DEBUG 2025-02-06 13:24:49.957 UTC: 	 Operating System: CentOS Linux 7 (Core)
+DEBUG 2025-02-06 13:24:49.957 UTC: 	 Executing command: 'submit'
+DEBUG 2025-02-06 13:24:49.957 UTC: 	 Found CRAB cache file /lustrehome/felicenenna/.crab3
+INFO 2025-02-06 13:24:49.958 UTC: 	 Will use CRAB configuration file DsTau3Mu_step3_RAW2DIGI_RECO_RECOSIM_PAT_VALIDATION_DQM.py
+DEBUG 2025-02-06 13:24:49.958 UTC: 	 Loading CRAB configuration file.
+ERROR 2025-02-06 13:27:18.209 UTC: 	 Error while loading CRAB configuration:
+Unable to find a Configuration object instance in file:
+/lustrehome/felicenenna/tau3mu/CMSSW_14_0_17/src/Utilities/run_the_matrix/29621.0_TenMuE_0_200+2026D110/DsTau3Mu/DsTau3Mu_step3_RAW2DIGI_RECO_RECOSIM_PAT_VALIDATION_DQM.py
+
+Please refer to https://twiki.cern.ch/twiki/bin/view/CMSPublic/CRAB3FAQ
+See the ./crab.log file for more details.
+The documentation about the CRAB configuration file can be found in https://twiki.cern.ch/twiki/bin/view/CMSPublic/CRAB3ConfigurationFile
+ERROR 2025-02-06 13:27:18.209 UTC: 	 Caught ClientException exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.241125.00/lib/CRABClient/Commands/SubCommand.py", line 56, in loadConfig
+    self.configuration = loadConfigurationFile(os.path.abspath(configname))
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.241125.00/lib/WMCore/Configuration.py", line 354, in loadConfigurationFile
+    raise RuntimeError(msg)
+RuntimeError: Unable to find a Configuration object instance in file:
+/lustrehome/felicenenna/tau3mu/CMSSW_14_0_17/src/Utilities/run_the_matrix/29621.0_TenMuE_0_200+2026D110/DsTau3Mu/DsTau3Mu_step3_RAW2DIGI_RECO_RECOSIM_PAT_VALIDATION_DQM.py
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.241125.00/bin/crab.py", line 157, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.241125.00/bin/crab.py", line 135, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])  # the crab command to be executed
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.241125.00/lib/CRABClient/Commands/submit.py", line 37, in __init__
+    SubCommand.__init__(self, logger, cmdargs, disable_interspersed_args=True)
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.241125.00/lib/CRABClient/Commands/SubCommand.py", line 326, in __init__
+    self.loadConfig(self.options.config, self.args)
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.241125.00/lib/CRABClient/Commands/SubCommand.py", line 90, in loadConfig
+    raise ConfigurationException(configmsg)
+CRABClient.ClientExceptions.ConfigurationException: Error while loading CRAB configuration:
+Unable to find a Configuration object instance in file:
+/lustrehome/felicenenna/tau3mu/CMSSW_14_0_17/src/Utilities/run_the_matrix/29621.0_TenMuE_0_200+2026D110/DsTau3Mu/DsTau3Mu_step3_RAW2DIGI_RECO_RECOSIM_PAT_VALIDATION_DQM.py
+
+Please refer to https://twiki.cern.ch/twiki/bin/view/CMSPublic/CRAB3FAQ
+See the ./crab.log file for more details.
+The documentation about the CRAB configuration file can be found in https://twiki.cern.ch/twiki/bin/view/CMSPublic/CRAB3ConfigurationFile
+INFO 2025-02-06 13:27:18.293 UTC: 	 Log file is /lustrehome/felicenenna/tau3mu/CMSSW_14_0_17/src/Utilities/run_the_matrix/29621.0_TenMuE_0_200+2026D110/DsTau3Mu/crab.log
+DEBUG 2025-02-06 14:25:00.674 UTC: 	 CRAB Client version: v3.241125
+DEBUG 2025-02-06 14:25:00.674 UTC: 	 Running on: Linux ui02.recas.ba.infn.it 3.10.0-1160.80.1.el7.x86_64 #1 SMP Tue Nov 8 15:48:59 UTC 2022 x86_64 x86_64 x86_64 GNU/Linux
+DEBUG 2025-02-06 14:25:00.674 UTC: 	 Not using Singularity
+DEBUG 2025-02-06 14:25:00.674 UTC: 	 Operating System: CentOS Linux 7 (Core)
+DEBUG 2025-02-06 14:25:00.674 UTC: 	 Executing command: 'submit'
+DEBUG 2025-02-06 14:25:00.674 UTC: 	 Found CRAB cache file /lustrehome/felicenenna/.crab3
+INFO 2025-02-06 14:25:00.675 UTC: 	 Will use CRAB configuration file crab_DsTau3Mu_Phase2_step2_cfg.py
+DEBUG 2025-02-06 14:25:00.675 UTC: 	 Loading CRAB configuration file.
+ERROR 2025-02-06 14:25:00.681 UTC: 	 Invalid CRAB configuration: In case of Automatic splitting, the Data.unitsPerJob parameter must be in the [180, 2700] minutes range. You asked for 1 minutes.
+The documentation about the CRAB configuration file can be found in https://twiki.cern.ch/twiki/bin/view/CMSPublic/CRAB3ConfigurationFile
+ERROR 2025-02-06 14:25:00.681 UTC: 	 Caught ClientException exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.241125.00/bin/crab.py", line 157, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.241125.00/bin/crab.py", line 135, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])  # the crab command to be executed
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.241125.00/lib/CRABClient/Commands/submit.py", line 37, in __init__
+    SubCommand.__init__(self, logger, cmdargs, disable_interspersed_args=True)
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.241125.00/lib/CRABClient/Commands/SubCommand.py", line 326, in __init__
+    self.loadConfig(self.options.config, self.args)
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.241125.00/lib/CRABClient/Commands/SubCommand.py", line 95, in loadConfig
+    raise ConfigurationException(configmsg)
+CRABClient.ClientExceptions.ConfigurationException: Invalid CRAB configuration: In case of Automatic splitting, the Data.unitsPerJob parameter must be in the [180, 2700] minutes range. You asked for 1 minutes.
+The documentation about the CRAB configuration file can be found in https://twiki.cern.ch/twiki/bin/view/CMSPublic/CRAB3ConfigurationFile
+INFO 2025-02-06 14:25:00.692 UTC: 	 Log file is /lustrehome/felicenenna/tau3mu/CMSSW_14_0_17/src/Utilities/run_the_matrix/29621.0_TenMuE_0_200+2026D110/DsTau3Mu/crab.log
+DEBUG 2025-02-07 19:52:45.221 UTC: 	 CRAB Client version: v3.241125
+DEBUG 2025-02-07 19:52:45.222 UTC: 	 Running on: Linux ui02.recas.ba.infn.it 3.10.0-1160.80.1.el7.x86_64 #1 SMP Tue Nov 8 15:48:59 UTC 2022 x86_64 x86_64 x86_64 GNU/Linux
+DEBUG 2025-02-07 19:52:45.222 UTC: 	 Not using Singularity
+DEBUG 2025-02-07 19:52:45.222 UTC: 	 Operating System: CentOS Linux 7 (Core)
+DEBUG 2025-02-07 19:52:45.222 UTC: 	 Executing command: 'submit'
+DEBUG 2025-02-07 19:52:45.222 UTC: 	 Found CRAB cache file /lustrehome/felicenenna/.crab3
+INFO 2025-02-07 19:52:45.223 UTC: 	 Will use CRAB configuration file DsTau3Mu_pythia8_cfi_GEN_SIM.py
+DEBUG 2025-02-07 19:52:45.223 UTC: 	 Loading CRAB configuration file.
+ERROR 2025-02-07 19:52:49.507 UTC: 	 Error while loading CRAB configuration:
+Unable to find a Configuration object instance in file:
+/lustrehome/felicenenna/tau3mu/CMSSW_14_0_17/src/Utilities/run_the_matrix/29621.0_TenMuE_0_200+2026D110/DsTau3Mu/DsTau3Mu_pythia8_cfi_GEN_SIM.py
+
+Please refer to https://twiki.cern.ch/twiki/bin/view/CMSPublic/CRAB3FAQ
+See the ./crab.log file for more details.
+The documentation about the CRAB configuration file can be found in https://twiki.cern.ch/twiki/bin/view/CMSPublic/CRAB3ConfigurationFile
+ERROR 2025-02-07 19:52:49.507 UTC: 	 Caught ClientException exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.241125.00/lib/CRABClient/Commands/SubCommand.py", line 56, in loadConfig
+    self.configuration = loadConfigurationFile(os.path.abspath(configname))
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.241125.00/lib/WMCore/Configuration.py", line 354, in loadConfigurationFile
+    raise RuntimeError(msg)
+RuntimeError: Unable to find a Configuration object instance in file:
+/lustrehome/felicenenna/tau3mu/CMSSW_14_0_17/src/Utilities/run_the_matrix/29621.0_TenMuE_0_200+2026D110/DsTau3Mu/DsTau3Mu_pythia8_cfi_GEN_SIM.py
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.241125.00/bin/crab.py", line 157, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.241125.00/bin/crab.py", line 135, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])  # the crab command to be executed
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.241125.00/lib/CRABClient/Commands/submit.py", line 37, in __init__
+    SubCommand.__init__(self, logger, cmdargs, disable_interspersed_args=True)
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.241125.00/lib/CRABClient/Commands/SubCommand.py", line 326, in __init__
+    self.loadConfig(self.options.config, self.args)
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.241125.00/lib/CRABClient/Commands/SubCommand.py", line 90, in loadConfig
+    raise ConfigurationException(configmsg)
+CRABClient.ClientExceptions.ConfigurationException: Error while loading CRAB configuration:
+Unable to find a Configuration object instance in file:
+/lustrehome/felicenenna/tau3mu/CMSSW_14_0_17/src/Utilities/run_the_matrix/29621.0_TenMuE_0_200+2026D110/DsTau3Mu/DsTau3Mu_pythia8_cfi_GEN_SIM.py
+
+Please refer to https://twiki.cern.ch/twiki/bin/view/CMSPublic/CRAB3FAQ
+See the ./crab.log file for more details.
+The documentation about the CRAB configuration file can be found in https://twiki.cern.ch/twiki/bin/view/CMSPublic/CRAB3ConfigurationFile
+INFO 2025-02-07 19:52:49.521 UTC: 	 Log file is /lustrehome/felicenenna/tau3mu/CMSSW_14_0_17/src/Utilities/run_the_matrix/29621.0_TenMuE_0_200+2026D110/DsTau3Mu/crab.log
+DEBUG 2025-02-08 20:09:33.763 UTC: 	 CRAB Client version: v3.241125
+DEBUG 2025-02-08 20:09:33.763 UTC: 	 Running on: Linux ui02.recas.ba.infn.it 3.10.0-1160.80.1.el7.x86_64 #1 SMP Tue Nov 8 15:48:59 UTC 2022 x86_64 x86_64 x86_64 GNU/Linux
+DEBUG 2025-02-08 20:09:33.763 UTC: 	 Not using Singularity
+DEBUG 2025-02-08 20:09:33.763 UTC: 	 Operating System: CentOS Linux 7 (Core)
+DEBUG 2025-02-08 20:09:33.763 UTC: 	 Executing command: 'kill'
+DEBUG 2025-02-08 20:09:33.764 UTC: 	 Found CRAB cache file /lustrehome/felicenenna/.crab3
+ERROR 2025-02-08 20:09:33.764 UTC: 	 Error: Please indicate the CRAB project directory with --dir=<project-directory>.
+ERROR 2025-02-08 20:09:33.764 UTC: 	 Caught ClientException exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.241125.00/bin/crab.py", line 157, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.241125.00/bin/crab.py", line 135, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])  # the crab command to be executed
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.241125.00/lib/CRABClient/Commands/SubCommand.py", line 281, in __init__
+    SubCommand.validateOptions(self)
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.241125.00/lib/CRABClient/Commands/SubCommand.py", line 687, in validateOptions
+    raise ex
+CRABClient.ClientExceptions.MissingOptionException: [91mError[0m: Please indicate the CRAB project directory with --dir=<project-directory>.
+INFO 2025-02-08 20:09:33.846 UTC: 	 Log file is /lustrehome/felicenenna/tau3mu/CMSSW_14_0_17/src/Utilities/run_the_matrix/29621.0_TenMuE_0_200+2026D110/DsTau3Mu/crab.log
+DEBUG 2025-02-09 00:17:07.157 UTC: 	 CRAB Client version: v3.241125
+DEBUG 2025-02-09 00:17:07.157 UTC: 	 Running on: Linux ui02.recas.ba.infn.it 3.10.0-1160.80.1.el7.x86_64 #1 SMP Tue Nov 8 15:48:59 UTC 2022 x86_64 x86_64 x86_64 GNU/Linux
+DEBUG 2025-02-09 00:17:07.157 UTC: 	 Not using Singularity
+DEBUG 2025-02-09 00:17:07.157 UTC: 	 Operating System: CentOS Linux 7 (Core)
+DEBUG 2025-02-09 00:17:07.157 UTC: 	 Executing command: 'submit'
+DEBUG 2025-02-09 00:17:07.157 UTC: 	 Found CRAB cache file /lustrehome/felicenenna/.crab3
+INFO 2025-02-09 00:17:07.158 UTC: 	 Will use CRAB configuration file crab_DsTau3Mu_GEN_Phase2.py
+DEBUG 2025-02-09 00:17:07.158 UTC: 	 Loading CRAB configuration file.
+DEBUG 2025-02-09 00:17:07.164 UTC: 	 Will use CRAB plugin PRIVATEMC (i.e. will run an a MC generation job type).
+ERROR 2025-02-09 00:17:07.164 UTC: 	 Working area '/lustrehome/felicenenna/tau3mu/CMSSW_14_0_17/src/Utilities/run_the_matrix/29621.0_TenMuE_0_200+2026D110/DsTau3Mu/crab_projects/crab_140X_mcPhase2_DsTau3Mu_GEN-SIM' already exists 
+Please change the requestName in the config file
+ERROR 2025-02-09 00:17:07.164 UTC: 	 Caught ClientException exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.241125.00/bin/crab.py", line 157, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.241125.00/bin/crab.py", line 135, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])  # the crab command to be executed
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.241125.00/lib/CRABClient/Commands/submit.py", line 37, in __init__
+    SubCommand.__init__(self, logger, cmdargs, disable_interspersed_args=True)
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.241125.00/lib/CRABClient/Commands/SubCommand.py", line 328, in __init__
+    self.requestarea, self.requestname, self.logfile = createWorkArea(
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.241125.00/lib/CRABClient/ClientUtilities.py", line 392, in createWorkArea
+    raise ConfigException("Working area '%s' already exists \nPlease change the requestName in the config file" % fullpath)
+CRABClient.ClientExceptions.ConfigException: Working area '/lustrehome/felicenenna/tau3mu/CMSSW_14_0_17/src/Utilities/run_the_matrix/29621.0_TenMuE_0_200+2026D110/DsTau3Mu/crab_projects/crab_140X_mcPhase2_DsTau3Mu_GEN-SIM' already exists 
+Please change the requestName in the config file
+INFO 2025-02-09 00:17:07.216 UTC: 	 Log file is /lustrehome/felicenenna/tau3mu/CMSSW_14_0_17/src/Utilities/run_the_matrix/29621.0_TenMuE_0_200+2026D110/DsTau3Mu/crab.log
+DEBUG 2025-02-11 10:10:36.304 UTC: 	 CRAB Client version: v3.241125
+DEBUG 2025-02-11 10:10:36.304 UTC: 	 Running on: Linux ui02.recas.ba.infn.it 3.10.0-1160.80.1.el7.x86_64 #1 SMP Tue Nov 8 15:48:59 UTC 2022 x86_64 x86_64 x86_64 GNU/Linux
+DEBUG 2025-02-11 10:10:36.304 UTC: 	 Not using Singularity
+DEBUG 2025-02-11 10:10:36.305 UTC: 	 Operating System: CentOS Linux 7 (Core)
+DEBUG 2025-02-11 10:10:36.305 UTC: 	 Executing command: 'submit'
+DEBUG 2025-02-11 10:10:36.306 UTC: 	 Found CRAB cache file /lustrehome/felicenenna/.crab3
+INFO 2025-02-11 10:10:36.309 UTC: 	 Will use CRAB configuration file crab_DsTau3Mu_Phase2_step1_cfg.py
+DEBUG 2025-02-11 10:10:36.309 UTC: 	 Loading CRAB configuration file.
+ERROR 2025-02-11 10:10:36.323 UTC: 	 The 'dryrun' option is not compatible with the 'Automatic' splitting mode (default).
+The documentation about the CRAB configuration file can be found in https://twiki.cern.ch/twiki/bin/view/CMSPublic/CRAB3ConfigurationFile
+ERROR 2025-02-11 10:10:36.324 UTC: 	 Caught ClientException exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.241125.00/bin/crab.py", line 157, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.241125.00/bin/crab.py", line 135, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])  # the crab command to be executed
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.241125.00/lib/CRABClient/Commands/submit.py", line 37, in __init__
+    SubCommand.__init__(self, logger, cmdargs, disable_interspersed_args=True)
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.241125.00/lib/CRABClient/Commands/SubCommand.py", line 326, in __init__
+    self.loadConfig(self.options.config, self.args)
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.241125.00/lib/CRABClient/Commands/SubCommand.py", line 95, in loadConfig
+    raise ConfigurationException(configmsg)
+CRABClient.ClientExceptions.ConfigurationException: The 'dryrun' option is not compatible with the 'Automatic' splitting mode (default).
+The documentation about the CRAB configuration file can be found in https://twiki.cern.ch/twiki/bin/view/CMSPublic/CRAB3ConfigurationFile
+INFO 2025-02-11 10:10:36.421 UTC: 	 Log file is /lustrehome/felicenenna/tau3mu/CMSSW_14_0_17/src/Utilities/run_the_matrix/29621.0_TenMuE_0_200+2026D110/DsTau3Mu/crab.log
+DEBUG 2025-02-11 12:25:02.389 UTC: 	 CRAB Client version: v3.241125
+DEBUG 2025-02-11 12:25:02.390 UTC: 	 Running on: Linux ui02.recas.ba.infn.it 3.10.0-1160.80.1.el7.x86_64 #1 SMP Tue Nov 8 15:48:59 UTC 2022 x86_64 x86_64 x86_64 GNU/Linux
+DEBUG 2025-02-11 12:25:02.390 UTC: 	 Not using Singularity
+DEBUG 2025-02-11 12:25:02.390 UTC: 	 Operating System: CentOS Linux 7 (Core)
+DEBUG 2025-02-11 12:25:02.390 UTC: 	 Executing command: 'submit'
+DEBUG 2025-02-11 12:25:02.390 UTC: 	 Found CRAB cache file /lustrehome/felicenenna/.crab3
+INFO 2025-02-11 12:25:02.391 UTC: 	 Will use CRAB configuration file crab_DsTau3Mu_Phase2_step1_cfg.py
+DEBUG 2025-02-11 12:25:02.391 UTC: 	 Loading CRAB configuration file.
+DEBUG 2025-02-11 12:25:02.396 UTC: 	 Will use CRAB plugin ANALYSIS (i.e. will run an analysis job type).
+ERROR 2025-02-11 12:25:02.396 UTC: 	 Working area '/lustrehome/felicenenna/tau3mu/CMSSW_14_0_17/src/Utilities/run_the_matrix/29621.0_TenMuE_0_200+2026D110/DsTau3Mu/crab_projects/crab_140X_mcPhase2_DsTau3Mu_PU200_GEN-SIM-DIGI-RAW' already exists 
+Please change the requestName in the config file
+ERROR 2025-02-11 12:25:02.396 UTC: 	 Caught ClientException exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.241125.00/bin/crab.py", line 157, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.241125.00/bin/crab.py", line 135, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])  # the crab command to be executed
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.241125.00/lib/CRABClient/Commands/submit.py", line 37, in __init__
+    SubCommand.__init__(self, logger, cmdargs, disable_interspersed_args=True)
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.241125.00/lib/CRABClient/Commands/SubCommand.py", line 328, in __init__
+    self.requestarea, self.requestname, self.logfile = createWorkArea(
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.241125.00/lib/CRABClient/ClientUtilities.py", line 392, in createWorkArea
+    raise ConfigException("Working area '%s' already exists \nPlease change the requestName in the config file" % fullpath)
+CRABClient.ClientExceptions.ConfigException: Working area '/lustrehome/felicenenna/tau3mu/CMSSW_14_0_17/src/Utilities/run_the_matrix/29621.0_TenMuE_0_200+2026D110/DsTau3Mu/crab_projects/crab_140X_mcPhase2_DsTau3Mu_PU200_GEN-SIM-DIGI-RAW' already exists 
+Please change the requestName in the config file
+INFO 2025-02-11 12:25:02.491 UTC: 	 Log file is /lustrehome/felicenenna/tau3mu/CMSSW_14_0_17/src/Utilities/run_the_matrix/29621.0_TenMuE_0_200+2026D110/DsTau3Mu/crab.log
+DEBUG 2025-02-11 12:45:43.977 UTC: 	 CRAB Client version: v3.241125
+DEBUG 2025-02-11 12:45:43.977 UTC: 	 Running on: Linux ui02.recas.ba.infn.it 3.10.0-1160.80.1.el7.x86_64 #1 SMP Tue Nov 8 15:48:59 UTC 2022 x86_64 x86_64 x86_64 GNU/Linux
+DEBUG 2025-02-11 12:45:43.977 UTC: 	 Not using Singularity
+DEBUG 2025-02-11 12:45:43.977 UTC: 	 Operating System: CentOS Linux 7 (Core)
+DEBUG 2025-02-11 12:45:43.977 UTC: 	 Executing command: 'submit'
+DEBUG 2025-02-11 12:45:43.980 UTC: 	 Found CRAB cache file /lustrehome/felicenenna/.crab3
+INFO 2025-02-11 12:45:43.981 UTC: 	 Will use CRAB configuration file crab_DsTau3Mu_Phase2_step1_cfg.py
+DEBUG 2025-02-11 12:45:43.981 UTC: 	 Loading CRAB configuration file.
+DEBUG 2025-02-11 12:45:43.984 UTC: 	 Will use CRAB plugin ANALYSIS (i.e. will run an analysis job type).
+ERROR 2025-02-11 12:45:43.985 UTC: 	 Working area '/lustrehome/felicenenna/tau3mu/CMSSW_14_0_17/src/Utilities/run_the_matrix/29621.0_TenMuE_0_200+2026D110/DsTau3Mu/crab_projects/crab_140X_mcPhase2_DsTau3Mu_PU200_GEN-SIM-DIGI-RAW' already exists 
+Please change the requestName in the config file
+ERROR 2025-02-11 12:45:43.985 UTC: 	 Caught ClientException exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.241125.00/bin/crab.py", line 157, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.241125.00/bin/crab.py", line 135, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])  # the crab command to be executed
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.241125.00/lib/CRABClient/Commands/submit.py", line 37, in __init__
+    SubCommand.__init__(self, logger, cmdargs, disable_interspersed_args=True)
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.241125.00/lib/CRABClient/Commands/SubCommand.py", line 328, in __init__
+    self.requestarea, self.requestname, self.logfile = createWorkArea(
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.241125.00/lib/CRABClient/ClientUtilities.py", line 392, in createWorkArea
+    raise ConfigException("Working area '%s' already exists \nPlease change the requestName in the config file" % fullpath)
+CRABClient.ClientExceptions.ConfigException: Working area '/lustrehome/felicenenna/tau3mu/CMSSW_14_0_17/src/Utilities/run_the_matrix/29621.0_TenMuE_0_200+2026D110/DsTau3Mu/crab_projects/crab_140X_mcPhase2_DsTau3Mu_PU200_GEN-SIM-DIGI-RAW' already exists 
+Please change the requestName in the config file
+INFO 2025-02-11 12:45:44.001 UTC: 	 Log file is /lustrehome/felicenenna/tau3mu/CMSSW_14_0_17/src/Utilities/run_the_matrix/29621.0_TenMuE_0_200+2026D110/DsTau3Mu/crab.log
+DEBUG 2025-02-12 21:36:22.979 UTC: 	 CRAB Client version: v3.241125
+DEBUG 2025-02-12 21:36:22.979 UTC: 	 Running on: Linux ui02.recas.ba.infn.it 3.10.0-1160.80.1.el7.x86_64 #1 SMP Tue Nov 8 15:48:59 UTC 2022 x86_64 x86_64 x86_64 GNU/Linux
+DEBUG 2025-02-12 21:36:22.980 UTC: 	 Not using Singularity
+DEBUG 2025-02-12 21:36:22.980 UTC: 	 Operating System: CentOS Linux 7 (Core)
+DEBUG 2025-02-12 21:36:22.980 UTC: 	 Executing command: 'submit'
+DEBUG 2025-02-12 21:36:22.980 UTC: 	 Found CRAB cache file /lustrehome/felicenenna/.crab3
+INFO 2025-02-12 21:36:22.981 UTC: 	 Will use CRAB configuration file crab_DsTau3Mu_Phase2_step1_cfg.py
+DEBUG 2025-02-12 21:36:22.981 UTC: 	 Loading CRAB configuration file.
+DEBUG 2025-02-12 21:36:22.982 UTC: 	 Will use CRAB plugin ANALYSIS (i.e. will run an analysis job type).
+ERROR 2025-02-12 21:36:22.982 UTC: 	 Working area '/lustrehome/felicenenna/tau3mu/CMSSW_14_0_17/src/Utilities/run_the_matrix/29621.0_TenMuE_0_200+2026D110/DsTau3Mu/crab_projects/crab_140X_mcPhase2_DsTau3Mu_14TeV_PU200_GEN-SIM-DIGI-RAW' already exists 
+Please change the requestName in the config file
+ERROR 2025-02-12 21:36:22.982 UTC: 	 Caught ClientException exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.241125.00/bin/crab.py", line 157, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.241125.00/bin/crab.py", line 135, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])  # the crab command to be executed
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.241125.00/lib/CRABClient/Commands/submit.py", line 37, in __init__
+    SubCommand.__init__(self, logger, cmdargs, disable_interspersed_args=True)
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.241125.00/lib/CRABClient/Commands/SubCommand.py", line 328, in __init__
+    self.requestarea, self.requestname, self.logfile = createWorkArea(
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.241125.00/lib/CRABClient/ClientUtilities.py", line 392, in createWorkArea
+    raise ConfigException("Working area '%s' already exists \nPlease change the requestName in the config file" % fullpath)
+CRABClient.ClientExceptions.ConfigException: Working area '/lustrehome/felicenenna/tau3mu/CMSSW_14_0_17/src/Utilities/run_the_matrix/29621.0_TenMuE_0_200+2026D110/DsTau3Mu/crab_projects/crab_140X_mcPhase2_DsTau3Mu_14TeV_PU200_GEN-SIM-DIGI-RAW' already exists 
+Please change the requestName in the config file
+INFO 2025-02-12 21:36:23.073 UTC: 	 Log file is /lustrehome/felicenenna/tau3mu/CMSSW_14_0_17/src/Utilities/run_the_matrix/29621.0_TenMuE_0_200+2026D110/DsTau3Mu/crab.log
+DEBUG 2025-02-13 09:43:46.714 UTC: 	 CRAB Client version: v3.241125
+DEBUG 2025-02-13 09:43:46.715 UTC: 	 Running on: Linux ui02.recas.ba.infn.it 3.10.0-1160.80.1.el7.x86_64 #1 SMP Tue Nov 8 15:48:59 UTC 2022 x86_64 x86_64 x86_64 GNU/Linux
+DEBUG 2025-02-13 09:43:46.715 UTC: 	 Not using Singularity
+DEBUG 2025-02-13 09:43:46.715 UTC: 	 Operating System: CentOS Linux 7 (Core)
+DEBUG 2025-02-13 09:43:46.715 UTC: 	 Executing command: 'submit'
+DEBUG 2025-02-13 09:43:46.716 UTC: 	 Found CRAB cache file /lustrehome/felicenenna/.crab3
+INFO 2025-02-13 09:43:46.717 UTC: 	 Will use CRAB configuration file crab_DsTau3Mu_Phase2_step1_cfg.py
+DEBUG 2025-02-13 09:43:46.717 UTC: 	 Loading CRAB configuration file.
+DEBUG 2025-02-13 09:43:46.726 UTC: 	 Will use CRAB plugin ANALYSIS (i.e. will run an analysis job type).
+ERROR 2025-02-13 09:43:46.729 UTC: 	 Working area '/lustrehome/felicenenna/tau3mu/CMSSW_14_0_17/src/Utilities/run_the_matrix/29621.0_TenMuE_0_200+2026D110/DsTau3Mu/crab_projects/crab_140X_mcPhase2_DsTau3Mu_14TeV_PU200_GEN-SIM-DIGI-RAW' already exists 
+Please change the requestName in the config file
+ERROR 2025-02-13 09:43:46.729 UTC: 	 Caught ClientException exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.241125.00/bin/crab.py", line 157, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.241125.00/bin/crab.py", line 135, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])  # the crab command to be executed
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.241125.00/lib/CRABClient/Commands/submit.py", line 37, in __init__
+    SubCommand.__init__(self, logger, cmdargs, disable_interspersed_args=True)
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.241125.00/lib/CRABClient/Commands/SubCommand.py", line 328, in __init__
+    self.requestarea, self.requestname, self.logfile = createWorkArea(
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.241125.00/lib/CRABClient/ClientUtilities.py", line 392, in createWorkArea
+    raise ConfigException("Working area '%s' already exists \nPlease change the requestName in the config file" % fullpath)
+CRABClient.ClientExceptions.ConfigException: Working area '/lustrehome/felicenenna/tau3mu/CMSSW_14_0_17/src/Utilities/run_the_matrix/29621.0_TenMuE_0_200+2026D110/DsTau3Mu/crab_projects/crab_140X_mcPhase2_DsTau3Mu_14TeV_PU200_GEN-SIM-DIGI-RAW' already exists 
+Please change the requestName in the config file
+INFO 2025-02-13 09:43:46.991 UTC: 	 Log file is /lustrehome/felicenenna/tau3mu/CMSSW_14_0_17/src/Utilities/run_the_matrix/29621.0_TenMuE_0_200+2026D110/DsTau3Mu/crab.log
+DEBUG 2025-02-15 18:06:28.526 UTC: 	 CRAB Client version: v3.241125
+DEBUG 2025-02-15 18:06:28.526 UTC: 	 Running on: Linux ui02.recas.ba.infn.it 3.10.0-1160.80.1.el7.x86_64 #1 SMP Tue Nov 8 15:48:59 UTC 2022 x86_64 x86_64 x86_64 GNU/Linux
+DEBUG 2025-02-15 18:06:28.526 UTC: 	 Not using Singularity
+DEBUG 2025-02-15 18:06:28.527 UTC: 	 Operating System: CentOS Linux 7 (Core)
+DEBUG 2025-02-15 18:06:28.527 UTC: 	 Executing command: 'submit'
+DEBUG 2025-02-15 18:06:28.527 UTC: 	 Found CRAB cache file /lustrehome/felicenenna/.crab3
+INFO 2025-02-15 18:06:28.528 UTC: 	 Will use CRAB configuration file crab_DsTau3Mu_Phase2_step2_NoPU_cfg.py
+DEBUG 2025-02-15 18:06:28.528 UTC: 	 Loading CRAB configuration file.
+DEBUG 2025-02-15 18:06:28.536 UTC: 	 Will use CRAB plugin ANALYSIS (i.e. will run an analysis job type).
+ERROR 2025-02-15 18:06:28.536 UTC: 	 Working area '/lustrehome/felicenenna/tau3mu/CMSSW_14_0_17/src/Utilities/run_the_matrix/29621.0_TenMuE_0_200+2026D110/DsTau3Mu/crab_projects/crab_140X_mcPhase2_DsTau3Mu_MINIAOD_NoPU' already exists 
+Please change the requestName in the config file
+ERROR 2025-02-15 18:06:28.536 UTC: 	 Caught ClientException exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.241125.00/bin/crab.py", line 157, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.241125.00/bin/crab.py", line 135, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])  # the crab command to be executed
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.241125.00/lib/CRABClient/Commands/submit.py", line 37, in __init__
+    SubCommand.__init__(self, logger, cmdargs, disable_interspersed_args=True)
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.241125.00/lib/CRABClient/Commands/SubCommand.py", line 328, in __init__
+    self.requestarea, self.requestname, self.logfile = createWorkArea(
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.241125.00/lib/CRABClient/ClientUtilities.py", line 392, in createWorkArea
+    raise ConfigException("Working area '%s' already exists \nPlease change the requestName in the config file" % fullpath)
+CRABClient.ClientExceptions.ConfigException: Working area '/lustrehome/felicenenna/tau3mu/CMSSW_14_0_17/src/Utilities/run_the_matrix/29621.0_TenMuE_0_200+2026D110/DsTau3Mu/crab_projects/crab_140X_mcPhase2_DsTau3Mu_MINIAOD_NoPU' already exists 
+Please change the requestName in the config file
+INFO 2025-02-15 18:06:28.564 UTC: 	 Log file is /lustrehome/felicenenna/tau3mu/CMSSW_14_0_17/src/Utilities/run_the_matrix/29621.0_TenMuE_0_200+2026D110/DsTau3Mu/crab.log
+DEBUG 2025-02-22 11:56:26.442 UTC: 	 CRAB Client version: v3.241125
+DEBUG 2025-02-22 11:56:26.442 UTC: 	 Running on: Linux ui02.recas.ba.infn.it 3.10.0-1160.80.1.el7.x86_64 #1 SMP Tue Nov 8 15:48:59 UTC 2022 x86_64 x86_64 x86_64 GNU/Linux
+DEBUG 2025-02-22 11:56:26.442 UTC: 	 Not using Singularity
+DEBUG 2025-02-22 11:56:26.442 UTC: 	 Operating System: CentOS Linux 7 (Core)
+DEBUG 2025-02-22 11:56:26.442 UTC: 	 Executing command: 'submit'
+DEBUG 2025-02-22 11:56:26.443 UTC: 	 Found CRAB cache file /lustrehome/felicenenna/.crab3
+INFO 2025-02-22 11:56:26.443 UTC: 	 Will use CRAB configuration file crab_DsTau3Mu_GEN_Phase2.py
+DEBUG 2025-02-22 11:56:26.444 UTC: 	 Loading CRAB configuration file.
+DEBUG 2025-02-22 11:56:26.446 UTC: 	 Will use CRAB plugin PRIVATEMC (i.e. will run an a MC generation job type).
+ERROR 2025-02-22 11:56:26.446 UTC: 	 Working area '/lustrehome/felicenenna/tau3mu/CMSSW_14_0_17/src/Utilities/run_the_matrix/29621.0_TenMuE_0_200+2026D110/DsTau3Mu/crab_projects/crab_140X_mcPhase2_14TeV_DsTau3Mu_onlyGEMpos_GEN-SIM' already exists 
+Please change the requestName in the config file
+ERROR 2025-02-22 11:56:26.446 UTC: 	 Caught ClientException exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.241125.00/bin/crab.py", line 157, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.241125.00/bin/crab.py", line 135, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])  # the crab command to be executed
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.241125.00/lib/CRABClient/Commands/submit.py", line 37, in __init__
+    SubCommand.__init__(self, logger, cmdargs, disable_interspersed_args=True)
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.241125.00/lib/CRABClient/Commands/SubCommand.py", line 328, in __init__
+    self.requestarea, self.requestname, self.logfile = createWorkArea(
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.241125.00/lib/CRABClient/ClientUtilities.py", line 392, in createWorkArea
+    raise ConfigException("Working area '%s' already exists \nPlease change the requestName in the config file" % fullpath)
+CRABClient.ClientExceptions.ConfigException: Working area '/lustrehome/felicenenna/tau3mu/CMSSW_14_0_17/src/Utilities/run_the_matrix/29621.0_TenMuE_0_200+2026D110/DsTau3Mu/crab_projects/crab_140X_mcPhase2_14TeV_DsTau3Mu_onlyGEMpos_GEN-SIM' already exists 
+Please change the requestName in the config file
+INFO 2025-02-22 11:56:26.716 UTC: 	 Log file is /lustrehome/felicenenna/tau3mu/CMSSW_14_0_17/src/Utilities/run_the_matrix/29621.0_TenMuE_0_200+2026D110/DsTau3Mu/crab.log
+DEBUG 2025-02-22 12:33:41.262 UTC: 	 CRAB Client version: v3.241125
+DEBUG 2025-02-22 12:33:41.262 UTC: 	 Running on: Linux ui02.recas.ba.infn.it 3.10.0-1160.80.1.el7.x86_64 #1 SMP Tue Nov 8 15:48:59 UTC 2022 x86_64 x86_64 x86_64 GNU/Linux
+DEBUG 2025-02-22 12:33:41.262 UTC: 	 Not using Singularity
+DEBUG 2025-02-22 12:33:41.263 UTC: 	 Operating System: CentOS Linux 7 (Core)
+DEBUG 2025-02-22 12:33:41.263 UTC: 	 Executing command: 'kill'
+DEBUG 2025-02-22 12:33:41.263 UTC: 	 Found CRAB cache file /lustrehome/felicenenna/.crab3
+ERROR 2025-02-22 12:33:41.264 UTC: 	 Error: Please indicate the CRAB project directory with --dir=<project-directory>.
+ERROR 2025-02-22 12:33:41.264 UTC: 	 Caught ClientException exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.241125.00/bin/crab.py", line 157, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.241125.00/bin/crab.py", line 135, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])  # the crab command to be executed
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.241125.00/lib/CRABClient/Commands/SubCommand.py", line 281, in __init__
+    SubCommand.validateOptions(self)
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.241125.00/lib/CRABClient/Commands/SubCommand.py", line 687, in validateOptions
+    raise ex
+CRABClient.ClientExceptions.MissingOptionException: [91mError[0m: Please indicate the CRAB project directory with --dir=<project-directory>.
+INFO 2025-02-22 12:33:41.317 UTC: 	 Log file is /lustrehome/felicenenna/tau3mu/CMSSW_14_0_17/src/Utilities/run_the_matrix/29621.0_TenMuE_0_200+2026D110/DsTau3Mu/crab.log
+DEBUG 2025-02-22 12:33:59.608 UTC: 	 CRAB Client version: v3.241125
+DEBUG 2025-02-22 12:33:59.608 UTC: 	 Running on: Linux ui02.recas.ba.infn.it 3.10.0-1160.80.1.el7.x86_64 #1 SMP Tue Nov 8 15:48:59 UTC 2022 x86_64 x86_64 x86_64 GNU/Linux
+DEBUG 2025-02-22 12:33:59.608 UTC: 	 Not using Singularity
+DEBUG 2025-02-22 12:33:59.608 UTC: 	 Operating System: CentOS Linux 7 (Core)
+DEBUG 2025-02-22 12:33:59.608 UTC: 	 Executing command: 'status'
+DEBUG 2025-02-22 12:33:59.608 UTC: 	 Found CRAB cache file /lustrehome/felicenenna/.crab3
+ERROR 2025-02-22 12:33:59.609 UTC: 	 Error: crab_projects/crab_140X_mcPhase2_14TeV_DsTau3Mu_onlyGEMpos_GEN-SIM is not a valid CRAB project directory.
+ERROR 2025-02-22 12:33:59.609 UTC: 	 Caught ClientException exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.241125.00/bin/crab.py", line 157, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.241125.00/bin/crab.py", line 135, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])  # the crab command to be executed
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.241125.00/lib/CRABClient/Commands/status.py", line 48, in __init__
+    SubCommand.__init__(self, logger, cmdargs)
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.241125.00/lib/CRABClient/Commands/SubCommand.py", line 281, in __init__
+    SubCommand.validateOptions(self)
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.241125.00/lib/CRABClient/Commands/SubCommand.py", line 691, in validateOptions
+    raise ConfigurationException(msg)
+CRABClient.ClientExceptions.ConfigurationException: [91mError[0m: crab_projects/crab_140X_mcPhase2_14TeV_DsTau3Mu_onlyGEMpos_GEN-SIM is not a valid CRAB project directory.
+INFO 2025-02-22 12:33:59.612 UTC: 	 Log file is /lustrehome/felicenenna/tau3mu/CMSSW_14_0_17/src/Utilities/run_the_matrix/29621.0_TenMuE_0_200+2026D110/DsTau3Mu/crab.log
+DEBUG 2025-02-22 13:00:30.905 UTC: 	 CRAB Client version: v3.241125
+DEBUG 2025-02-22 13:00:30.906 UTC: 	 Running on: Linux ui02.recas.ba.infn.it 3.10.0-1160.80.1.el7.x86_64 #1 SMP Tue Nov 8 15:48:59 UTC 2022 x86_64 x86_64 x86_64 GNU/Linux
+DEBUG 2025-02-22 13:00:30.906 UTC: 	 Not using Singularity
+DEBUG 2025-02-22 13:00:30.906 UTC: 	 Operating System: CentOS Linux 7 (Core)
+DEBUG 2025-02-22 13:00:30.906 UTC: 	 Executing command: 'submit'
+DEBUG 2025-02-22 13:00:30.906 UTC: 	 Found CRAB cache file /lustrehome/felicenenna/.crab3
+INFO 2025-02-22 13:00:30.907 UTC: 	 Will use CRAB configuration file crab_DsTau3Mu_GEN_Phase2.py
+DEBUG 2025-02-22 13:00:30.907 UTC: 	 Loading CRAB configuration file.
+DEBUG 2025-02-22 13:00:30.912 UTC: 	 Will use CRAB plugin PRIVATEMC (i.e. will run an a MC generation job type).
+ERROR 2025-02-22 13:00:30.913 UTC: 	 Working area '/lustrehome/felicenenna/tau3mu/CMSSW_14_0_17/src/Utilities/run_the_matrix/29621.0_TenMuE_0_200+2026D110/DsTau3Mu/crab_projects/crab_140X_mcPhase2_14TeV_DsTau3Mu_GEN-SIM' already exists 
+Please change the requestName in the config file
+ERROR 2025-02-22 13:00:30.913 UTC: 	 Caught ClientException exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.241125.00/bin/crab.py", line 157, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.241125.00/bin/crab.py", line 135, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])  # the crab command to be executed
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.241125.00/lib/CRABClient/Commands/submit.py", line 37, in __init__
+    SubCommand.__init__(self, logger, cmdargs, disable_interspersed_args=True)
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.241125.00/lib/CRABClient/Commands/SubCommand.py", line 328, in __init__
+    self.requestarea, self.requestname, self.logfile = createWorkArea(
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.241125.00/lib/CRABClient/ClientUtilities.py", line 392, in createWorkArea
+    raise ConfigException("Working area '%s' already exists \nPlease change the requestName in the config file" % fullpath)
+CRABClient.ClientExceptions.ConfigException: Working area '/lustrehome/felicenenna/tau3mu/CMSSW_14_0_17/src/Utilities/run_the_matrix/29621.0_TenMuE_0_200+2026D110/DsTau3Mu/crab_projects/crab_140X_mcPhase2_14TeV_DsTau3Mu_GEN-SIM' already exists 
+Please change the requestName in the config file
+INFO 2025-02-22 13:00:30.984 UTC: 	 Log file is /lustrehome/felicenenna/tau3mu/CMSSW_14_0_17/src/Utilities/run_the_matrix/29621.0_TenMuE_0_200+2026D110/DsTau3Mu/crab.log
+DEBUG 2025-02-22 14:25:03.552 UTC: 	 CRAB Client version: v3.241125
+DEBUG 2025-02-22 14:25:03.552 UTC: 	 Running on: Linux ui02.recas.ba.infn.it 3.10.0-1160.80.1.el7.x86_64 #1 SMP Tue Nov 8 15:48:59 UTC 2022 x86_64 x86_64 x86_64 GNU/Linux
+DEBUG 2025-02-22 14:25:03.552 UTC: 	 Not using Singularity
+DEBUG 2025-02-22 14:25:03.552 UTC: 	 Operating System: CentOS Linux 7 (Core)
+DEBUG 2025-02-22 14:25:03.552 UTC: 	 Executing command: 'submit'
+DEBUG 2025-02-22 14:25:03.554 UTC: 	 Found CRAB cache file /lustrehome/felicenenna/.crab3
+INFO 2025-02-22 14:25:03.556 UTC: 	 Will use CRAB configuration file crab_DsTau3Mu_GEN_Phase2.py
+DEBUG 2025-02-22 14:25:03.556 UTC: 	 Loading CRAB configuration file.
+DEBUG 2025-02-22 14:25:03.562 UTC: 	 Will use CRAB plugin PRIVATEMC (i.e. will run an a MC generation job type).
+ERROR 2025-02-22 14:25:03.563 UTC: 	 Working area '/lustrehome/felicenenna/tau3mu/CMSSW_14_0_17/src/Utilities/run_the_matrix/29621.0_TenMuE_0_200+2026D110/DsTau3Mu/crab_projects/crab_140X_mcPhase2_14TeV_DsTau3Mu_onlyGEMpos_GEN-SIM' already exists 
+Please change the requestName in the config file
+ERROR 2025-02-22 14:25:03.563 UTC: 	 Caught ClientException exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.241125.00/bin/crab.py", line 157, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.241125.00/bin/crab.py", line 135, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])  # the crab command to be executed
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.241125.00/lib/CRABClient/Commands/submit.py", line 37, in __init__
+    SubCommand.__init__(self, logger, cmdargs, disable_interspersed_args=True)
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.241125.00/lib/CRABClient/Commands/SubCommand.py", line 328, in __init__
+    self.requestarea, self.requestname, self.logfile = createWorkArea(
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.241125.00/lib/CRABClient/ClientUtilities.py", line 392, in createWorkArea
+    raise ConfigException("Working area '%s' already exists \nPlease change the requestName in the config file" % fullpath)
+CRABClient.ClientExceptions.ConfigException: Working area '/lustrehome/felicenenna/tau3mu/CMSSW_14_0_17/src/Utilities/run_the_matrix/29621.0_TenMuE_0_200+2026D110/DsTau3Mu/crab_projects/crab_140X_mcPhase2_14TeV_DsTau3Mu_onlyGEMpos_GEN-SIM' already exists 
+Please change the requestName in the config file
+INFO 2025-02-22 14:25:03.578 UTC: 	 Log file is /lustrehome/felicenenna/tau3mu/CMSSW_14_0_17/src/Utilities/run_the_matrix/29621.0_TenMuE_0_200+2026D110/DsTau3Mu/crab.log
+DEBUG 2025-02-23 10:49:45.596 UTC: 	 CRAB Client version: v3.241125
+DEBUG 2025-02-23 10:49:45.596 UTC: 	 Running on: Linux ui02.recas.ba.infn.it 3.10.0-1160.80.1.el7.x86_64 #1 SMP Tue Nov 8 15:48:59 UTC 2022 x86_64 x86_64 x86_64 GNU/Linux
+DEBUG 2025-02-23 10:49:45.596 UTC: 	 Not using Singularity
+DEBUG 2025-02-23 10:49:45.596 UTC: 	 Operating System: CentOS Linux 7 (Core)
+DEBUG 2025-02-23 10:49:45.597 UTC: 	 Executing command: 'submit'
+DEBUG 2025-02-23 10:49:45.598 UTC: 	 Found CRAB cache file /lustrehome/felicenenna/.crab3
+INFO 2025-02-23 10:49:45.600 UTC: 	 Will use CRAB configuration file crab_DsTau3Mu_GEN_Phase2.py
+DEBUG 2025-02-23 10:49:45.600 UTC: 	 Loading CRAB configuration file.
+DEBUG 2025-02-23 10:49:45.605 UTC: 	 Will use CRAB plugin PRIVATEMC (i.e. will run an a MC generation job type).
+ERROR 2025-02-23 10:49:45.609 UTC: 	 Working area '/lustrehome/felicenenna/tau3mu/CMSSW_14_0_17/src/Utilities/run_the_matrix/29621.0_TenMuE_0_200+2026D110/DsTau3Mu/crab_projects/crab_140X_mcPhase2_14TeV_DsTau3Mu_onlyGEMpos_GEN-SIM' already exists 
+Please change the requestName in the config file
+ERROR 2025-02-23 10:49:45.609 UTC: 	 Caught ClientException exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.241125.00/bin/crab.py", line 157, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.241125.00/bin/crab.py", line 135, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])  # the crab command to be executed
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.241125.00/lib/CRABClient/Commands/submit.py", line 37, in __init__
+    SubCommand.__init__(self, logger, cmdargs, disable_interspersed_args=True)
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.241125.00/lib/CRABClient/Commands/SubCommand.py", line 328, in __init__
+    self.requestarea, self.requestname, self.logfile = createWorkArea(
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.241125.00/lib/CRABClient/ClientUtilities.py", line 392, in createWorkArea
+    raise ConfigException("Working area '%s' already exists \nPlease change the requestName in the config file" % fullpath)
+CRABClient.ClientExceptions.ConfigException: Working area '/lustrehome/felicenenna/tau3mu/CMSSW_14_0_17/src/Utilities/run_the_matrix/29621.0_TenMuE_0_200+2026D110/DsTau3Mu/crab_projects/crab_140X_mcPhase2_14TeV_DsTau3Mu_onlyGEMpos_GEN-SIM' already exists 
+Please change the requestName in the config file
+INFO 2025-02-23 10:49:45.630 UTC: 	 Log file is /lustrehome/felicenenna/tau3mu/CMSSW_14_0_17/src/Utilities/run_the_matrix/29621.0_TenMuE_0_200+2026D110/DsTau3Mu/crab.log
+DEBUG 2025-02-23 11:38:58.310 UTC: 	 CRAB Client version: v3.241125
+DEBUG 2025-02-23 11:38:58.310 UTC: 	 Running on: Linux ui02.recas.ba.infn.it 3.10.0-1160.80.1.el7.x86_64 #1 SMP Tue Nov 8 15:48:59 UTC 2022 x86_64 x86_64 x86_64 GNU/Linux
+DEBUG 2025-02-23 11:38:58.310 UTC: 	 Not using Singularity
+DEBUG 2025-02-23 11:38:58.310 UTC: 	 Operating System: CentOS Linux 7 (Core)
+DEBUG 2025-02-23 11:38:58.311 UTC: 	 Executing command: 'submit'
+DEBUG 2025-02-23 11:38:58.311 UTC: 	 Found CRAB cache file /lustrehome/felicenenna/.crab3
+INFO 2025-02-23 11:38:58.312 UTC: 	 Will use CRAB configuration file crab_DsTau3Mu_GEN_Phase2.py
+DEBUG 2025-02-23 11:38:58.312 UTC: 	 Loading CRAB configuration file.
+DEBUG 2025-02-23 11:38:58.319 UTC: 	 Will use CRAB plugin PRIVATEMC (i.e. will run an a MC generation job type).
+ERROR 2025-02-23 11:38:58.320 UTC: 	 Working area '/lustrehome/felicenenna/tau3mu/CMSSW_14_0_17/src/Utilities/run_the_matrix/29621.0_TenMuE_0_200+2026D110/DsTau3Mu/crab_projects/crab_140X_mcPhase2_14TeV_DsTau3Mu_onlyGEMneg_GEN-SIM' already exists 
+Please change the requestName in the config file
+ERROR 2025-02-23 11:38:58.320 UTC: 	 Caught ClientException exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.241125.00/bin/crab.py", line 157, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.241125.00/bin/crab.py", line 135, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])  # the crab command to be executed
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.241125.00/lib/CRABClient/Commands/submit.py", line 37, in __init__
+    SubCommand.__init__(self, logger, cmdargs, disable_interspersed_args=True)
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.241125.00/lib/CRABClient/Commands/SubCommand.py", line 328, in __init__
+    self.requestarea, self.requestname, self.logfile = createWorkArea(
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.241125.00/lib/CRABClient/ClientUtilities.py", line 392, in createWorkArea
+    raise ConfigException("Working area '%s' already exists \nPlease change the requestName in the config file" % fullpath)
+CRABClient.ClientExceptions.ConfigException: Working area '/lustrehome/felicenenna/tau3mu/CMSSW_14_0_17/src/Utilities/run_the_matrix/29621.0_TenMuE_0_200+2026D110/DsTau3Mu/crab_projects/crab_140X_mcPhase2_14TeV_DsTau3Mu_onlyGEMneg_GEN-SIM' already exists 
+Please change the requestName in the config file
+INFO 2025-02-23 11:38:58.337 UTC: 	 Log file is /lustrehome/felicenenna/tau3mu/CMSSW_14_0_17/src/Utilities/run_the_matrix/29621.0_TenMuE_0_200+2026D110/DsTau3Mu/crab.log
+DEBUG 2025-02-24 08:08:30.910 UTC: 	 CRAB Client version: v3.241125
+DEBUG 2025-02-24 08:08:30.910 UTC: 	 Running on: Linux ui02.recas.ba.infn.it 3.10.0-1160.80.1.el7.x86_64 #1 SMP Tue Nov 8 15:48:59 UTC 2022 x86_64 x86_64 x86_64 GNU/Linux
+DEBUG 2025-02-24 08:08:30.910 UTC: 	 Not using Singularity
+DEBUG 2025-02-24 08:08:30.910 UTC: 	 Operating System: CentOS Linux 7 (Core)
+DEBUG 2025-02-24 08:08:30.910 UTC: 	 Executing command: 'submit'
+DEBUG 2025-02-24 08:08:30.910 UTC: 	 Found CRAB cache file /lustrehome/felicenenna/.crab3
+ERROR 2025-02-24 08:08:30.911 UTC: 	 CRAB configuration file crab not found.
+ERROR 2025-02-24 08:08:30.911 UTC: 	 Caught ClientException exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.241125.00/bin/crab.py", line 157, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.241125.00/bin/crab.py", line 135, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])  # the crab command to be executed
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.241125.00/lib/CRABClient/Commands/submit.py", line 37, in __init__
+    SubCommand.__init__(self, logger, cmdargs, disable_interspersed_args=True)
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.241125.00/lib/CRABClient/Commands/SubCommand.py", line 326, in __init__
+    self.loadConfig(self.options.config, self.args)
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.241125.00/lib/CRABClient/Commands/SubCommand.py", line 52, in loadConfig
+    raise ConfigurationException("CRAB configuration file %s not found." % (configname))
+CRABClient.ClientExceptions.ConfigurationException: CRAB configuration file crab not found.
+INFO 2025-02-24 08:08:30.926 UTC: 	 Log file is /lustrehome/felicenenna/tau3mu/CMSSW_14_0_17/src/Utilities/run_the_matrix/29621.0_TenMuE_0_200+2026D110/DsTau3Mu/crab.log
+DEBUG 2025-02-24 09:12:10.330 UTC: 	 CRAB Client version: v3.241125
+DEBUG 2025-02-24 09:12:10.331 UTC: 	 Running on: Linux ui02.recas.ba.infn.it 3.10.0-1160.80.1.el7.x86_64 #1 SMP Tue Nov 8 15:48:59 UTC 2022 x86_64 x86_64 x86_64 GNU/Linux
+DEBUG 2025-02-24 09:12:10.331 UTC: 	 Not using Singularity
+DEBUG 2025-02-24 09:12:10.331 UTC: 	 Operating System: CentOS Linux 7 (Core)
+DEBUG 2025-02-24 09:12:10.331 UTC: 	 Executing command: 'status'
+DEBUG 2025-02-24 09:12:10.331 UTC: 	 Found CRAB cache file /lustrehome/felicenenna/.crab3
+ERROR 2025-02-24 09:12:10.332 UTC: 	 Error: crab_projects/crab_140X_mcPhase2_DsTau3Mu_14TeV_NoPU_onlyGEMneg_GEN-SIM-DIGI-RAW is not a valid CRAB project directory.
+ERROR 2025-02-24 09:12:10.332 UTC: 	 Caught ClientException exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.241125.00/bin/crab.py", line 157, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.241125.00/bin/crab.py", line 135, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])  # the crab command to be executed
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.241125.00/lib/CRABClient/Commands/status.py", line 48, in __init__
+    SubCommand.__init__(self, logger, cmdargs)
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.241125.00/lib/CRABClient/Commands/SubCommand.py", line 281, in __init__
+    SubCommand.validateOptions(self)
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.241125.00/lib/CRABClient/Commands/SubCommand.py", line 691, in validateOptions
+    raise ConfigurationException(msg)
+CRABClient.ClientExceptions.ConfigurationException: [91mError[0m: crab_projects/crab_140X_mcPhase2_DsTau3Mu_14TeV_NoPU_onlyGEMneg_GEN-SIM-DIGI-RAW is not a valid CRAB project directory.
+INFO 2025-02-24 09:12:10.351 UTC: 	 Log file is /lustrehome/felicenenna/tau3mu/CMSSW_14_0_17/src/Utilities/run_the_matrix/29621.0_TenMuE_0_200+2026D110/DsTau3Mu/crab.log
+DEBUG 2025-02-26 10:34:15.840 UTC: 	 CRAB Client version: v3.241125
+DEBUG 2025-02-26 10:34:15.840 UTC: 	 Running on: Linux ui02.recas.ba.infn.it 3.10.0-1160.80.1.el7.x86_64 #1 SMP Tue Nov 8 15:48:59 UTC 2022 x86_64 x86_64 x86_64 GNU/Linux
+DEBUG 2025-02-26 10:34:15.840 UTC: 	 Not using Singularity
+DEBUG 2025-02-26 10:34:15.840 UTC: 	 Operating System: CentOS Linux 7 (Core)
+DEBUG 2025-02-26 10:34:15.840 UTC: 	 Executing command: 'submit'
+DEBUG 2025-02-26 10:34:15.841 UTC: 	 Found CRAB cache file /lustrehome/felicenenna/.crab3
+ERROR 2025-02-26 10:34:15.842 UTC: 	 CRAB configuration file crab_projects/crab_140X_mcPhase2_DsTau3Mu_MINIAOD_NoPU_onlyGEMpos not found.
+ERROR 2025-02-26 10:34:15.842 UTC: 	 Caught ClientException exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.241125.00/bin/crab.py", line 157, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.241125.00/bin/crab.py", line 135, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])  # the crab command to be executed
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.241125.00/lib/CRABClient/Commands/submit.py", line 37, in __init__
+    SubCommand.__init__(self, logger, cmdargs, disable_interspersed_args=True)
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.241125.00/lib/CRABClient/Commands/SubCommand.py", line 326, in __init__
+    self.loadConfig(self.options.config, self.args)
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.241125.00/lib/CRABClient/Commands/SubCommand.py", line 52, in loadConfig
+    raise ConfigurationException("CRAB configuration file %s not found." % (configname))
+CRABClient.ClientExceptions.ConfigurationException: CRAB configuration file crab_projects/crab_140X_mcPhase2_DsTau3Mu_MINIAOD_NoPU_onlyGEMpos not found.
+INFO 2025-02-26 10:34:15.857 UTC: 	 Log file is /lustrehome/felicenenna/tau3mu/CMSSW_14_0_17/src/Utilities/run_the_matrix/29621.0_TenMuE_0_200+2026D110/DsTau3Mu/crab.log
+DEBUG 2025-02-26 12:51:30.602 UTC: 	 CRAB Client version: v3.241125
+DEBUG 2025-02-26 12:51:30.602 UTC: 	 Running on: Linux ui02.recas.ba.infn.it 3.10.0-1160.80.1.el7.x86_64 #1 SMP Tue Nov 8 15:48:59 UTC 2022 x86_64 x86_64 x86_64 GNU/Linux
+DEBUG 2025-02-26 12:51:30.602 UTC: 	 Not using Singularity
+DEBUG 2025-02-26 12:51:30.602 UTC: 	 Operating System: CentOS Linux 7 (Core)
+DEBUG 2025-02-26 12:51:30.602 UTC: 	 Executing command: 'checkwrite'
+DEBUG 2025-02-26 12:51:30.602 UTC: 	 Found CRAB cache file /lustrehome/felicenenna/.crab3
+DEBUG 2025-02-26 12:51:30.604 UTC: 	 Checking credentials
+DEBUG 2025-02-26 12:51:30.604 UTC: 	 Found proxy file /tmp/x509up_u881416
+DEBUG 2025-02-26 12:51:30.604 UTC: 	 Making sure it has proper VOMS extension
+DEBUG 2025-02-26 12:51:30.604 UTC: 	 Executing command :
+ voms-proxy-info --vo --file /tmp/x509up_u881416
+DEBUG 2025-02-26 12:51:31.543 UTC: 	 output : cms
+
+ error: 
+ retcode : 0
+DEBUG 2025-02-26 12:51:31.543 UTC: 	 Getting proxy life time left
+DEBUG 2025-02-26 12:51:31.543 UTC: 	 Executing command :
+ voms-proxy-info --actimeleft --timeleft --file /tmp/x509up_u881416
+DEBUG 2025-02-26 12:51:32.393 UTC: 	 output : 680165
+680164
+
+ error: 
+ retcode : 0
+DEBUG 2025-02-26 12:51:32.393 UTC: 	 Proxy valid for 188:56:04 hours
+DEBUG 2025-02-26 12:51:32.393 UTC: 	 Retrieving username ...
+DEBUG 2025-02-26 12:51:32.393 UTC: 	 Retrieving username from CRIC...
+DEBUG 2025-02-26 12:51:33.288 UTC: 	 username is fnenna
+INFO 2025-02-26 12:51:35.042 UTC: 	 Rucio client intialized for account fnenna
+ERROR 2025-02-26 12:51:35.042 UTC: 	 Error: Please specify the site where to check the write permissions. Use the --site option.
+ERROR 2025-02-26 12:51:35.043 UTC: 	 Caught ClientException exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.241125.00/bin/crab.py", line 157, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.241125.00/bin/crab.py", line 135, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])  # the crab command to be executed
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.241125.00/lib/CRABClient/Commands/checkwrite.py", line 22, in __init__
+    SubCommand.__init__(self, logger, cmdargs)
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.241125.00/lib/CRABClient/Commands/SubCommand.py", line 403, in __init__
+    self.validateOptions()
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.241125.00/lib/CRABClient/Commands/checkwrite.py", line 356, in validateOptions
+    raise ex
+CRABClient.ClientExceptions.MissingOptionException: [91mError[0m: Please specify the site where to check the write permissions. Use the --site option.
+INFO 2025-02-26 12:51:35.066 UTC: 	 Log file is /lustrehome/felicenenna/tau3mu/CMSSW_14_0_17/src/Utilities/run_the_matrix/29621.0_TenMuE_0_200+2026D110/DsTau3Mu/crab.log
+DEBUG 2025-02-27 08:10:25.599 UTC: 	 CRAB Client version: v3.241125
+DEBUG 2025-02-27 08:10:25.599 UTC: 	 Running on: Linux ui02.recas.ba.infn.it 3.10.0-1160.80.1.el7.x86_64 #1 SMP Tue Nov 8 15:48:59 UTC 2022 x86_64 x86_64 x86_64 GNU/Linux
+DEBUG 2025-02-27 08:10:25.599 UTC: 	 Not using Singularity
+DEBUG 2025-02-27 08:10:25.599 UTC: 	 Operating System: CentOS Linux 7 (Core)
+DEBUG 2025-02-27 08:10:25.600 UTC: 	 Executing command: 'checkwrite'
+DEBUG 2025-02-27 08:10:25.600 UTC: 	 Found CRAB cache file /lustrehome/felicenenna/.crab3
+WARNING 2025-02-27 08:10:25.600 UTC: 	 Warning: 'crab checkwrite' command takes no arguments, 1 given. Ignoring arguments ['crab_projects/crab_140X_mcPhase2_DsTau3Mu_MINIAOD_NoPU_onlyGEMneg'].
+DEBUG 2025-02-27 08:10:25.601 UTC: 	 Checking credentials
+DEBUG 2025-02-27 08:10:25.601 UTC: 	 Found proxy file /tmp/x509up_u881416
+DEBUG 2025-02-27 08:10:25.601 UTC: 	 Making sure it has proper VOMS extension
+DEBUG 2025-02-27 08:10:25.601 UTC: 	 Executing command :
+ voms-proxy-info --vo --file /tmp/x509up_u881416
+DEBUG 2025-02-27 08:10:26.676 UTC: 	 output : cms
+
+ error: 
+ retcode : 0
+DEBUG 2025-02-27 08:10:26.676 UTC: 	 Getting proxy life time left
+DEBUG 2025-02-27 08:10:26.676 UTC: 	 Executing command :
+ voms-proxy-info --actimeleft --timeleft --file /tmp/x509up_u881416
+DEBUG 2025-02-27 08:10:27.668 UTC: 	 output : 610630
+610629
+
+ error: 
+ retcode : 0
+DEBUG 2025-02-27 08:10:27.669 UTC: 	 Proxy valid for 169:37:09 hours
+DEBUG 2025-02-27 08:10:27.669 UTC: 	 Retrieving username ...
+DEBUG 2025-02-27 08:10:27.669 UTC: 	 Retrieving username from CRIC...
+DEBUG 2025-02-27 08:10:28.412 UTC: 	 username is fnenna
+INFO 2025-02-27 08:10:29.935 UTC: 	 Rucio client intialized for account fnenna
+ERROR 2025-02-27 08:10:29.935 UTC: 	 Error: Please specify the site where to check the write permissions. Use the --site option.
+ERROR 2025-02-27 08:10:29.936 UTC: 	 Caught ClientException exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.241125.00/bin/crab.py", line 157, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.241125.00/bin/crab.py", line 135, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])  # the crab command to be executed
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.241125.00/lib/CRABClient/Commands/checkwrite.py", line 22, in __init__
+    SubCommand.__init__(self, logger, cmdargs)
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.241125.00/lib/CRABClient/Commands/SubCommand.py", line 403, in __init__
+    self.validateOptions()
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.241125.00/lib/CRABClient/Commands/checkwrite.py", line 356, in validateOptions
+    raise ex
+CRABClient.ClientExceptions.MissingOptionException: [91mError[0m: Please specify the site where to check the write permissions. Use the --site option.
+INFO 2025-02-27 08:10:30.044 UTC: 	 Log file is /lustrehome/felicenenna/tau3mu/CMSSW_14_0_17/src/Utilities/run_the_matrix/29621.0_TenMuE_0_200+2026D110/DsTau3Mu/crab.log
+DEBUG 2025-02-27 08:10:59.997 UTC: 	 CRAB Client version: v3.241125
+DEBUG 2025-02-27 08:10:59.997 UTC: 	 Running on: Linux ui02.recas.ba.infn.it 3.10.0-1160.80.1.el7.x86_64 #1 SMP Tue Nov 8 15:48:59 UTC 2022 x86_64 x86_64 x86_64 GNU/Linux
+DEBUG 2025-02-27 08:10:59.997 UTC: 	 Not using Singularity
+DEBUG 2025-02-27 08:10:59.997 UTC: 	 Operating System: CentOS Linux 7 (Core)
+DEBUG 2025-02-27 08:10:59.997 UTC: 	 Executing command: 'checkwrite'
+DEBUG 2025-02-27 08:10:59.998 UTC: 	 Found CRAB cache file /lustrehome/felicenenna/.crab3
+WARNING 2025-02-27 08:10:59.998 UTC: 	 Warning: 'crab checkwrite' command takes no arguments, 1 given. Ignoring arguments ['crab_projects/crab_140X_mcPhase2_DsTau3Mu_MINIAOD_NoPU_onlyGEMneg'].
+DEBUG 2025-02-27 08:10:59.999 UTC: 	 Checking credentials
+DEBUG 2025-02-27 08:10:59.999 UTC: 	 Found proxy file /tmp/x509up_u881416
+DEBUG 2025-02-27 08:10:59.999 UTC: 	 Making sure it has proper VOMS extension
+DEBUG 2025-02-27 08:10:59.999 UTC: 	 Executing command :
+ voms-proxy-info --vo --file /tmp/x509up_u881416
+DEBUG 2025-02-27 08:11:00.965 UTC: 	 output : cms
+
+ error: 
+ retcode : 0
+DEBUG 2025-02-27 08:11:00.965 UTC: 	 Getting proxy life time left
+DEBUG 2025-02-27 08:11:00.965 UTC: 	 Executing command :
+ voms-proxy-info --actimeleft --timeleft --file /tmp/x509up_u881416
+DEBUG 2025-02-27 08:11:01.906 UTC: 	 output : 610596
+610595
+
+ error: 
+ retcode : 0
+DEBUG 2025-02-27 08:11:01.906 UTC: 	 Proxy valid for 169:36:35 hours
+DEBUG 2025-02-27 08:11:01.907 UTC: 	 Retrieving username ...
+DEBUG 2025-02-27 08:11:01.907 UTC: 	 Retrieving username from CRIC...
+DEBUG 2025-02-27 08:11:02.695 UTC: 	 username is fnenna
+INFO 2025-02-27 08:11:04.187 UTC: 	 Rucio client intialized for account fnenna
+DEBUG 2025-02-27 08:11:04.187 UTC: 	 Command use: checkwrite
+DEBUG 2025-02-27 08:11:04.187 UTC: 	 Options use: ['crab_projects/crab_140X_mcPhase2_DsTau3Mu_MINIAOD_NoPU_onlyGEMneg', '--site', 'T2_IT_BARI']
+DEBUG 2025-02-27 08:11:04.187 UTC: 	 Instance is None
+DEBUG 2025-02-27 08:11:04.187 UTC: 	 Server base url is None
+DEBUG 2025-02-27 08:11:04.187 UTC: 	 Retrieving username ...
+DEBUG 2025-02-27 08:11:04.187 UTC: 	 Retrieving username from CRIC...
+DEBUG 2025-02-27 08:11:04.966 UTC: 	 username is fnenna
+INFO 2025-02-27 08:11:04.966 UTC: 	 Will check write permission in the default location /store/user/<username>
+INFO 2025-02-27 08:11:04.966 UTC: 	 Validating LFN /store/user/fnenna...
+INFO 2025-02-27 08:11:04.967 UTC: 	 LFN /store/user/fnenna is valid.
+INFO 2025-02-27 08:11:04.992 UTC: 	 Will use `gfal-copy`, `gfal-rm` commands for checking write permissions
+INFO 2025-02-27 08:11:04.993 UTC: 	 Will check write permission in /store/user/fnenna on site T2_IT_BARI
+ERROR 2025-02-27 08:11:05.033 UTC: 	 RSE does not exist.
+Details: RSE 'T2_IT_BARI' cannot be found in vo 'def'
+WARNING 2025-02-27 08:11:05.033 UTC: 	 Command checkwrite failed
+ERROR 2025-02-27 08:11:05.033 UTC: 	 Caught CommandFailedException exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.241125.00/bin/crab.py", line 157, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.241125.00/bin/crab.py", line 144, in __call__
+    raise CommandFailedException("Command %s failed" % str(args[0]))
+CRABClient.ClientExceptions.CommandFailedException: Command checkwrite failed
+DEBUG 2025-02-27 08:12:49.112 UTC: 	 CRAB Client version: v3.241125
+DEBUG 2025-02-27 08:12:49.113 UTC: 	 Running on: Linux ui02.recas.ba.infn.it 3.10.0-1160.80.1.el7.x86_64 #1 SMP Tue Nov 8 15:48:59 UTC 2022 x86_64 x86_64 x86_64 GNU/Linux
+DEBUG 2025-02-27 08:12:49.113 UTC: 	 Not using Singularity
+DEBUG 2025-02-27 08:12:49.113 UTC: 	 Operating System: CentOS Linux 7 (Core)
+DEBUG 2025-02-27 08:12:49.113 UTC: 	 Executing command: 'checkwrite'
+DEBUG 2025-02-27 08:12:49.113 UTC: 	 Found CRAB cache file /lustrehome/felicenenna/.crab3
+DEBUG 2025-02-27 08:12:49.114 UTC: 	 Checking credentials
+DEBUG 2025-02-27 08:12:49.114 UTC: 	 Found proxy file /tmp/x509up_u881416
+DEBUG 2025-02-27 08:12:49.114 UTC: 	 Making sure it has proper VOMS extension
+DEBUG 2025-02-27 08:12:49.114 UTC: 	 Executing command :
+ voms-proxy-info --vo --file /tmp/x509up_u881416
+DEBUG 2025-02-27 08:12:50.070 UTC: 	 output : cms
+
+ error: 
+ retcode : 0
+DEBUG 2025-02-27 08:12:50.070 UTC: 	 Getting proxy life time left
+DEBUG 2025-02-27 08:12:50.070 UTC: 	 Executing command :
+ voms-proxy-info --actimeleft --timeleft --file /tmp/x509up_u881416
+DEBUG 2025-02-27 08:12:50.974 UTC: 	 output : 610487
+610486
+
+ error: 
+ retcode : 0
+DEBUG 2025-02-27 08:12:50.974 UTC: 	 Proxy valid for 169:34:46 hours
+DEBUG 2025-02-27 08:12:50.974 UTC: 	 Retrieving username ...
+DEBUG 2025-02-27 08:12:50.974 UTC: 	 Retrieving username from CRIC...
+DEBUG 2025-02-27 08:12:51.710 UTC: 	 username is fnenna
+INFO 2025-02-27 08:12:53.210 UTC: 	 Rucio client intialized for account fnenna
+DEBUG 2025-02-27 08:12:53.211 UTC: 	 Command use: checkwrite
+DEBUG 2025-02-27 08:12:53.211 UTC: 	 Options use: ['--site', 'T2_IT_BARI']
+DEBUG 2025-02-27 08:12:53.211 UTC: 	 Instance is None
+DEBUG 2025-02-27 08:12:53.211 UTC: 	 Server base url is None
+DEBUG 2025-02-27 08:12:53.211 UTC: 	 Retrieving username ...
+DEBUG 2025-02-27 08:12:53.211 UTC: 	 Retrieving username from CRIC...
+DEBUG 2025-02-27 08:12:53.925 UTC: 	 username is fnenna
+INFO 2025-02-27 08:12:53.926 UTC: 	 Will check write permission in the default location /store/user/<username>
+INFO 2025-02-27 08:12:53.926 UTC: 	 Validating LFN /store/user/fnenna...
+INFO 2025-02-27 08:12:53.926 UTC: 	 LFN /store/user/fnenna is valid.
+INFO 2025-02-27 08:12:53.943 UTC: 	 Will use `gfal-copy`, `gfal-rm` commands for checking write permissions
+INFO 2025-02-27 08:12:53.944 UTC: 	 Will check write permission in /store/user/fnenna on site T2_IT_BARI
+ERROR 2025-02-27 08:12:53.983 UTC: 	 RSE does not exist.
+Details: RSE 'T2_IT_BARI' cannot be found in vo 'def'
+WARNING 2025-02-27 08:12:53.983 UTC: 	 Command checkwrite failed
+ERROR 2025-02-27 08:12:53.983 UTC: 	 Caught CommandFailedException exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.241125.00/bin/crab.py", line 157, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.241125.00/bin/crab.py", line 144, in __call__
+    raise CommandFailedException("Command %s failed" % str(args[0]))
+CRABClient.ClientExceptions.CommandFailedException: Command checkwrite failed
+DEBUG 2025-02-27 08:14:32.606 UTC: 	 CRAB Client version: v3.241125
+DEBUG 2025-02-27 08:14:32.607 UTC: 	 Running on: Linux ui02.recas.ba.infn.it 3.10.0-1160.80.1.el7.x86_64 #1 SMP Tue Nov 8 15:48:59 UTC 2022 x86_64 x86_64 x86_64 GNU/Linux
+DEBUG 2025-02-27 08:14:32.607 UTC: 	 Not using Singularity
+DEBUG 2025-02-27 08:14:32.607 UTC: 	 Operating System: CentOS Linux 7 (Core)
+DEBUG 2025-02-27 08:14:32.607 UTC: 	 Executing command: 'checkwrite'
+DEBUG 2025-02-27 08:14:32.607 UTC: 	 Found CRAB cache file /lustrehome/felicenenna/.crab3
+DEBUG 2025-02-27 08:14:48.569 UTC: 	 CRAB Client version: v3.241125
+DEBUG 2025-02-27 08:14:48.569 UTC: 	 Running on: Linux ui02.recas.ba.infn.it 3.10.0-1160.80.1.el7.x86_64 #1 SMP Tue Nov 8 15:48:59 UTC 2022 x86_64 x86_64 x86_64 GNU/Linux
+DEBUG 2025-02-27 08:14:48.569 UTC: 	 Not using Singularity
+DEBUG 2025-02-27 08:14:48.570 UTC: 	 Operating System: CentOS Linux 7 (Core)
+DEBUG 2025-02-27 08:14:48.570 UTC: 	 Executing command: 'checkwrite'
+DEBUG 2025-02-27 08:14:48.570 UTC: 	 Found CRAB cache file /lustrehome/felicenenna/.crab3
+DEBUG 2025-02-27 08:14:48.571 UTC: 	 Checking credentials
+DEBUG 2025-02-27 08:14:48.571 UTC: 	 Found proxy file /tmp/x509up_u881416
+DEBUG 2025-02-27 08:14:48.571 UTC: 	 Making sure it has proper VOMS extension
+DEBUG 2025-02-27 08:14:48.571 UTC: 	 Executing command :
+ voms-proxy-info --vo --file /tmp/x509up_u881416
+DEBUG 2025-02-27 08:14:49.549 UTC: 	 output : cms
+
+ error: 
+ retcode : 0
+DEBUG 2025-02-27 08:14:49.549 UTC: 	 Getting proxy life time left
+DEBUG 2025-02-27 08:14:49.549 UTC: 	 Executing command :
+ voms-proxy-info --actimeleft --timeleft --file /tmp/x509up_u881416
+DEBUG 2025-02-27 08:14:50.504 UTC: 	 output : 610367
+610366
+
+ error: 
+ retcode : 0
+DEBUG 2025-02-27 08:14:50.505 UTC: 	 Proxy valid for 169:32:46 hours
+DEBUG 2025-02-27 08:14:50.505 UTC: 	 Retrieving username ...
+DEBUG 2025-02-27 08:14:50.505 UTC: 	 Retrieving username from CRIC...
+DEBUG 2025-02-27 08:14:51.290 UTC: 	 username is fnenna
+INFO 2025-02-27 08:14:52.656 UTC: 	 Rucio client intialized for account fnenna
+DEBUG 2025-02-27 08:14:52.657 UTC: 	 Command use: checkwrite
+DEBUG 2025-02-27 08:14:52.657 UTC: 	 Options use: ['--site=T2_IT_BARI']
+DEBUG 2025-02-27 08:14:52.657 UTC: 	 Instance is None
+DEBUG 2025-02-27 08:14:52.657 UTC: 	 Server base url is None
+DEBUG 2025-02-27 08:14:52.657 UTC: 	 Retrieving username ...
+DEBUG 2025-02-27 08:14:52.657 UTC: 	 Retrieving username from CRIC...
+DEBUG 2025-02-27 08:14:53.381 UTC: 	 username is fnenna
+INFO 2025-02-27 08:14:53.382 UTC: 	 Will check write permission in the default location /store/user/<username>
+INFO 2025-02-27 08:14:53.382 UTC: 	 Validating LFN /store/user/fnenna...
+INFO 2025-02-27 08:14:53.382 UTC: 	 LFN /store/user/fnenna is valid.
+INFO 2025-02-27 08:14:53.401 UTC: 	 Will use `gfal-copy`, `gfal-rm` commands for checking write permissions
+INFO 2025-02-27 08:14:53.401 UTC: 	 Will check write permission in /store/user/fnenna on site T2_IT_BARI
+ERROR 2025-02-27 08:14:53.440 UTC: 	 RSE does not exist.
+Details: RSE 'T2_IT_BARI' cannot be found in vo 'def'
+WARNING 2025-02-27 08:14:53.440 UTC: 	 Command checkwrite failed
+ERROR 2025-02-27 08:14:53.440 UTC: 	 Caught CommandFailedException exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.241125.00/bin/crab.py", line 157, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.241125.00/bin/crab.py", line 144, in __call__
+    raise CommandFailedException("Command %s failed" % str(args[0]))
+CRABClient.ClientExceptions.CommandFailedException: Command checkwrite failed
+DEBUG 2025-02-27 09:18:56.949 UTC: 	 CRAB Client version: v3.241125
+DEBUG 2025-02-27 09:18:56.949 UTC: 	 Running on: Linux ui02.recas.ba.infn.it 3.10.0-1160.80.1.el7.x86_64 #1 SMP Tue Nov 8 15:48:59 UTC 2022 x86_64 x86_64 x86_64 GNU/Linux
+DEBUG 2025-02-27 09:18:56.949 UTC: 	 Not using Singularity
+DEBUG 2025-02-27 09:18:56.949 UTC: 	 Operating System: CentOS Linux 7 (Core)
+DEBUG 2025-02-27 09:18:56.949 UTC: 	 Executing command: 'checkwrite'
+DEBUG 2025-02-27 09:18:56.950 UTC: 	 Found CRAB cache file /lustrehome/felicenenna/.crab3
+DEBUG 2025-02-27 09:18:56.950 UTC: 	 Checking credentials
+DEBUG 2025-02-27 09:18:56.950 UTC: 	 Found proxy file /tmp/x509up_u881416
+DEBUG 2025-02-27 09:18:56.950 UTC: 	 Making sure it has proper VOMS extension
+DEBUG 2025-02-27 09:18:56.951 UTC: 	 Executing command :
+ voms-proxy-info --vo --file /tmp/x509up_u881416
+DEBUG 2025-02-27 09:18:58.337 UTC: 	 output : cms
+
+ error: 
+ retcode : 0
+DEBUG 2025-02-27 09:18:58.338 UTC: 	 Getting proxy life time left
+DEBUG 2025-02-27 09:18:58.338 UTC: 	 Executing command :
+ voms-proxy-info --actimeleft --timeleft --file /tmp/x509up_u881416
+DEBUG 2025-02-27 09:18:59.304 UTC: 	 output : 606518
+606517
+
+ error: 
+ retcode : 0
+DEBUG 2025-02-27 09:18:59.304 UTC: 	 Proxy valid for 168:28:37 hours
+DEBUG 2025-02-27 09:18:59.305 UTC: 	 Retrieving username ...
+DEBUG 2025-02-27 09:18:59.305 UTC: 	 Retrieving username from CRIC...
+DEBUG 2025-02-27 09:19:00.170 UTC: 	 username is fnenna
+INFO 2025-02-27 09:19:02.299 UTC: 	 Rucio client intialized for account fnenna
+DEBUG 2025-02-27 09:19:02.300 UTC: 	 Command use: checkwrite
+DEBUG 2025-02-27 09:19:02.300 UTC: 	 Options use: ['--site', 'T2_IT_BARI']
+DEBUG 2025-02-27 09:19:02.300 UTC: 	 Instance is None
+DEBUG 2025-02-27 09:19:02.300 UTC: 	 Server base url is None
+DEBUG 2025-02-27 09:19:02.300 UTC: 	 Retrieving username ...
+DEBUG 2025-02-27 09:19:02.300 UTC: 	 Retrieving username from CRIC...
+DEBUG 2025-02-27 09:19:03.169 UTC: 	 username is fnenna
+INFO 2025-02-27 09:19:03.169 UTC: 	 Will check write permission in the default location /store/user/<username>
+INFO 2025-02-27 09:19:03.169 UTC: 	 Validating LFN /store/user/fnenna...
+INFO 2025-02-27 09:19:03.170 UTC: 	 LFN /store/user/fnenna is valid.
+INFO 2025-02-27 09:19:03.201 UTC: 	 Will use `gfal-copy`, `gfal-rm` commands for checking write permissions
+INFO 2025-02-27 09:19:03.201 UTC: 	 Will check write permission in /store/user/fnenna on site T2_IT_BARI
+ERROR 2025-02-27 09:19:03.240 UTC: 	 RSE does not exist.
+Details: RSE 'T2_IT_BARI' cannot be found in vo 'def'
+WARNING 2025-02-27 09:19:03.241 UTC: 	 Command checkwrite failed
+ERROR 2025-02-27 09:19:03.241 UTC: 	 Caught CommandFailedException exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.241125.00/bin/crab.py", line 157, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.241125.00/bin/crab.py", line 144, in __call__
+    raise CommandFailedException("Command %s failed" % str(args[0]))
+CRABClient.ClientExceptions.CommandFailedException: Command checkwrite failed
+DEBUG 2025-02-27 10:30:57.025 UTC: 	 CRAB Client version: v3.241125
+DEBUG 2025-02-27 10:30:57.026 UTC: 	 Running on: Linux ui02.recas.ba.infn.it 3.10.0-1160.80.1.el7.x86_64 #1 SMP Tue Nov 8 15:48:59 UTC 2022 x86_64 x86_64 x86_64 GNU/Linux
+DEBUG 2025-02-27 10:30:57.026 UTC: 	 Not using Singularity
+DEBUG 2025-02-27 10:30:57.026 UTC: 	 Operating System: CentOS Linux 7 (Core)
+DEBUG 2025-02-27 10:30:57.026 UTC: 	 Executing command: 'status'
+DEBUG 2025-02-27 10:30:57.026 UTC: 	 Found CRAB cache file /lustrehome/felicenenna/.crab3
+ERROR 2025-02-27 10:30:57.028 UTC: 	 Error: crab_projects/crab_140X_mcPhase2_DsTau3Mu_MINIAOD_PU200_onlyGEMneg is not a valid CRAB project directory.
+ERROR 2025-02-27 10:30:57.028 UTC: 	 Caught ClientException exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.241125.00/bin/crab.py", line 157, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.241125.00/bin/crab.py", line 135, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])  # the crab command to be executed
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.241125.00/lib/CRABClient/Commands/status.py", line 48, in __init__
+    SubCommand.__init__(self, logger, cmdargs)
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.241125.00/lib/CRABClient/Commands/SubCommand.py", line 281, in __init__
+    SubCommand.validateOptions(self)
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.241125.00/lib/CRABClient/Commands/SubCommand.py", line 691, in validateOptions
+    raise ConfigurationException(msg)
+CRABClient.ClientExceptions.ConfigurationException: [91mError[0m: crab_projects/crab_140X_mcPhase2_DsTau3Mu_MINIAOD_PU200_onlyGEMneg is not a valid CRAB project directory.
+INFO 2025-02-27 10:30:57.042 UTC: 	 Log file is /lustrehome/felicenenna/tau3mu/CMSSW_14_0_17/src/Utilities/run_the_matrix/29621.0_TenMuE_0_200+2026D110/DsTau3Mu/crab.log
+DEBUG 2025-02-27 23:04:15.398 UTC: 	 CRAB Client version: v3.241125
+DEBUG 2025-02-27 23:04:15.398 UTC: 	 Running on: Linux ui02.recas.ba.infn.it 3.10.0-1160.80.1.el7.x86_64 #1 SMP Tue Nov 8 15:48:59 UTC 2022 x86_64 x86_64 x86_64 GNU/Linux
+DEBUG 2025-02-27 23:04:15.398 UTC: 	 Not using Singularity
+DEBUG 2025-02-27 23:04:15.398 UTC: 	 Operating System: CentOS Linux 7 (Core)
+DEBUG 2025-02-27 23:04:15.398 UTC: 	 Executing command: 'checkwrite'
+DEBUG 2025-02-27 23:04:15.399 UTC: 	 Found CRAB cache file /lustrehome/felicenenna/.crab3
+DEBUG 2025-02-27 23:04:15.401 UTC: 	 Checking credentials
+DEBUG 2025-02-27 23:04:15.401 UTC: 	 Found proxy file /tmp/x509up_u881416
+DEBUG 2025-02-27 23:04:15.401 UTC: 	 Making sure it has proper VOMS extension
+DEBUG 2025-02-27 23:04:15.401 UTC: 	 Executing command :
+ voms-proxy-info --vo --file /tmp/x509up_u881416
+DEBUG 2025-02-27 23:04:16.412 UTC: 	 output : cms
+
+ error: 
+ retcode : 0
+DEBUG 2025-02-27 23:04:16.412 UTC: 	 Getting proxy life time left
+DEBUG 2025-02-27 23:04:16.412 UTC: 	 Executing command :
+ voms-proxy-info --actimeleft --timeleft --file /tmp/x509up_u881416
+DEBUG 2025-02-27 23:04:17.630 UTC: 	 output : 557000
+556999
+
+ error: 
+ retcode : 0
+DEBUG 2025-02-27 23:04:17.631 UTC: 	 Proxy valid for 154:43:19 hours
+DEBUG 2025-02-27 23:04:17.631 UTC: 	 Retrieving username ...
+DEBUG 2025-02-27 23:04:17.631 UTC: 	 Retrieving username from CRIC...
+DEBUG 2025-02-27 23:04:18.552 UTC: 	 username is fnenna
+INFO 2025-02-27 23:04:20.783 UTC: 	 Rucio client intialized for account fnenna
+DEBUG 2025-02-27 23:04:20.783 UTC: 	 Command use: checkwrite
+DEBUG 2025-02-27 23:04:20.783 UTC: 	 Options use: ['--site', 'T2_IT_Bari']
+DEBUG 2025-02-27 23:04:20.783 UTC: 	 Instance is None
+DEBUG 2025-02-27 23:04:20.783 UTC: 	 Server base url is None
+DEBUG 2025-02-27 23:04:20.783 UTC: 	 Retrieving username ...
+DEBUG 2025-02-27 23:04:20.783 UTC: 	 Retrieving username from CRIC...
+DEBUG 2025-02-27 23:04:21.521 UTC: 	 username is fnenna
+INFO 2025-02-27 23:04:21.521 UTC: 	 Will check write permission in the default location /store/user/<username>
+INFO 2025-02-27 23:04:21.521 UTC: 	 Validating LFN /store/user/fnenna...
+INFO 2025-02-27 23:04:21.522 UTC: 	 LFN /store/user/fnenna is valid.
+INFO 2025-02-27 23:04:21.544 UTC: 	 Will use `gfal-copy`, `gfal-rm` commands for checking write permissions
+INFO 2025-02-27 23:04:21.545 UTC: 	 Will check write permission in /store/user/fnenna on site T2_IT_Bari
+INFO 2025-02-27 23:04:21.591 UTC: 	 Will use PFN: davs://webdav.recas.ba.infn.it:8443/cms/store/user/fnenna/crab3checkwrite_20250228_000421_e245334f-0301-4fec-9f75-e4b956af592f/e245334f-0301-4fec-9f75-e4b956af592f.tmp
+INFO 2025-02-27 23:04:21.591 UTC: 	 
+Attempting to create (dummy) directory crab3checkwrite_20250228_000421_e245334f-0301-4fec-9f75-e4b956af592f and copy (dummy) file e245334f-0301-4fec-9f75-e4b956af592f.tmp to /store/user/fnenna
+
+INFO 2025-02-27 23:04:21.598 UTC: 	 Executing command: which scram >/dev/null 2>&1 && eval `scram unsetenv -sh`; gfal-copy -p -v -t 180 file:///lustrehome/felicenenna/tau3mu/CMSSW_14_0_17/src/Utilities/run_the_matrix/29621.0_TenMuE_0_200+2026D110/DsTau3Mu/e245334f-0301-4fec-9f75-e4b956af592f.tmp 'davs://webdav.recas.ba.infn.it:8443/cms/store/user/fnenna/crab3checkwrite_20250228_000421_e245334f-0301-4fec-9f75-e4b956af592f/e245334f-0301-4fec-9f75-e4b956af592f.tmp'
+INFO 2025-02-27 23:04:21.598 UTC: 	 Please wait...
+INFO 2025-02-27 23:04:26.260 UTC: 	 
+Successfully created directory crab3checkwrite_20250228_000421_e245334f-0301-4fec-9f75-e4b956af592f and copied file e245334f-0301-4fec-9f75-e4b956af592f.tmp to /store/user/fnenna
+INFO 2025-02-27 23:04:26.260 UTC: 	 
+Attempting to delete file davs://webdav.recas.ba.infn.it:8443/cms/store/user/fnenna/crab3checkwrite_20250228_000421_e245334f-0301-4fec-9f75-e4b956af592f/e245334f-0301-4fec-9f75-e4b956af592f.tmp
+
+INFO 2025-02-27 23:04:26.261 UTC: 	 Executing command: which scram >/dev/null 2>&1 && eval `scram unsetenv -sh`; gfal-rm -v -t 180 'davs://webdav.recas.ba.infn.it:8443/cms/store/user/fnenna/crab3checkwrite_20250228_000421_e245334f-0301-4fec-9f75-e4b956af592f/e245334f-0301-4fec-9f75-e4b956af592f.tmp'
+INFO 2025-02-27 23:04:26.261 UTC: 	 Please wait...
+INFO 2025-02-27 23:04:27.697 UTC: 	 
+Successfully deleted file davs://webdav.recas.ba.infn.it:8443/cms/store/user/fnenna/crab3checkwrite_20250228_000421_e245334f-0301-4fec-9f75-e4b956af592f/e245334f-0301-4fec-9f75-e4b956af592f.tmp
+INFO 2025-02-27 23:04:27.697 UTC: 	 
+Attempting to delete directory davs://webdav.recas.ba.infn.it:8443/cms/store/user/fnenna/crab3checkwrite_20250228_000421_e245334f-0301-4fec-9f75-e4b956af592f/
+
+INFO 2025-02-27 23:04:27.697 UTC: 	 Executing command: which scram >/dev/null 2>&1 && eval `scram unsetenv -sh`; gfal-rm -r -v -t 180 'davs://webdav.recas.ba.infn.it:8443/cms/store/user/fnenna/crab3checkwrite_20250228_000421_e245334f-0301-4fec-9f75-e4b956af592f/'
+INFO 2025-02-27 23:04:27.697 UTC: 	 Please wait...
+INFO 2025-02-27 23:04:29.010 UTC: 	 
+Successfully deleted directory davs://webdav.recas.ba.infn.it:8443/cms/store/user/fnenna/crab3checkwrite_20250228_000421_e245334f-0301-4fec-9f75-e4b956af592f/
+INFO 2025-02-27 23:04:29.011 UTC: 	 
+Checkwrite Result:
+INFO 2025-02-27 23:04:29.012 UTC: 	 Success: Able to write in /store/user/fnenna on site T2_IT_Bari
+DEBUG 2025-03-03 14:57:43.728 UTC: 	 CRAB Client version: v3.241125
+DEBUG 2025-03-03 14:57:43.729 UTC: 	 Running on: Linux ui02.recas.ba.infn.it 3.10.0-1160.80.1.el7.x86_64 #1 SMP Tue Nov 8 15:48:59 UTC 2022 x86_64 x86_64 x86_64 GNU/Linux
+DEBUG 2025-03-03 14:57:43.729 UTC: 	 Not using Singularity
+DEBUG 2025-03-03 14:57:43.729 UTC: 	 Operating System: CentOS Linux 7 (Core)
+DEBUG 2025-03-03 14:57:43.729 UTC: 	 Executing command: 'submit'
+DEBUG 2025-03-03 14:57:43.729 UTC: 	 Found CRAB cache file /lustrehome/felicenenna/.crab3
+INFO 2025-03-03 14:57:43.730 UTC: 	 Will use CRAB configuration file crab_DsTau3Mu_GEN_Phase2.py
+DEBUG 2025-03-03 14:57:43.730 UTC: 	 Loading CRAB configuration file.
+DEBUG 2025-03-03 14:57:43.734 UTC: 	 Will use CRAB plugin PRIVATEMC (i.e. will run an a MC generation job type).
+ERROR 2025-03-03 14:57:43.735 UTC: 	 Working area '/lustrehome/felicenenna/tau3mu/CMSSW_14_0_17/src/Utilities/run_the_matrix/29621.0_TenMuE_0_200+2026D110/DsTau3Mu/crab_projects/crab_140X_mcPhase2_14TeV_DsTau3Mu_onlyGEMneg_GEN-SIM_v2' already exists 
+Please change the requestName in the config file
+ERROR 2025-03-03 14:57:43.735 UTC: 	 Caught ClientException exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.241125.00/bin/crab.py", line 157, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.241125.00/bin/crab.py", line 135, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])  # the crab command to be executed
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.241125.00/lib/CRABClient/Commands/submit.py", line 37, in __init__
+    SubCommand.__init__(self, logger, cmdargs, disable_interspersed_args=True)
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.241125.00/lib/CRABClient/Commands/SubCommand.py", line 328, in __init__
+    self.requestarea, self.requestname, self.logfile = createWorkArea(
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.241125.00/lib/CRABClient/ClientUtilities.py", line 392, in createWorkArea
+    raise ConfigException("Working area '%s' already exists \nPlease change the requestName in the config file" % fullpath)
+CRABClient.ClientExceptions.ConfigException: Working area '/lustrehome/felicenenna/tau3mu/CMSSW_14_0_17/src/Utilities/run_the_matrix/29621.0_TenMuE_0_200+2026D110/DsTau3Mu/crab_projects/crab_140X_mcPhase2_14TeV_DsTau3Mu_onlyGEMneg_GEN-SIM_v2' already exists 
+Please change the requestName in the config file
+INFO 2025-03-03 14:57:43.751 UTC: 	 Log file is /lustrehome/felicenenna/tau3mu/CMSSW_14_0_17/src/Utilities/run_the_matrix/29621.0_TenMuE_0_200+2026D110/DsTau3Mu/crab.log
+DEBUG 2025-03-04 21:33:19.352 UTC: 	 CRAB Client version: v3.241125
+DEBUG 2025-03-04 21:33:19.353 UTC: 	 Running on: Linux ui02.recas.ba.infn.it 3.10.0-1160.80.1.el7.x86_64 #1 SMP Tue Nov 8 15:48:59 UTC 2022 x86_64 x86_64 x86_64 GNU/Linux
+DEBUG 2025-03-04 21:33:19.353 UTC: 	 Not using Singularity
+DEBUG 2025-03-04 21:33:19.353 UTC: 	 Operating System: CentOS Linux 7 (Core)
+DEBUG 2025-03-04 21:33:19.353 UTC: 	 Executing command: 'submit'
+DEBUG 2025-03-04 21:33:19.353 UTC: 	 Found CRAB cache file /lustrehome/felicenenna/.crab3
+INFO 2025-03-04 21:33:19.354 UTC: 	 Will use CRAB configuration file DsTau3Mu_pythia8_cfi_onlyGEMneg_GEN_SIM.py
+DEBUG 2025-03-04 21:33:19.354 UTC: 	 Loading CRAB configuration file.
+ERROR 2025-03-04 21:33:22.035 UTC: 	 Error while loading CRAB configuration:
+Unable to find a Configuration object instance in file:
+/lustrehome/felicenenna/tau3mu/CMSSW_14_0_17/src/Utilities/run_the_matrix/29621.0_TenMuE_0_200+2026D110/DsTau3Mu/DsTau3Mu_pythia8_cfi_onlyGEMneg_GEN_SIM.py
+
+Please refer to https://twiki.cern.ch/twiki/bin/view/CMSPublic/CRAB3FAQ
+See the ./crab.log file for more details.
+The documentation about the CRAB configuration file can be found in https://twiki.cern.ch/twiki/bin/view/CMSPublic/CRAB3ConfigurationFile
+ERROR 2025-03-04 21:33:22.035 UTC: 	 Caught ClientException exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.241125.00/lib/CRABClient/Commands/SubCommand.py", line 56, in loadConfig
+    self.configuration = loadConfigurationFile(os.path.abspath(configname))
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.241125.00/lib/WMCore/Configuration.py", line 354, in loadConfigurationFile
+    raise RuntimeError(msg)
+RuntimeError: Unable to find a Configuration object instance in file:
+/lustrehome/felicenenna/tau3mu/CMSSW_14_0_17/src/Utilities/run_the_matrix/29621.0_TenMuE_0_200+2026D110/DsTau3Mu/DsTau3Mu_pythia8_cfi_onlyGEMneg_GEN_SIM.py
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.241125.00/bin/crab.py", line 157, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.241125.00/bin/crab.py", line 135, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])  # the crab command to be executed
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.241125.00/lib/CRABClient/Commands/submit.py", line 37, in __init__
+    SubCommand.__init__(self, logger, cmdargs, disable_interspersed_args=True)
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.241125.00/lib/CRABClient/Commands/SubCommand.py", line 326, in __init__
+    self.loadConfig(self.options.config, self.args)
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.241125.00/lib/CRABClient/Commands/SubCommand.py", line 90, in loadConfig
+    raise ConfigurationException(configmsg)
+CRABClient.ClientExceptions.ConfigurationException: Error while loading CRAB configuration:
+Unable to find a Configuration object instance in file:
+/lustrehome/felicenenna/tau3mu/CMSSW_14_0_17/src/Utilities/run_the_matrix/29621.0_TenMuE_0_200+2026D110/DsTau3Mu/DsTau3Mu_pythia8_cfi_onlyGEMneg_GEN_SIM.py
+
+Please refer to https://twiki.cern.ch/twiki/bin/view/CMSPublic/CRAB3FAQ
+See the ./crab.log file for more details.
+The documentation about the CRAB configuration file can be found in https://twiki.cern.ch/twiki/bin/view/CMSPublic/CRAB3ConfigurationFile
+INFO 2025-03-04 21:33:22.060 UTC: 	 Log file is /lustrehome/felicenenna/tau3mu/CMSSW_14_0_17/src/Utilities/run_the_matrix/29621.0_TenMuE_0_200+2026D110/DsTau3Mu/crab.log
+DEBUG 2025-03-05 20:41:10.511 UTC: 	 CRAB Client version: v3.241125
+DEBUG 2025-03-05 20:41:10.511 UTC: 	 Running on: Linux ui02.recas.ba.infn.it 3.10.0-1160.80.1.el7.x86_64 #1 SMP Tue Nov 8 15:48:59 UTC 2022 x86_64 x86_64 x86_64 GNU/Linux
+DEBUG 2025-03-05 20:41:10.511 UTC: 	 Not using Singularity
+DEBUG 2025-03-05 20:41:10.511 UTC: 	 Operating System: CentOS Linux 7 (Core)
+DEBUG 2025-03-05 20:41:10.511 UTC: 	 Executing command: 'status'
+DEBUG 2025-03-05 20:41:10.513 UTC: 	 Found CRAB cache file /lustrehome/felicenenna/.crab3
+ERROR 2025-03-05 20:41:10.515 UTC: 	 Error: crab_projects/crab_140X_mcPhase2_DsTau3Mu_newMINIAOD_ANA_GENv3_onlyGEMneg is not a valid CRAB project directory.
+ERROR 2025-03-05 20:41:10.515 UTC: 	 Caught ClientException exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.241125.00/bin/crab.py", line 157, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.241125.00/bin/crab.py", line 135, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])  # the crab command to be executed
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.241125.00/lib/CRABClient/Commands/status.py", line 48, in __init__
+    SubCommand.__init__(self, logger, cmdargs)
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.241125.00/lib/CRABClient/Commands/SubCommand.py", line 281, in __init__
+    SubCommand.validateOptions(self)
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.241125.00/lib/CRABClient/Commands/SubCommand.py", line 691, in validateOptions
+    raise ConfigurationException(msg)
+CRABClient.ClientExceptions.ConfigurationException: [91mError[0m: crab_projects/crab_140X_mcPhase2_DsTau3Mu_newMINIAOD_ANA_GENv3_onlyGEMneg is not a valid CRAB project directory.
+INFO 2025-03-05 20:41:10.543 UTC: 	 Log file is /lustrehome/felicenenna/tau3mu/CMSSW_14_0_17/src/Utilities/run_the_matrix/29621.0_TenMuE_0_200+2026D110/DsTau3Mu/crab.log
+DEBUG 2025-03-07 09:28:50.194 UTC: 	 CRAB Client version: v3.241125
+DEBUG 2025-03-07 09:28:50.194 UTC: 	 Running on: Linux ui02.recas.ba.infn.it 3.10.0-1160.80.1.el7.x86_64 #1 SMP Tue Nov 8 15:48:59 UTC 2022 x86_64 x86_64 x86_64 GNU/Linux
+DEBUG 2025-03-07 09:28:50.194 UTC: 	 Not using Singularity
+DEBUG 2025-03-07 09:28:50.194 UTC: 	 Operating System: CentOS Linux 7 (Core)
+DEBUG 2025-03-07 09:28:50.194 UTC: 	 Executing command: 'status'
+DEBUG 2025-03-07 09:28:50.194 UTC: 	 Found CRAB cache file /lustrehome/felicenenna/.crab3
+ERROR 2025-03-07 09:28:50.196 UTC: 	 Error: crab_projects/crab_140X_mcPhase2_DsTau3Mu_MINIAOD_NoPU_onlyGEM_v2 is not a valid CRAB project directory.
+ERROR 2025-03-07 09:28:50.196 UTC: 	 Caught ClientException exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.241125.00/bin/crab.py", line 157, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.241125.00/bin/crab.py", line 135, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])  # the crab command to be executed
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.241125.00/lib/CRABClient/Commands/status.py", line 48, in __init__
+    SubCommand.__init__(self, logger, cmdargs)
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.241125.00/lib/CRABClient/Commands/SubCommand.py", line 281, in __init__
+    SubCommand.validateOptions(self)
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.241125.00/lib/CRABClient/Commands/SubCommand.py", line 691, in validateOptions
+    raise ConfigurationException(msg)
+CRABClient.ClientExceptions.ConfigurationException: [91mError[0m: crab_projects/crab_140X_mcPhase2_DsTau3Mu_MINIAOD_NoPU_onlyGEM_v2 is not a valid CRAB project directory.
+INFO 2025-03-07 09:28:50.213 UTC: 	 Log file is /lustrehome/felicenenna/tau3mu/CMSSW_14_0_17/src/Utilities/run_the_matrix/29621.0_TenMuE_0_200+2026D110/DsTau3Mu/crab.log
+DEBUG 2025-03-07 11:29:43.254 UTC: 	 CRAB Client version: v3.241125
+DEBUG 2025-03-07 11:29:43.254 UTC: 	 Running on: Linux ui02.recas.ba.infn.it 3.10.0-1160.80.1.el7.x86_64 #1 SMP Tue Nov 8 15:48:59 UTC 2022 x86_64 x86_64 x86_64 GNU/Linux
+DEBUG 2025-03-07 11:29:43.255 UTC: 	 Not using Singularity
+DEBUG 2025-03-07 11:29:43.255 UTC: 	 Operating System: CentOS Linux 7 (Core)
+DEBUG 2025-03-07 11:29:43.255 UTC: 	 Executing command: 'status'
+DEBUG 2025-03-07 11:29:43.257 UTC: 	 Found CRAB cache file /lustrehome/felicenenna/.crab3
+ERROR 2025-03-07 11:29:43.260 UTC: 	 Error: crab_projects/crab_140X_mcPhase2_DsTau3Mu_14TeV_NoPU_onlyGEM is not a valid CRAB project directory.
+ERROR 2025-03-07 11:29:43.261 UTC: 	 Caught ClientException exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.241125.00/bin/crab.py", line 157, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.241125.00/bin/crab.py", line 135, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])  # the crab command to be executed
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.241125.00/lib/CRABClient/Commands/status.py", line 48, in __init__
+    SubCommand.__init__(self, logger, cmdargs)
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.241125.00/lib/CRABClient/Commands/SubCommand.py", line 281, in __init__
+    SubCommand.validateOptions(self)
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.241125.00/lib/CRABClient/Commands/SubCommand.py", line 691, in validateOptions
+    raise ConfigurationException(msg)
+CRABClient.ClientExceptions.ConfigurationException: [91mError[0m: crab_projects/crab_140X_mcPhase2_DsTau3Mu_14TeV_NoPU_onlyGEM is not a valid CRAB project directory.
+INFO 2025-03-07 11:29:43.300 UTC: 	 Log file is /lustrehome/felicenenna/tau3mu/CMSSW_14_0_17/src/Utilities/run_the_matrix/29621.0_TenMuE_0_200+2026D110/DsTau3Mu/crab.log
+DEBUG 2025-03-07 16:25:47.831 UTC: 	 CRAB Client version: v3.241125
+DEBUG 2025-03-07 16:25:47.831 UTC: 	 Running on: Linux ui02.recas.ba.infn.it 3.10.0-1160.80.1.el7.x86_64 #1 SMP Tue Nov 8 15:48:59 UTC 2022 x86_64 x86_64 x86_64 GNU/Linux
+DEBUG 2025-03-07 16:25:47.831 UTC: 	 Not using Singularity
+DEBUG 2025-03-07 16:25:47.831 UTC: 	 Operating System: CentOS Linux 7 (Core)
+DEBUG 2025-03-07 16:25:47.831 UTC: 	 Executing command: 'status'
+DEBUG 2025-03-07 16:25:47.832 UTC: 	 Found CRAB cache file /lustrehome/felicenenna/.crab3
+ERROR 2025-03-07 16:25:47.833 UTC: 	 Error: crab_projects/crab_140X_mcPhase2_DsTau3Mu_14TeV_NoPU_onlyGEMpos_GEN-SIM-DIGI-RAW_v2 is not a valid CRAB project directory.
+ERROR 2025-03-07 16:25:47.833 UTC: 	 Caught ClientException exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.241125.00/bin/crab.py", line 157, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.241125.00/bin/crab.py", line 135, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])  # the crab command to be executed
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.241125.00/lib/CRABClient/Commands/status.py", line 48, in __init__
+    SubCommand.__init__(self, logger, cmdargs)
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.241125.00/lib/CRABClient/Commands/SubCommand.py", line 281, in __init__
+    SubCommand.validateOptions(self)
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.241125.00/lib/CRABClient/Commands/SubCommand.py", line 691, in validateOptions
+    raise ConfigurationException(msg)
+CRABClient.ClientExceptions.ConfigurationException: [91mError[0m: crab_projects/crab_140X_mcPhase2_DsTau3Mu_14TeV_NoPU_onlyGEMpos_GEN-SIM-DIGI-RAW_v2 is not a valid CRAB project directory.
+INFO 2025-03-07 16:25:47.850 UTC: 	 Log file is /lustrehome/felicenenna/tau3mu/CMSSW_14_0_17/src/Utilities/run_the_matrix/29621.0_TenMuE_0_200+2026D110/DsTau3Mu/crab.log
+DEBUG 2025-03-07 20:43:39.274 UTC: 	 CRAB Client version: v3.241125
+DEBUG 2025-03-07 20:43:39.275 UTC: 	 Running on: Linux ui02.recas.ba.infn.it 3.10.0-1160.80.1.el7.x86_64 #1 SMP Tue Nov 8 15:48:59 UTC 2022 x86_64 x86_64 x86_64 GNU/Linux
+DEBUG 2025-03-07 20:43:39.275 UTC: 	 Not using Singularity
+DEBUG 2025-03-07 20:43:39.275 UTC: 	 Operating System: CentOS Linux 7 (Core)
+DEBUG 2025-03-07 20:43:39.275 UTC: 	 Executing command: 'status'
+DEBUG 2025-03-07 20:43:39.276 UTC: 	 Found CRAB cache file /lustrehome/felicenenna/.crab3
+ERROR 2025-03-07 20:43:39.277 UTC: 	 Error: crab_projects/crab_140X_mcPhase2_DsTau3Mu_14TeV_NoPU_onlyGEMpos_GEN-SIM-DIGI-RAW_v2 is not a valid CRAB project directory.
+ERROR 2025-03-07 20:43:39.277 UTC: 	 Caught ClientException exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.241125.00/bin/crab.py", line 157, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.241125.00/bin/crab.py", line 135, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])  # the crab command to be executed
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.241125.00/lib/CRABClient/Commands/status.py", line 48, in __init__
+    SubCommand.__init__(self, logger, cmdargs)
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.241125.00/lib/CRABClient/Commands/SubCommand.py", line 281, in __init__
+    SubCommand.validateOptions(self)
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.241125.00/lib/CRABClient/Commands/SubCommand.py", line 691, in validateOptions
+    raise ConfigurationException(msg)
+CRABClient.ClientExceptions.ConfigurationException: [91mError[0m: crab_projects/crab_140X_mcPhase2_DsTau3Mu_14TeV_NoPU_onlyGEMpos_GEN-SIM-DIGI-RAW_v2 is not a valid CRAB project directory.
+INFO 2025-03-07 20:43:39.303 UTC: 	 Log file is /lustrehome/felicenenna/tau3mu/CMSSW_14_0_17/src/Utilities/run_the_matrix/29621.0_TenMuE_0_200+2026D110/DsTau3Mu/crab.log
+DEBUG 2025-03-07 20:43:50.834 UTC: 	 CRAB Client version: v3.241125
+DEBUG 2025-03-07 20:43:50.835 UTC: 	 Running on: Linux ui02.recas.ba.infn.it 3.10.0-1160.80.1.el7.x86_64 #1 SMP Tue Nov 8 15:48:59 UTC 2022 x86_64 x86_64 x86_64 GNU/Linux
+DEBUG 2025-03-07 20:43:50.835 UTC: 	 Not using Singularity
+DEBUG 2025-03-07 20:43:50.835 UTC: 	 Operating System: CentOS Linux 7 (Core)
+DEBUG 2025-03-07 20:43:50.835 UTC: 	 Executing command: 'status'
+DEBUG 2025-03-07 20:43:50.835 UTC: 	 Found CRAB cache file /lustrehome/felicenenna/.crab3
+ERROR 2025-03-07 20:43:50.836 UTC: 	 Error: crab_projects/crab_140X_mcPhase2_DsTau3Mu_14TeV_NoPU_onlyGEMpos_GEN-SIM-DIGI-RAW_v3 is not a valid CRAB project directory.
+ERROR 2025-03-07 20:43:50.836 UTC: 	 Caught ClientException exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.241125.00/bin/crab.py", line 157, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.241125.00/bin/crab.py", line 135, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])  # the crab command to be executed
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.241125.00/lib/CRABClient/Commands/status.py", line 48, in __init__
+    SubCommand.__init__(self, logger, cmdargs)
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.241125.00/lib/CRABClient/Commands/SubCommand.py", line 281, in __init__
+    SubCommand.validateOptions(self)
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.241125.00/lib/CRABClient/Commands/SubCommand.py", line 691, in validateOptions
+    raise ConfigurationException(msg)
+CRABClient.ClientExceptions.ConfigurationException: [91mError[0m: crab_projects/crab_140X_mcPhase2_DsTau3Mu_14TeV_NoPU_onlyGEMpos_GEN-SIM-DIGI-RAW_v3 is not a valid CRAB project directory.
+INFO 2025-03-07 20:43:50.840 UTC: 	 Log file is /lustrehome/felicenenna/tau3mu/CMSSW_14_0_17/src/Utilities/run_the_matrix/29621.0_TenMuE_0_200+2026D110/DsTau3Mu/crab.log
+DEBUG 2025-05-16 20:22:01.507 UTC: 	 CRAB Client version: v3.250409
+DEBUG 2025-05-16 20:22:01.507 UTC: 	 Running on: Linux ui02.recas.ba.infn.it 3.10.0-1160.80.1.el7.x86_64 #1 SMP Tue Nov 8 15:48:59 UTC 2022 x86_64 x86_64 x86_64 GNU/Linux
+DEBUG 2025-05-16 20:22:01.507 UTC: 	 Not using Singularity
+DEBUG 2025-05-16 20:22:01.507 UTC: 	 Operating System: CentOS Linux 7 (Core)
+DEBUG 2025-05-16 20:22:01.507 UTC: 	 Executing command: 'submit'
+DEBUG 2025-05-16 20:22:01.508 UTC: 	 Found CRAB cache file /lustrehome/felicenenna/.crab3
+INFO 2025-05-16 20:22:01.509 UTC: 	 Will use CRAB configuration file crab_DsTau3Mu_GEN_Phase2.py
+DEBUG 2025-05-16 20:22:01.510 UTC: 	 Loading CRAB configuration file.
+DEBUG 2025-05-16 20:22:01.516 UTC: 	 Will use CRAB plugin PRIVATEMC (i.e. will run an a MC generation job type).
+ERROR 2025-05-16 20:22:01.517 UTC: 	 Working area '/lustrehome/felicenenna/tau3mu/CMSSW_14_0_17/src/MC_generation/DsTau3Mu/CrabSubmission/crab_projects/crab_140X_mcPhase2_14TeV_DsTau3Mu_allEtas_GEN-SIM_v3' already exists 
+Please change the requestName in the config file
+ERROR 2025-05-16 20:22:01.517 UTC: 	 Caught ClientException exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.250409.00/bin/crab.py", line 157, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.250409.00/bin/crab.py", line 135, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])  # the crab command to be executed
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.250409.00/lib/CRABClient/Commands/submit.py", line 37, in __init__
+    SubCommand.__init__(self, logger, cmdargs, disable_interspersed_args=True)
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.250409.00/lib/CRABClient/Commands/SubCommand.py", line 328, in __init__
+    self.requestarea, self.requestname, self.logfile = createWorkArea(
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.250409.00/lib/CRABClient/ClientUtilities.py", line 392, in createWorkArea
+    raise ConfigException("Working area '%s' already exists \nPlease change the requestName in the config file" % fullpath)
+CRABClient.ClientExceptions.ConfigException: Working area '/lustrehome/felicenenna/tau3mu/CMSSW_14_0_17/src/MC_generation/DsTau3Mu/CrabSubmission/crab_projects/crab_140X_mcPhase2_14TeV_DsTau3Mu_allEtas_GEN-SIM_v3' already exists 
+Please change the requestName in the config file
+INFO 2025-05-16 20:22:01.552 UTC: 	 Log file is /lustrehome/felicenenna/tau3mu/CMSSW_14_0_17/src/MC_generation/DsTau3Mu/CrabSubmission/crab.log
+DEBUG 2025-05-27 09:59:34.552 UTC: 	 CRAB Client version: v3.250409
+DEBUG 2025-05-27 09:59:34.552 UTC: 	 Running on: Linux ui02.recas.ba.infn.it 3.10.0-1160.80.1.el7.x86_64 #1 SMP Tue Nov 8 15:48:59 UTC 2022 x86_64 x86_64 x86_64 GNU/Linux
+DEBUG 2025-05-27 09:59:34.552 UTC: 	 Not using Singularity
+DEBUG 2025-05-27 09:59:34.552 UTC: 	 Operating System: CentOS Linux 7 (Core)
+DEBUG 2025-05-27 09:59:34.552 UTC: 	 Executing command: 'submit'
+DEBUG 2025-05-27 09:59:34.554 UTC: 	 Found CRAB cache file /lustrehome/felicenenna/.crab3
+INFO 2025-05-27 09:59:34.554 UTC: 	 Will use CRAB configuration file crab_DsTau3Mu_Phase2_step2_NoPU_cfg.py
+DEBUG 2025-05-27 09:59:34.555 UTC: 	 Loading CRAB configuration file.
+DEBUG 2025-05-27 09:59:34.561 UTC: 	 Will use CRAB plugin ANALYSIS (i.e. will run an analysis job type).
+ERROR 2025-05-27 09:59:34.561 UTC: 	 Working area '/lustrehome/felicenenna/tau3mu/CMSSW_14_0_17/src/MC_generation/DsTau3Mu/CrabSubmission/crab_projects/crab_140X_mcPhase2_DsTau3Mu_MINIAOD_NoPU_onlyGEMpos_gemsegm' already exists 
+Please change the requestName in the config file
+ERROR 2025-05-27 09:59:34.561 UTC: 	 Caught ClientException exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.250409.00/bin/crab.py", line 157, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.250409.00/bin/crab.py", line 135, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])  # the crab command to be executed
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.250409.00/lib/CRABClient/Commands/submit.py", line 37, in __init__
+    SubCommand.__init__(self, logger, cmdargs, disable_interspersed_args=True)
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.250409.00/lib/CRABClient/Commands/SubCommand.py", line 328, in __init__
+    self.requestarea, self.requestname, self.logfile = createWorkArea(
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.250409.00/lib/CRABClient/ClientUtilities.py", line 392, in createWorkArea
+    raise ConfigException("Working area '%s' already exists \nPlease change the requestName in the config file" % fullpath)
+CRABClient.ClientExceptions.ConfigException: Working area '/lustrehome/felicenenna/tau3mu/CMSSW_14_0_17/src/MC_generation/DsTau3Mu/CrabSubmission/crab_projects/crab_140X_mcPhase2_DsTau3Mu_MINIAOD_NoPU_onlyGEMpos_gemsegm' already exists 
+Please change the requestName in the config file
+INFO 2025-05-27 09:59:34.577 UTC: 	 Log file is /lustrehome/felicenenna/tau3mu/CMSSW_14_0_17/src/MC_generation/DsTau3Mu/CrabSubmission/crab.log
+DEBUG 2025-05-29 21:36:30.269 UTC: 	 CRAB Client version: v3.250409
+DEBUG 2025-05-29 21:36:30.269 UTC: 	 Running on: Linux ui02.recas.ba.infn.it 3.10.0-1160.80.1.el7.x86_64 #1 SMP Tue Nov 8 15:48:59 UTC 2022 x86_64 x86_64 x86_64 GNU/Linux
+DEBUG 2025-05-29 21:36:30.269 UTC: 	 Not using Singularity
+DEBUG 2025-05-29 21:36:30.269 UTC: 	 Operating System: CentOS Linux 7 (Core)
+DEBUG 2025-05-29 21:36:30.269 UTC: 	 Executing command: 'submit'
+DEBUG 2025-05-29 21:36:30.269 UTC: 	 Found CRAB cache file /lustrehome/felicenenna/.crab3
+INFO 2025-05-29 21:36:30.270 UTC: 	 Will use CRAB configuration file crab_DsTau3Mu_Phase2_step2_cfg.py
+DEBUG 2025-05-29 21:36:30.270 UTC: 	 Loading CRAB configuration file.
+DEBUG 2025-05-29 21:36:30.274 UTC: 	 Will use CRAB plugin ANALYSIS (i.e. will run an analysis job type).
+ERROR 2025-05-29 21:36:30.275 UTC: 	 Working area '/lustrehome/felicenenna/tau3mu/CMSSW_14_0_17/src/MC_generation/DsTau3Mu/CrabSubmission/crab_projects/crab_140X_mcPhase2_DsTau3Mu_PU200_onlyGEMneg_MINIAOD_gemsegm_v1' already exists 
+Please change the requestName in the config file
+ERROR 2025-05-29 21:36:30.275 UTC: 	 Caught ClientException exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.250409.00/bin/crab.py", line 157, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.250409.00/bin/crab.py", line 135, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])  # the crab command to be executed
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.250409.00/lib/CRABClient/Commands/submit.py", line 37, in __init__
+    SubCommand.__init__(self, logger, cmdargs, disable_interspersed_args=True)
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.250409.00/lib/CRABClient/Commands/SubCommand.py", line 328, in __init__
+    self.requestarea, self.requestname, self.logfile = createWorkArea(
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.250409.00/lib/CRABClient/ClientUtilities.py", line 392, in createWorkArea
+    raise ConfigException("Working area '%s' already exists \nPlease change the requestName in the config file" % fullpath)
+CRABClient.ClientExceptions.ConfigException: Working area '/lustrehome/felicenenna/tau3mu/CMSSW_14_0_17/src/MC_generation/DsTau3Mu/CrabSubmission/crab_projects/crab_140X_mcPhase2_DsTau3Mu_PU200_onlyGEMneg_MINIAOD_gemsegm_v1' already exists 
+Please change the requestName in the config file
+INFO 2025-05-29 21:36:30.301 UTC: 	 Log file is /lustrehome/felicenenna/tau3mu/CMSSW_14_0_17/src/MC_generation/DsTau3Mu/CrabSubmission/crab.log
+DEBUG 2025-06-06 15:46:20.081 UTC: 	 CRAB Client version: v3.250409
+DEBUG 2025-06-06 15:46:20.081 UTC: 	 Running on: Linux ui02.recas.ba.infn.it 3.10.0-1160.80.1.el7.x86_64 #1 SMP Tue Nov 8 15:48:59 UTC 2022 x86_64 x86_64 x86_64 GNU/Linux
+DEBUG 2025-06-06 15:46:20.081 UTC: 	 Not using Singularity
+DEBUG 2025-06-06 15:46:20.081 UTC: 	 Operating System: CentOS Linux 7 (Core)
+DEBUG 2025-06-06 15:46:20.081 UTC: 	 Executing command: 'status'
+DEBUG 2025-06-06 15:46:20.082 UTC: 	 Found CRAB cache file /lustrehome/felicenenna/.crab3
+ERROR 2025-06-06 15:46:20.083 UTC: 	 Error: crab_projects/crab_140X_mcPhase2_ is not a valid CRAB project directory.
+ERROR 2025-06-06 15:46:20.083 UTC: 	 Caught ClientException exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.250409.00/bin/crab.py", line 157, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.250409.00/bin/crab.py", line 135, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])  # the crab command to be executed
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.250409.00/lib/CRABClient/Commands/status.py", line 48, in __init__
+    SubCommand.__init__(self, logger, cmdargs)
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.250409.00/lib/CRABClient/Commands/SubCommand.py", line 281, in __init__
+    SubCommand.validateOptions(self)
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.250409.00/lib/CRABClient/Commands/SubCommand.py", line 691, in validateOptions
+    raise ConfigurationException(msg)
+CRABClient.ClientExceptions.ConfigurationException: [91mError[0m: crab_projects/crab_140X_mcPhase2_ is not a valid CRAB project directory.
+INFO 2025-06-06 15:46:20.098 UTC: 	 Log file is /lustrehome/felicenenna/tau3mu/CMSSW_14_0_17/src/MC_generation/DsTau3Mu/CrabSubmission/crab.log

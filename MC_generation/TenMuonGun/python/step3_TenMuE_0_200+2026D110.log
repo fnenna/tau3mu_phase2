@@ -1,0 +1,64 @@
+RAW2DIGI,RECO,RECOSIM,PAT,VALIDATION:@phase2Validation+@miniAODValidation,DQM:@phase2+@miniAODDQM
+We have determined that this is simulation (if not, rerun cmsDriver.py with --data)
+entry file:step2.root
+Step: RAW2DIGI Spec: 
+Step: RECO Spec: 
+Step: RECOSIM Spec: 
+Step: PAT Spec: 
+Step: VALIDATION Spec: ['@phase2Validation', '@miniAODValidation']
+@phase2Validation+@miniAODValidation in preparing validation
+Step: DQM Spec: ['@phase2', '@miniAODDQM']
+customising the process with setCrossingFrameOn from SimGeneral/MixingModule/fullMixCustomize_cff
+customising the process with miniAOD_customizeAllMC from PhysicsTools/PatAlgos/slimming/miniAOD_tools
+Starting  cmsRun  step3_RAW2DIGI_RECO_RECOSIM_PAT_VALIDATION_DQM.py
+%MSG-i AlpakaService:  (NoModuleName) 21-Jan-2025 16:07:58 CET pre-events
+AlpakaServiceSerialSync succesfully initialised.
+Found 1 device:
+  - AMD EPYC 7301 16-Core Processor
+%MSG
+21-Jan-2025 16:08:06 CET  Initiating request to open file file:step2.root
+21-Jan-2025 16:08:24 CET  Successfully opened file file:step2.root
+2025-01-21 16:08:47.391599: I tensorflow/core/platform/cpu_feature_guard.cc:182] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: SSE4.1 SSE4.2 AVX AVX2 FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2025-01-21 16:08:47.415650: I tensorflow/compiler/mlir/mlir_graph_optimization_pass.cc:353] MLIR V1 optimization pass is not enabled
+%MSG-w NonConsumedConditionalModules:  AfterModConstruction  21-Jan-2025 16:09:13 CET pre-events
+The following modules were part of some ConditionalTask, but were not
+consumed by any other module in any of the Paths to which the ConditionalTask
+was associated. Perhaps they should be either removed from the
+job, or moved to a Task to make it explicit they are unscheduled.
+
+ ecalRecHit@cpu
+ hbhereco@cpu
+ siPixelClustersPreSplitting@cpu
+ siPixelRecHitsPreSplitting@cpu
+%MSG
+Begin processing the 1st record. Run 1, Event 1, LumiSection 1 on stream 0 at 21-Jan-2025 16:10:31.712 CET
+%MSG-w UnexpectedMagneticFieldUsingNonIdealPixelTemplate:   SiPixelTemplateDBObjectESProducer:siPixelTemplateDBObjectESProducer@callESModule  21-Jan-2025 16:10:36 CET Run: 1 Event: 1
+Magnetic field is 3.8112 Template Magnetic field is 0
+%MSG
+#--------------------------------------------------------------------------
+#                         FastJet release 3.4.1
+#                 M. Cacciari, G.P. Salam and G. Soyez                  
+#     A software package for jet finding and analysis at colliders      
+#                           http://fastjet.fr                           
+#	                                                                      
+# Please cite EPJC72(2012)1896 [arXiv:1111.6097] if you use this package
+# for scientific work and optionally PLB641(2006)57 [hep-ph/0512210].   
+#                                                                       
+# FastJet is provided without warranty under the GNU GPL v2 or higher.  
+# It uses T. Chan's closest pair algorithm, S. Fortune's Voronoi code
+# and 3rd party plugin jet algorithms. See COPYING file for details.
+#--------------------------------------------------------------------------
+Begin processing the 2nd record. Run 1, Event 2, LumiSection 1 on stream 0 at 21-Jan-2025 16:10:43.149 CET
+Begin processing the 3rd record. Run 1, Event 3, LumiSection 1 on stream 0 at 21-Jan-2025 16:10:46.924 CET
+Begin processing the 4th record. Run 1, Event 4, LumiSection 1 on stream 0 at 21-Jan-2025 16:10:50.383 CET
+Begin processing the 5th record. Run 1, Event 5, LumiSection 1 on stream 0 at 21-Jan-2025 16:10:53.567 CET
+Begin processing the 6th record. Run 1, Event 6, LumiSection 1 on stream 0 at 21-Jan-2025 16:10:56.994 CET
+Begin processing the 7th record. Run 1, Event 7, LumiSection 1 on stream 0 at 21-Jan-2025 16:11:01.374 CET
+Begin processing the 8th record. Run 1, Event 8, LumiSection 1 on stream 0 at 21-Jan-2025 16:11:04.292 CET
+Begin processing the 9th record. Run 1, Event 9, LumiSection 1 on stream 0 at 21-Jan-2025 16:11:07.779 CET
+Begin processing the 10th record. Run 1, Event 10, LumiSection 1 on stream 0 at 21-Jan-2025 16:11:10.779 CET
+%MSG-w BSFitter:  AlcaBeamMonitor:AlcaBeamMonitor@endLumi  21-Jan-2025 16:11:14 CET Run: 1 Lumi: 1
+need at least 150 tracks to run beamline fitter.
+%MSG
+21-Jan-2025 16:11:16 CET  Closed file file:step2.root

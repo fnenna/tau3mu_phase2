@@ -1,0 +1,66 @@
+DIGI:pdigi_valid,L1TrackTrigger,L1,DIGI2RAW,HLT:@relval2026,ENDJOB
+We have determined that this is simulation (if not, rerun cmsDriver.py with --data)
+entry file:step1.root
+Step: DIGI Spec: ['pdigi_valid']
+Step: L1TrackTrigger Spec: 
+Step: L1 Spec: 
+Step: DIGI2RAW Spec: 
+Step: HLT Spec: ['@relval2026']
+Step: ENDJOB Spec: 
+customising the process with customizeHLTforMC from HLTrigger/Configuration/customizeHLTforMC
+Starting  cmsRun  step2_DIGI_L1TrackTrigger_L1_DIGI2RAW_HLT.py
+21-Jan-2025 16:01:45 CET  Initiating request to open file file:step1.root
+21-Jan-2025 16:01:46 CET  Successfully opened file file:step1.root
+2025-01-21 16:02:01.982517: I tensorflow/core/platform/cpu_feature_guard.cc:182] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: SSE4.1 SSE4.2 AVX AVX2 FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2025-01-21 16:02:02.032360: I tensorflow/compiler/mlir/mlir_graph_optimization_pass.cc:353] MLIR V1 optimization pass is not enabled
+%MSG-w UnusedProductsForCanDeleteEarly:  AfterModDestruction  21-Jan-2025 16:02:21 CET pre-events
+The following products in the 'canDeleteEarly' list are not used in this job and will be ignored.
+ If possible, remove the producer from the job.
+ IntermediateHitDoublets_hltElePixelHitDoubletsL1Seeded__HLT
+ IntermediateHitDoublets_hltElePixelHitDoubletsUnseeded__HLT
+ RegionsSeedingHitSets_hltElePixelHitDoubletsForTripletsL1Seeded__HLT
+ RegionsSeedingHitSets_hltElePixelHitDoubletsForTripletsUnseeded__HLT
+%MSG
+Begin processing the 1st record. Run 1, Event 1, LumiSection 1 on stream 0 at 21-Jan-2025 16:03:24.748 CET
+#--------------------------------------------------------------------------
+#                         FastJet release 3.4.1
+#                 M. Cacciari, G.P. Salam and G. Soyez                  
+#     A software package for jet finding and analysis at colliders      
+#                           http://fastjet.fr                           
+#	                                                                      
+# Please cite EPJC72(2012)1896 [arXiv:1111.6097] if you use this package
+# for scientific work and optionally PLB641(2006)57 [hep-ph/0512210].   
+#                                                                       
+# FastJet is provided without warranty under the GNU GPL v2 or higher.  
+# It uses T. Chan's closest pair algorithm, S. Fortune's Voronoi code
+# and 3rd party plugin jet algorithms. See COPYING file for details.
+#--------------------------------------------------------------------------
+Begin processing the 2nd record. Run 1, Event 2, LumiSection 1 on stream 0 at 21-Jan-2025 16:03:45.322 CET
+Begin processing the 3rd record. Run 1, Event 3, LumiSection 1 on stream 0 at 21-Jan-2025 16:03:53.026 CET
+Begin processing the 4th record. Run 1, Event 4, LumiSection 1 on stream 0 at 21-Jan-2025 16:04:00.686 CET
+Begin processing the 5th record. Run 1, Event 5, LumiSection 1 on stream 0 at 21-Jan-2025 16:04:09.635 CET
+%MSG-w DTTSPhi:  DTTrigProd:simDtTriggerPrimitiveDigis 21-Jan-2025 16:04:14 CET  Run: 1 Event: 5
+addTracoT: preview not present in TRACO trigger or its code=0  trigger not added!
+%MSG
+%MSG-w DTTSPhi:  DTTrigProd:simDtTriggerPrimitiveDigis 21-Jan-2025 16:04:14 CET  Run: 1 Event: 5
+addTracoT: preview not present in TRACO trigger or its code=0  trigger not added!
+%MSG
+%MSG-w DTTSPhi:  DTTrigProd:simDtTriggerPrimitiveDigis 21-Jan-2025 16:04:14 CET  Run: 1 Event: 5
+addTracoT: preview not present in TRACO trigger or its code=0  trigger not added!
+%MSG
+Begin processing the 6th record. Run 1, Event 6, LumiSection 1 on stream 0 at 21-Jan-2025 16:04:17.894 CET
+Begin processing the 7th record. Run 1, Event 7, LumiSection 1 on stream 0 at 21-Jan-2025 16:04:25.509 CET
+%MSG-w DTTSPhi:  DTTrigProd:simDtTriggerPrimitiveDigis 21-Jan-2025 16:04:30 CET  Run: 1 Event: 7
+addTracoT: preview not present in TRACO trigger or its code=0  trigger not added!
+%MSG
+%MSG-w DTTSPhi:  DTTrigProd:simDtTriggerPrimitiveDigis 21-Jan-2025 16:04:30 CET  Run: 1 Event: 7
+addTracoT: preview not present in TRACO trigger or its code=0  trigger not added!
+%MSG
+Begin processing the 8th record. Run 1, Event 8, LumiSection 1 on stream 0 at 21-Jan-2025 16:04:33.422 CET
+%MSG-w DTTSPhi:  DTTrigProd:simDtTriggerPrimitiveDigis 21-Jan-2025 16:04:38 CET  Run: 1 Event: 8
+addTracoT: preview not present in TRACO trigger or its code=0  trigger not added!
+%MSG
+Begin processing the 9th record. Run 1, Event 9, LumiSection 1 on stream 0 at 21-Jan-2025 16:04:40.921 CET
+Begin processing the 10th record. Run 1, Event 10, LumiSection 1 on stream 0 at 21-Jan-2025 16:04:50.947 CET
+21-Jan-2025 16:04:58 CET  Closed file file:step1.root
