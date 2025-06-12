@@ -1,1 +1,1 @@
-$\tau \rughtarrow 3\mu$ Analysis in the CMS Phase-2 Scenario
+$\tau \rightarrow 3\mu$ Analysis in the CMS Phase-2 Scenario
