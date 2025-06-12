@@ -1,0 +1,54 @@
+DEBUG 2025-03-15 18:18:49.650 UTC: 	 CRAB Client version: v3.250217
+DEBUG 2025-03-15 18:18:49.651 UTC: 	 Running on: Linux ui02.recas.ba.infn.it 3.10.0-1160.80.1.el7.x86_64 #1 SMP Tue Nov 8 15:48:59 UTC 2022 x86_64 x86_64 x86_64 GNU/Linux
+DEBUG 2025-03-15 18:18:49.651 UTC: 	 Not using Singularity
+DEBUG 2025-03-15 18:18:49.651 UTC: 	 Operating System: CentOS Linux 7 (Core)
+DEBUG 2025-03-15 18:18:49.651 UTC: 	 Executing command: 'submit'
+DEBUG 2025-03-15 18:18:49.651 UTC: 	 Found CRAB cache file /lustrehome/felicenenna/.crab3
+INFO 2025-03-15 18:18:49.652 UTC: 	 Will use CRAB configuration file crab_MCRun4_DsTau3Mu_newMiniAod_cfg.py
+DEBUG 2025-03-15 18:18:49.652 UTC: 	 Loading CRAB configuration file.
+DEBUG 2025-03-15 18:18:49.657 UTC: 	 Will use CRAB plugin ANALYSIS (i.e. will run an analysis job type).
+DEBUG 2025-03-15 18:18:49.662 UTC: 	 Checking credentials
+DEBUG 2025-03-15 18:18:49.662 UTC: 	 Found proxy file /tmp/x509up_u881416
+DEBUG 2025-03-15 18:18:49.662 UTC: 	 Making sure it has proper VOMS extension
+DEBUG 2025-03-15 18:18:49.663 UTC: 	 Executing command :
+ voms-proxy-info --vo --file /tmp/x509up_u881416
+DEBUG 2025-03-15 18:18:50.585 UTC: 	 output : cms
+
+ error: 
+ retcode : 0
+DEBUG 2025-03-15 18:18:50.585 UTC: 	 Getting proxy life time left
+DEBUG 2025-03-15 18:18:50.585 UTC: 	 Executing command :
+ voms-proxy-info --actimeleft --timeleft --file /tmp/x509up_u881416
+DEBUG 2025-03-15 18:18:51.515 UTC: 	 output : 603540
+603540
+
+ error: 
+ retcode : 0
+DEBUG 2025-03-15 18:18:51.515 UTC: 	 Proxy valid for 167:39:00 hours
+DEBUG 2025-03-15 18:18:51.515 UTC: 	 Encoded data for curl request: subresource=delegatedn
+DEBUG 2025-03-15 18:18:51.662 UTC: 	 Registering user credentials on myproxy for /DC=ch/DC=cern/OU=computers/CN=crab-(preprod|prod)-tw(01|02).cern.ch|/DC=ch/DC=cern/OU=computers/CN=crab-dev-tw(01|02|03|04).cern.ch|/DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=cmscrab/CN=(817881|373708)/CN=Robot: cms crab|/DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=crabint1/CN=373708/CN=Robot: CMS CRAB Integration 1
+DEBUG 2025-03-15 18:18:51.662 UTC: 	 Executing command :
+ voms-proxy-info --identity --file /tmp/x509up_u881416
+DEBUG 2025-03-15 18:18:52.591 UTC: 	 output : /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=fnenna/CN=868185/CN=Felice Nenna
+
+ error: 
+ retcode : 0
+DEBUG 2025-03-15 18:18:52.591 UTC: 	 Getting myproxy life time left for a133b326f2e83ec4c6fd8cd18786edfdbb69b415
+DEBUG 2025-03-15 18:18:52.592 UTC: 	 Executing command :
+ myproxy-info -s myproxy.cern.ch -l a133b326f2e83ec4c6fd8cd18786edfdbb69b415
+DEBUG 2025-03-15 18:18:53.042 UTC: 	 output : username: a133b326f2e83ec4c6fd8cd18786edfdbb69b415
+owner: /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=fnenna/CN=868185/CN=Felice Nenna
+  renewal policy: /DC=ch/DC=cern/OU=computers/CN=crab-(preprod|prod)-tw(01|02).cern.ch|/DC=ch/DC=cern/OU=computers/CN=crab-dev-tw(01|02|03|04).cern.ch|/DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=cmscrab/CN=(817881|373708)/CN=Robot: cms crab|/DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=crabint1/CN=373708/CN=Robot: CMS CRAB Integration 1
+  trusted retrieval policy: /DC=ch/DC=cern/OU=computers/CN=crab-(preprod|prod)-tw(01|02).cern.ch|/DC=ch/DC=cern/OU=computers/CN=crab-dev-tw(01|02|03|04).cern.ch|/DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=cmscrab/CN=(817881|373708)/CN=Robot: cms crab|/DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=crabint1/CN=373708/CN=Robot: CMS CRAB Integration 1
+  timeleft: 382:39:12  (15.9 days)
+
+ error: 
+ retcode : 0
+DEBUG 2025-03-15 18:18:53.042 UTC: 	 Myproxy is valid: 1377540
+DEBUG 2025-03-15 18:18:53.043 UTC: 	 Result of myproxy credential check:
+  Credential exists on myproxy: username: a133b326f2e83ec4c6fd8cd18786edfdbb69b415  - validity: 15 days, 22:39:00
+DEBUG 2025-03-15 18:18:53.043 UTC: 	 Command use: submit
+DEBUG 2025-03-15 18:18:53.043 UTC: 	 Options use: ['-c', 'crab_MCRun4_DsTau3Mu_newMiniAod_cfg.py']
+DEBUG 2025-03-15 18:18:53.043 UTC: 	 Encoded data for curl request: subresource=version
+ERROR 2025-03-15 18:19:07.943 UTC: 	 Keyboard Interrupted
+INFO 2025-03-15 18:19:07.949 UTC: 	 Log file is /lustrehome/felicenenna/tau3mu/CMSSW_14_0_17/src/GenAnalyser/GenAnalyzer/CrabSubmission/crab_projects/crab_140X_mcPhase2_DsTau3Mu_GEN_ANAv3_onlyGEMneg_PU200_Gen/crab.log

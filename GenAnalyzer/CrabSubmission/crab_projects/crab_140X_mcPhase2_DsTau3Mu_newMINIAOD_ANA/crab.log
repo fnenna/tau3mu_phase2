@@ -1,0 +1,471 @@
+DEBUG 2025-02-06 23:00:42.682 UTC: 	 CRAB Client version: v3.241125
+DEBUG 2025-02-06 23:00:42.682 UTC: 	 Running on: Linux ui02.recas.ba.infn.it 3.10.0-1160.80.1.el7.x86_64 #1 SMP Tue Nov 8 15:48:59 UTC 2022 x86_64 x86_64 x86_64 GNU/Linux
+DEBUG 2025-02-06 23:00:42.682 UTC: 	 Not using Singularity
+DEBUG 2025-02-06 23:00:42.682 UTC: 	 Operating System: CentOS Linux 7 (Core)
+DEBUG 2025-02-06 23:00:42.682 UTC: 	 Executing command: 'submit'
+DEBUG 2025-02-06 23:00:42.682 UTC: 	 Found CRAB cache file /lustrehome/felicenenna/.crab3
+INFO 2025-02-06 23:00:42.684 UTC: 	 Will use CRAB configuration file crab_MCRun4_DsTau3Mu_newMiniAod_cfg.py
+DEBUG 2025-02-06 23:00:42.684 UTC: 	 Loading CRAB configuration file.
+DEBUG 2025-02-06 23:00:42.690 UTC: 	 Will use CRAB plugin ANALYSIS (i.e. will run an analysis job type).
+DEBUG 2025-02-06 23:00:42.694 UTC: 	 Checking credentials
+DEBUG 2025-02-06 23:00:42.694 UTC: 	 Found proxy file /tmp/x509up_u881416
+DEBUG 2025-02-06 23:00:42.694 UTC: 	 Making sure it has proper VOMS extension
+DEBUG 2025-02-06 23:00:42.694 UTC: 	 Executing command :
+ voms-proxy-info --vo --file /tmp/x509up_u881416
+DEBUG 2025-02-06 23:00:43.613 UTC: 	 output : cms
+
+ error: 
+ retcode : 0
+DEBUG 2025-02-06 23:00:43.613 UTC: 	 Getting proxy life time left
+DEBUG 2025-02-06 23:00:43.613 UTC: 	 Executing command :
+ voms-proxy-info --actimeleft --timeleft --file /tmp/x509up_u881416
+DEBUG 2025-02-06 23:00:44.547 UTC: 	 output : 207094
+207094
+
+ error: 
+ retcode : 0
+DEBUG 2025-02-06 23:00:44.548 UTC: 	 Proxy valid for 57:31:34 hours
+DEBUG 2025-02-06 23:00:44.548 UTC: 	 Encoded data for curl request: subresource=delegatedn
+DEBUG 2025-02-06 23:00:44.722 UTC: 	 Registering user credentials on myproxy for /DC=ch/DC=cern/OU=computers/CN=crab-(preprod|prod)-tw(01|02).cern.ch|/DC=ch/DC=cern/OU=computers/CN=crab-dev-tw(01|02|03|04).cern.ch|/DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=cmscrab/CN=(817881|373708)/CN=Robot: cms crab|/DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=crabint1/CN=373708/CN=Robot: CMS CRAB Integration 1
+DEBUG 2025-02-06 23:00:44.723 UTC: 	 Executing command :
+ voms-proxy-info --identity --file /tmp/x509up_u881416
+DEBUG 2025-02-06 23:00:45.591 UTC: 	 output : /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=fnenna/CN=868185/CN=Felice Nenna
+
+ error: 
+ retcode : 0
+DEBUG 2025-02-06 23:00:45.592 UTC: 	 Getting myproxy life time left for a133b326f2e83ec4c6fd8cd18786edfdbb69b415
+DEBUG 2025-02-06 23:00:45.592 UTC: 	 Executing command :
+ myproxy-info -s myproxy.cern.ch -l a133b326f2e83ec4c6fd8cd18786edfdbb69b415
+DEBUG 2025-02-06 23:00:46.052 UTC: 	 output : username: a133b326f2e83ec4c6fd8cd18786edfdbb69b415
+owner: /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=fnenna/CN=868185/CN=Felice Nenna
+  renewal policy: /DC=ch/DC=cern/OU=computers/CN=crab-(preprod|prod)-tw(01|02).cern.ch|/DC=ch/DC=cern/OU=computers/CN=crab-dev-tw(01|02|03|04).cern.ch|/DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=cmscrab/CN=(817881|373708)/CN=Robot: cms crab|/DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=crabint1/CN=373708/CN=Robot: CMS CRAB Integration 1
+  trusted retrieval policy: /DC=ch/DC=cern/OU=computers/CN=crab-(preprod|prod)-tw(01|02).cern.ch|/DC=ch/DC=cern/OU=computers/CN=crab-dev-tw(01|02|03|04).cern.ch|/DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=cmscrab/CN=(817881|373708)/CN=Robot: cms crab|/DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=crabint1/CN=373708/CN=Robot: CMS CRAB Integration 1
+  timeleft: 545:12:11  (22.7 days)
+
+ error: 
+ retcode : 0
+DEBUG 2025-02-06 23:00:46.052 UTC: 	 Myproxy is valid: 1962720
+DEBUG 2025-02-06 23:00:46.052 UTC: 	 Result of myproxy credential check:
+  Credential exists on myproxy: username: a133b326f2e83ec4c6fd8cd18786edfdbb69b415  - validity: 22 days, 17:12:00
+DEBUG 2025-02-06 23:00:46.052 UTC: 	 Command use: submit
+DEBUG 2025-02-06 23:00:46.052 UTC: 	 Options use: ['-c', 'crab_MCRun4_DsTau3Mu_newMiniAod_cfg.py']
+DEBUG 2025-02-06 23:00:46.052 UTC: 	 Encoded data for curl request: subresource=version
+DEBUG 2025-02-06 23:00:46.198 UTC: 	 CRABClient version: v3.241125
+DEBUG 2025-02-06 23:00:46.198 UTC: 	 Instance is prod
+DEBUG 2025-02-06 23:00:46.198 UTC: 	 Server base url is cmsweb.cern.ch
+DEBUG 2025-02-06 23:00:46.198 UTC: 	 Command api workflow
+DEBUG 2025-02-06 23:00:46.198 UTC: 	 Started submission
+DEBUG 2025-02-06 23:00:46.199 UTC: 	 Working on /lustrehome/felicenenna/tau3mu/CMSSW_14_0_17/src/GenAnalyser/GenAnalyzer/CrabSubmission/crab_projects/crab_140X_mcPhase2_DsTau3Mu_newMINIAOD_ANA
+DEBUG 2025-02-06 23:00:46.199 UTC: 	 Encoded data for curl request: subresource=backendurls
+DEBUG 2025-02-06 23:00:46.391 UTC: 	 Loading required information from the environment
+DEBUG 2025-02-06 23:00:46.391 UTC: 	 Found CMSSW_14_0_17 for slc7_amd64_gcc12 with base /lustrehome/felicenenna/tau3mu/CMSSW_14_0_17
+DEBUG 2025-02-06 23:00:46.391 UTC: 	 Loading required information from the environment
+DEBUG 2025-02-06 23:00:46.391 UTC: 	 Found CMSSW_14_0_17 for slc7_amd64_gcc12 with base /lustrehome/felicenenna/tau3mu/CMSSW_14_0_17
+DEBUG 2025-02-06 23:00:46.391 UTC: 	 UNIQUE NAME: tarUUID 256384a5-4cc5-46c3-9905-2b407c0f9174 
+DEBUG 2025-02-06 23:00:46.391 UTC: 	 self.config: from WMCore.Configuration import Configuration
+config = Configuration()
+config.section_('General')
+config.General.requestName = '140X_mcPhase2_DsTau3Mu_newMINIAOD_ANA'
+config.General.workArea = 'crab_projects'
+config.General.transferOutputs = True
+config.General.transferLogs = True
+config.section_('JobType')
+config.JobType.allowUndistributedCMSSW = True
+config.JobType.pluginName = 'Analysis'
+config.JobType.psetName = '/lustrehome/felicenenna/tau3mu/CMSSW_14_0_17/src/GenAnalyser/GenAnalyzer/python/genAnalyser_cff.py'
+config.section_('Data')
+config.Data.splitting = 'FileBased'
+config.Data.unitsPerJob = 100
+config.Data.inputDataset = '/DsTau3Mu_pythia8_Phase2/fnenna-140X_mcPhase2_DsTau3Mu_RECO_RECOSIM_PAT_VALIDATION_DQM-431bb83c87cdc1aa9929b4654a1dd7c1/USER'
+config.Data.inputDBS = 'phys03'
+config.Data.outputDatasetTag = '140X_mcPhase2_DsTau3Mu_newMINIAOD_ANA'
+config.Data.publication = True
+config.section_('Site')
+config.Site.storageSite = 'T2_IT_Bari'
+config.Site.ignoreGlobalBlacklist = True
+config.section_('User')
+config.section_('Debug')
+
+DEBUG 2025-02-06 23:00:46.391 UTC: 	 self.config.JobType.psetName: /lustrehome/felicenenna/tau3mu/CMSSW_14_0_17/src/GenAnalyser/GenAnalyzer/python/genAnalyser_cff.py
+INFO 2025-02-06 23:00:46.393 UTC: 	 Importing CMSSW configuration /lustrehome/felicenenna/tau3mu/CMSSW_14_0_17/src/GenAnalyser/GenAnalyzer/python/genAnalyser_cff.py
+INFO 2025-02-06 23:00:49.174 UTC: 	 Finished importing CMSSW configuration /lustrehome/felicenenna/tau3mu/CMSSW_14_0_17/src/GenAnalyser/GenAnalyzer/python/genAnalyser_cff.py
+DEBUG 2025-02-06 23:00:49.175 UTC: 	 Writing CMSSW configuration to /lustrehome/felicenenna/tau3mu/CMSSW_14_0_17/src/GenAnalyser/GenAnalyzer/CrabSubmission/crab_projects/crab_140X_mcPhase2_DsTau3Mu_newMINIAOD_ANA/inputs/PSet.py
+DEBUG 2025-02-06 23:00:49.270 UTC: 	 The following EDM output files will be collected: []
+DEBUG 2025-02-06 23:00:49.270 UTC: 	 The following TFile output files will be collected: ['TreeMC_RtM.root']
+DEBUG 2025-02-06 23:00:49.270 UTC: 	 The following user output files (not listed as PoolOuputModule or TFileService in the CMSSW PSet) will be collected: 
+DEBUG 2025-02-06 23:00:49.270 UTC: 	 Loading required information from the environment
+DEBUG 2025-02-06 23:00:49.270 UTC: 	 Found CMSSW_14_0_17 for slc7_amd64_gcc12 with base /lustrehome/felicenenna/tau3mu/CMSSW_14_0_17
+DEBUG 2025-02-06 23:00:49.270 UTC: 	 Making tarball in /lustrehome/felicenenna/tau3mu/CMSSW_14_0_17/src/GenAnalyser/GenAnalyzer/CrabSubmission/crab_projects/crab_140X_mcPhase2_DsTau3Mu_newMINIAOD_ANA/inputs/256384a5-4cc5-46c3-9905-2b407c0f9174default.tgz
+DEBUG 2025-02-06 23:00:49.271 UTC: 	 Checking directory /lustrehome/felicenenna/tau3mu/CMSSW_14_0_17/bin
+DEBUG 2025-02-06 23:00:49.271 UTC: 	 Adding directory /lustrehome/felicenenna/tau3mu/CMSSW_14_0_17/bin to tarball
+DEBUG 2025-02-06 23:00:49.339 UTC: 	 Checking directory /lustrehome/felicenenna/tau3mu/CMSSW_14_0_17/python
+DEBUG 2025-02-06 23:00:49.339 UTC: 	 Adding directory /lustrehome/felicenenna/tau3mu/CMSSW_14_0_17/python to tarball
+DEBUG 2025-02-06 23:00:49.873 UTC: 	 Checking directory /lustrehome/felicenenna/tau3mu/CMSSW_14_0_17/cfipython
+DEBUG 2025-02-06 23:00:49.873 UTC: 	 Adding directory /lustrehome/felicenenna/tau3mu/CMSSW_14_0_17/cfipython to tarball
+DEBUG 2025-02-06 23:00:49.972 UTC: 	 Checking directory /lustrehome/felicenenna/tau3mu/CMSSW_14_0_17/lib
+DEBUG 2025-02-06 23:00:49.972 UTC: 	 Adding directory /lustrehome/felicenenna/tau3mu/CMSSW_14_0_17/lib to tarball
+DEBUG 2025-02-06 23:00:52.712 UTC: 	 Checking directory /lustrehome/felicenenna/tau3mu/CMSSW_14_0_17/biglib
+DEBUG 2025-02-06 23:00:52.713 UTC: 	 Adding directory /lustrehome/felicenenna/tau3mu/CMSSW_14_0_17/biglib to tarball
+DEBUG 2025-02-06 23:00:52.714 UTC: 	 Checking directory /lustrehome/felicenenna/tau3mu/CMSSW_14_0_17/module
+DEBUG 2025-02-06 23:00:52.714 UTC: 	 Checking directory /lustrehome/felicenenna/tau3mu/CMSSW_14_0_17/config/SCRAM/hooks
+DEBUG 2025-02-06 23:00:52.716 UTC: 	 Adding directory /lustrehome/felicenenna/tau3mu/CMSSW_14_0_17/config/SCRAM/hooks to tarball
+DEBUG 2025-02-06 23:00:52.800 UTC: 	 Adding directory /lustrehome/felicenenna/tau3mu/CMSSW_14_0_17/src/GenAnalyser/GenAnalyzer/python to tarball
+DEBUG 2025-02-06 23:00:53.191 UTC: 	 Adding directory /lustrehome/felicenenna/tau3mu/CMSSW_14_0_17/src/Plugins/MiniAnaTau3Mu/python to tarball
+DEBUG 2025-02-06 23:00:53.282 UTC: 	 Adding directory /lustrehome/felicenenna/tau3mu/CMSSW_14_0_17/src/Plugins/TrackFromCandProducer/python to tarball
+DEBUG 2025-02-06 23:00:53.288 UTC: 	 Adding directory /lustrehome/felicenenna/tau3mu/CMSSW_14_0_17/src/Plugins/RecoMuonAnalyzer/python to tarball
+DEBUG 2025-02-06 23:00:53.308 UTC: 	 Adding directory /lustrehome/felicenenna/tau3mu/CMSSW_14_0_17/src/Plugins/SimpleEventCounter/python to tarball
+DEBUG 2025-02-06 23:00:53.329 UTC: 	 Adding directory /lustrehome/felicenenna/tau3mu/CMSSW_14_0_17/src/Plugins/PFCandFilter/python to tarball
+DEBUG 2025-02-06 23:00:53.332 UTC: 	 Adding directory /lustrehome/felicenenna/tau3mu/CMSSW_14_0_17/src/PhysicsTools/PatAlgos/interface to tarball
+DEBUG 2025-02-06 23:00:53.395 UTC: 	 Adding directory /lustrehome/felicenenna/tau3mu/CMSSW_14_0_17/src/PhysicsTools/PatAlgos/python to tarball
+DEBUG 2025-02-06 23:00:55.012 UTC: 	 Adding directory /lustrehome/felicenenna/tau3mu/CMSSW_14_0_17/src/GenAna/GenAnalyser/GenAnalyzer/python to tarball
+DEBUG 2025-02-06 23:00:55.063 UTC: 	 Adding directory /lustrehome/felicenenna/tau3mu/CMSSW_14_0_17/src/SkimTools/SkimTau3Mu/python to tarball
+DEBUG 2025-02-06 23:00:55.126 UTC: 	 Adding directory /lustrehome/felicenenna/tau3mu/CMSSW_14_0_17/src/SkimTools/SkimPhiPi/python to tarball
+DEBUG 2025-02-06 23:00:55.234 UTC: 	 Adding directory /lustrehome/felicenenna/tau3mu/CMSSW_14_0_17/src/SkimTools/SkimPhiMuNu/python to tarball
+DEBUG 2025-02-06 23:00:55.444 UTC: 	 Uploading archive /lustrehome/felicenenna/tau3mu/CMSSW_14_0_17/src/GenAnalyser/GenAnalyzer/CrabSubmission/crab_projects/crab_140X_mcPhase2_DsTau3Mu_newMINIAOD_ANA/inputs/256384a5-4cc5-46c3-9905-2b407c0f9174default.tgz (3.291016.1 MB) to the CRAB cache. Using URI https://cmsweb.cern.ch/S3/crabcache_prod
+DEBUG 2025-02-06 23:00:57.392 UTC: 	 Encoded data for curl request: subresource=upload&objecttype=sandbox&tarballname=1a1f3683d4aad896d8127e637814a864c465cb161c4daecb170466a4c1b543dd.tar.gz
+DEBUG 2025-02-06 23:00:57.570 UTC: 	 sandbox 1a1f3683d4aad896d8127e637814a864c465cb161c4daecb170466a4c1b543dd.tar.gz is already in the S3 store, will not upload again
+DEBUG 2025-02-06 23:00:57.570 UTC: 	 Loading required information from the environment
+DEBUG 2025-02-06 23:00:57.570 UTC: 	 Found CMSSW_14_0_17 for slc7_amd64_gcc12 with base /lustrehome/felicenenna/tau3mu/CMSSW_14_0_17
+DEBUG 2025-02-06 23:00:57.570 UTC: 	 Making tarball in /lustrehome/felicenenna/tau3mu/CMSSW_14_0_17/src/GenAnalyser/GenAnalyzer/CrabSubmission/crab_projects/crab_140X_mcPhase2_DsTau3Mu_newMINIAOD_ANA/inputs/debugFiles.tgz
+DEBUG 2025-02-06 23:00:57.575 UTC: 	 Uploading archive /lustrehome/felicenenna/tau3mu/CMSSW_14_0_17/src/GenAnalyser/GenAnalyzer/CrabSubmission/crab_projects/crab_140X_mcPhase2_DsTau3Mu_newMINIAOD_ANA/inputs/debugFiles.tgz (2 KB) to the CRAB cache. Using URI https://cmsweb.cern.ch/S3/crabcache_prod
+DEBUG 2025-02-06 23:00:57.578 UTC: 	 Encoded data for curl request: subresource=upload&objecttype=sandbox&tarballname=ae320fbb43abf21cf7bdbe74819a16d20b05f07c449d7c7996c7d8ddb8733f4e.tar.gz
+DEBUG 2025-02-06 23:00:57.744 UTC: 	 Will execute:
+curl -f -v -X POST  -H "User-Agent: CRAB" -F "key=fnenna/sandboxes/ae320fbb43abf21cf7bdbe74819a16d20b05f07c449d7c7996c7d8ddb8733f4e.tar.gz" -F "AWSAccessKeyId=715203df6482458ba839e73e6dab634b" -F "policy=eyJleHBpcmF0aW9uIjogIjIwMjUtMDItMDdUMDA6MDA6NTdaIiwgImNvbmRpdGlvbnMiOiBbeyJidWNrZXQiOiAiY3JhYmNhY2hlX3Byb2QifSwgeyJrZXkiOiAiZm5lbm5hL3NhbmRib3hlcy9hZTMyMGZiYjQzYWJmMjFjZjdiZGJlNzQ4MTlhMTZkMjBiMDVmMDdjNDQ5ZDdjNzk5NmM3ZDhkZGI4NzMzZjRlLnRhci5neiJ9XX0=" -F "signature=4X5zhSerFGjV3eUg9zJXhcYnZ1I=" -F "file=@/lustrehome/felicenenna/tau3mu/CMSSW_14_0_17/src/GenAnalyser/GenAnalyzer/CrabSubmission/crab_projects/crab_140X_mcPhase2_DsTau3Mu_newMINIAOD_ANA/inputs/debugFiles.tgz" "https://s3.cern.ch/crabcache_prod"
+DEBUG 2025-02-06 23:00:57.916 UTC: 	 exitcode: 0
+stdout: b''
+DEBUG 2025-02-06 23:00:57.916 UTC: 	 upload to S3 of sandbox /lustrehome/felicenenna/tau3mu/CMSSW_14_0_17/src/GenAnalyser/GenAnalyzer/CrabSubmission/crab_projects/crab_140X_mcPhase2_DsTau3Mu_newMINIAOD_ANA/inputs/debugFiles.tgz completed
+DEBUG 2025-02-06 23:00:57.916 UTC: 	 make sure that object is ready for retrieve
+DEBUG 2025-02-06 23:00:58.918 UTC: 	 Encoded data for curl request: subresource=download&objecttype=sandbox&tarballname=ae320fbb43abf21cf7bdbe74819a16d20b05f07c449d7c7996c7d8ddb8733f4e.tar.gz&clientmethod=head_object
+DEBUG 2025-02-06 23:00:59.075 UTC: 	 PreSignedUrl to download sandbox received OK
+DEBUG 2025-02-06 23:00:59.079 UTC: 	 Will execute:
+ curl -v -s -f -o /dev/null --head  "https://s3.cern.ch/crabcache_prod/fnenna/sandboxes/ae320fbb43abf21cf7bdbe74819a16d20b05f07c449d7c7996c7d8ddb8733f4e.tar.gz?AWSAccessKeyId=715203df6482458ba839e73e6dab634b&Signature=kVuvlR%2FntO8NlkO%2FrUtUb%2Bqxtsw%3D&Expires=1738886459"
+DEBUG 2025-02-06 23:00:59.211 UTC: 	 exitcode: 0
+stdout: b''
+DEBUG 2025-02-06 23:00:59.211 UTC: 	 sandbox /lustrehome/felicenenna/tau3mu/CMSSW_14_0_17/src/GenAnalyser/GenAnalyzer/CrabSubmission/crab_projects/crab_140X_mcPhase2_DsTau3Mu_newMINIAOD_ANA/inputs/debugFiles.tgz successfully uploaded to S3
+DEBUG 2025-02-06 23:00:59.212 UTC: 	 Result uploading input files: 1a1f3683d4aad896d8127e637814a864c465cb161c4daecb170466a4c1b543dd.tar.gz 
+WARNING 2025-02-06 23:00:59.212 UTC: 	 Warning: The following output files will not be published, as they are not EDM files: ['TreeMC_RtM.root']
+DEBUG 2025-02-06 23:00:59.212 UTC: 	 submit() - self.configuration from WMCore.Configuration import Configuration
+config = Configuration()
+config.section_('General')
+config.General.requestName = '140X_mcPhase2_DsTau3Mu_newMINIAOD_ANA'
+config.General.workArea = 'crab_projects'
+config.General.transferOutputs = True
+config.General.transferLogs = True
+config.section_('JobType')
+config.JobType.allowUndistributedCMSSW = True
+config.JobType.pluginName = 'Analysis'
+config.JobType.psetName = '/lustrehome/felicenenna/tau3mu/CMSSW_14_0_17/src/GenAnalyser/GenAnalyzer/python/genAnalyser_cff.py'
+config.section_('Data')
+config.Data.splitting = 'FileBased'
+config.Data.unitsPerJob = 100
+config.Data.inputDataset = '/DsTau3Mu_pythia8_Phase2/fnenna-140X_mcPhase2_DsTau3Mu_RECO_RECOSIM_PAT_VALIDATION_DQM-431bb83c87cdc1aa9929b4654a1dd7c1/USER'
+config.Data.inputDBS = 'phys03'
+config.Data.outputDatasetTag = '140X_mcPhase2_DsTau3Mu_newMINIAOD_ANA'
+config.Data.publication = True
+config.section_('Site')
+config.Site.storageSite = 'T2_IT_Bari'
+config.Site.ignoreGlobalBlacklist = True
+config.section_('User')
+config.section_('Debug')
+
+DEBUG 2025-02-06 23:00:59.212 UTC: 	 submit() - self.configreq {'dryrun': 0, 'workflow': 'crab_140X_mcPhase2_DsTau3Mu_newMINIAOD_ANA', 'saveoutput': 1, 'savelogsflag': 1, 'inputdata': '/DsTau3Mu_pythia8_Phase2/fnenna-140X_mcPhase2_DsTau3Mu_RECO_RECOSIM_PAT_VALIDATION_DQM-431bb83c87cdc1aa9929b4654a1dd7c1/USER', 'nonvaliddata': 0, 'userfiles': [], 'dbsurl': 'https://cmsweb.cern.ch/dbs/prod/phys03/DBSReader', 'useparent': 0, 'ignorelocality': 0, 'splitalgo': 'FileBased', 'algoargs': 100, 'totalunits': 0, 'publication': 1, 'publishdbsurl': 'https://cmsweb.cern.ch/dbs/prod/phys03/DBSWriter', 'publishname2': '140X_mcPhase2_DsTau3Mu_newMINIAOD_ANA', 'jobtype': 'Analysis', 'generator': 'pythia', 'addoutputfiles': [], 'maxjobruntime': 1250, 'numcores': 1, 'maxmemory': 2000, 'priority': 10, 'nonprodsw': 1, 'asyncdest': 'T2_IT_Bari', 'requireaccelerator': 0, 'oneEventMode': 0, 'extrajdl': [], 'ignoreglobalblacklist': 1, 'partialdataset': 0, 'inputblocks': []}
+DEBUG 2025-02-06 23:00:59.212 UTC: 	 submit() - jobconfig {'addoutputfiles': [], 'tfileoutfiles': ['TreeMC_RtM.root'], 'edmoutfiles': [], 'jobarch': 'slc7_amd64_gcc12', 'jobsw': 'CMSSW_14_0_17', 'inputdata': '/DsTau3Mu_pythia8_Phase2/fnenna-140X_mcPhase2_DsTau3Mu_RECO_RECOSIM_PAT_VALIDATION_DQM-431bb83c87cdc1aa9929b4654a1dd7c1/USER', 'cacheurl': 'https://cmsweb.cern.ch/S3/crabcache_prod', 'cachefilename': '1a1f3683d4aad896d8127e637814a864c465cb161c4daecb170466a4c1b543dd.tar.gz', 'debugfilename': 'ae320fbb43abf21cf7bdbe74819a16d20b05f07c449d7c7996c7d8ddb8733f4e.tar.gz', 'jobtype': 'Analysis'}
+INFO 2025-02-06 23:00:59.212 UTC: 	 Sending the request to the server at cmsweb.cern.ch
+DEBUG 2025-02-06 23:00:59.213 UTC: 	 Submitting {'dryrun': 0, 'workflow': 'crab_140X_mcPhase2_DsTau3Mu_newMINIAOD_ANA', 'saveoutput': 1, 'savelogsflag': 1, 'inputdata': '/DsTau3Mu_pythia8_Phase2/fnenna-140X_mcPhase2_DsTau3Mu_RECO_RECOSIM_PAT_VALIDATION_DQM-431bb83c87cdc1aa9929b4654a1dd7c1/USER', 'nonvaliddata': 0, 'userfiles': [], 'dbsurl': 'https://cmsweb.cern.ch/dbs/prod/phys03/DBSReader', 'useparent': 0, 'ignorelocality': 0, 'splitalgo': 'FileBased', 'algoargs': 100, 'totalunits': 0, 'publication': 1, 'publishdbsurl': 'https://cmsweb.cern.ch/dbs/prod/phys03/DBSWriter', 'publishname2': '140X_mcPhase2_DsTau3Mu_newMINIAOD_ANA', 'jobtype': 'Analysis', 'generator': 'pythia', 'addoutputfiles': [], 'maxjobruntime': 1250, 'numcores': 1, 'maxmemory': 2000, 'priority': 10, 'nonprodsw': 1, 'asyncdest': 'T2_IT_Bari', 'requireaccelerator': 0, 'oneEventMode': 0, 'extrajdl': [], 'ignoreglobalblacklist': 1, 'partialdataset': 0, 'inputblocks': [], 'tfileoutfiles': ['TreeMC_RtM.root'], 'edmoutfiles': [], 'jobarch': 'slc7_amd64_gcc12', 'jobsw': 'CMSSW_14_0_17', 'cacheurl': 'https://cmsweb.cern.ch/S3/crabcache_prod', 'cachefilename': '1a1f3683d4aad896d8127e637814a864c465cb161c4daecb170466a4c1b543dd.tar.gz', 'debugfilename': 'ae320fbb43abf21cf7bdbe74819a16d20b05f07c449d7c7996c7d8ddb8733f4e.tar.gz'} 
+DEBUG 2025-02-06 23:00:59.213 UTC: 	 Encoded data for curl request: dryrun=0&workflow=crab_140X_mcPhase2_DsTau3Mu_newMINIAOD_ANA&saveoutput=1&savelogsflag=1&inputdata=%2FDsTau3Mu_pythia8_Phase2%2Ffnenna-140X_mcPhase2_DsTau3Mu_RECO_RECOSIM_PAT_VALIDATION_DQM-431bb83c87cdc1aa9929b4654a1dd7c1%2FUSER&nonvaliddata=0&dbsurl=https%3A%2F%2Fcmsweb.cern.ch%2Fdbs%2Fprod%2Fphys03%2FDBSReader&useparent=0&ignorelocality=0&splitalgo=FileBased&algoargs=100&totalunits=0&publication=1&publishdbsurl=https%3A%2F%2Fcmsweb.cern.ch%2Fdbs%2Fprod%2Fphys03%2FDBSWriter&publishname2=140X_mcPhase2_DsTau3Mu_newMINIAOD_ANA&jobtype=Analysis&generator=pythia&maxjobruntime=1250&numcores=1&maxmemory=2000&priority=10&nonprodsw=1&asyncdest=T2_IT_Bari&requireaccelerator=0&oneEventMode=0&ignoreglobalblacklist=1&partialdataset=0&jobarch=slc7_amd64_gcc12&jobsw=CMSSW_14_0_17&cacheurl=https%3A%2F%2Fcmsweb.cern.ch%2FS3%2Fcrabcache_prod&cachefilename=1a1f3683d4aad896d8127e637814a864c465cb161c4daecb170466a4c1b543dd.tar.gz&debugfilename=ae320fbb43abf21cf7bdbe74819a16d20b05f07c449d7c7996c7d8ddb8733f4e.tar.gz&tfileoutfiles=TreeMC_RtM.root
+DEBUG 2025-02-06 23:00:59.617 UTC: 	 Result: {'result': [{'RequestName': '250206_230059:fnenna_crab_140X_mcPhase2_DsTau3Mu_newMINIAOD_ANA'}]}
+INFO 2025-02-06 23:00:59.619 UTC: 	 Success: Your task has been delivered to the prod CRAB3 server.
+INFO 2025-02-06 23:00:59.620 UTC: 	 Task name: 250206_230059:fnenna_crab_140X_mcPhase2_DsTau3Mu_newMINIAOD_ANA
+INFO 2025-02-06 23:00:59.620 UTC: 	 Project dir: crab_projects/crab_140X_mcPhase2_DsTau3Mu_newMINIAOD_ANA
+INFO 2025-02-06 23:00:59.620 UTC: 	 Please use ' crab status -d crab_projects/crab_140X_mcPhase2_DsTau3Mu_newMINIAOD_ANA ' to check how the submission process proceeds.
+DEBUG 2025-02-06 23:00:59.620 UTC: 	 About to return
+INFO 2025-02-06 23:00:59.626 UTC: 	 Log file is /lustrehome/felicenenna/tau3mu/CMSSW_14_0_17/src/GenAnalyser/GenAnalyzer/CrabSubmission/crab_projects/crab_140X_mcPhase2_DsTau3Mu_newMINIAOD_ANA/crab.log
+DEBUG 2025-02-06 23:01:08.966 UTC: 	 CRAB Client version: v3.241125
+DEBUG 2025-02-06 23:01:08.966 UTC: 	 Running on: Linux ui02.recas.ba.infn.it 3.10.0-1160.80.1.el7.x86_64 #1 SMP Tue Nov 8 15:48:59 UTC 2022 x86_64 x86_64 x86_64 GNU/Linux
+DEBUG 2025-02-06 23:01:08.966 UTC: 	 Not using Singularity
+DEBUG 2025-02-06 23:01:08.966 UTC: 	 Operating System: CentOS Linux 7 (Core)
+DEBUG 2025-02-06 23:01:08.966 UTC: 	 Executing command: 'status'
+DEBUG 2025-02-06 23:01:08.966 UTC: 	 Found CRAB cache file /lustrehome/felicenenna/.crab3
+DEBUG 2025-02-06 23:01:08.969 UTC: 	 Checking credentials
+DEBUG 2025-02-06 23:01:08.969 UTC: 	 Found proxy file /tmp/x509up_u881416
+DEBUG 2025-02-06 23:01:08.969 UTC: 	 Making sure it has proper VOMS extension
+DEBUG 2025-02-06 23:01:08.969 UTC: 	 Executing command :
+ voms-proxy-info --vo --file /tmp/x509up_u881416
+DEBUG 2025-02-06 23:01:09.930 UTC: 	 output : cms
+
+ error: 
+ retcode : 0
+DEBUG 2025-02-06 23:01:09.930 UTC: 	 Getting proxy life time left
+DEBUG 2025-02-06 23:01:09.930 UTC: 	 Executing command :
+ voms-proxy-info --actimeleft --timeleft --file /tmp/x509up_u881416
+DEBUG 2025-02-06 23:01:10.869 UTC: 	 output : 207068
+207068
+
+ error: 
+ retcode : 0
+DEBUG 2025-02-06 23:01:10.869 UTC: 	 Proxy valid for 57:31:08 hours
+DEBUG 2025-02-06 23:01:10.870 UTC: 	 Encoded data for curl request: subresource=delegatedn
+DEBUG 2025-02-06 23:01:11.023 UTC: 	 Registering user credentials on myproxy for /DC=ch/DC=cern/OU=computers/CN=crab-(preprod|prod)-tw(01|02).cern.ch|/DC=ch/DC=cern/OU=computers/CN=crab-dev-tw(01|02|03|04).cern.ch|/DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=cmscrab/CN=(817881|373708)/CN=Robot: cms crab|/DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=crabint1/CN=373708/CN=Robot: CMS CRAB Integration 1
+DEBUG 2025-02-06 23:01:11.023 UTC: 	 Executing command :
+ voms-proxy-info --identity --file /tmp/x509up_u881416
+DEBUG 2025-02-06 23:01:12.210 UTC: 	 output : /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=fnenna/CN=868185/CN=Felice Nenna
+
+ error: 
+ retcode : 0
+DEBUG 2025-02-06 23:01:12.210 UTC: 	 Getting myproxy life time left for a133b326f2e83ec4c6fd8cd18786edfdbb69b415
+DEBUG 2025-02-06 23:01:12.210 UTC: 	 Executing command :
+ myproxy-info -s myproxy.cern.ch -l a133b326f2e83ec4c6fd8cd18786edfdbb69b415
+DEBUG 2025-02-06 23:01:12.885 UTC: 	 output : username: a133b326f2e83ec4c6fd8cd18786edfdbb69b415
+owner: /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=fnenna/CN=868185/CN=Felice Nenna
+  renewal policy: /DC=ch/DC=cern/OU=computers/CN=crab-(preprod|prod)-tw(01|02).cern.ch|/DC=ch/DC=cern/OU=computers/CN=crab-dev-tw(01|02|03|04).cern.ch|/DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=cmscrab/CN=(817881|373708)/CN=Robot: cms crab|/DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=crabint1/CN=373708/CN=Robot: CMS CRAB Integration 1
+  trusted retrieval policy: /DC=ch/DC=cern/OU=computers/CN=crab-(preprod|prod)-tw(01|02).cern.ch|/DC=ch/DC=cern/OU=computers/CN=crab-dev-tw(01|02|03|04).cern.ch|/DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=cmscrab/CN=(817881|373708)/CN=Robot: cms crab|/DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=crabint1/CN=373708/CN=Robot: CMS CRAB Integration 1
+  timeleft: 545:11:45  (22.7 days)
+
+ error: 
+ retcode : 0
+DEBUG 2025-02-06 23:01:12.885 UTC: 	 Myproxy is valid: 1962660
+DEBUG 2025-02-06 23:01:12.885 UTC: 	 Result of myproxy credential check:
+  Credential exists on myproxy: username: a133b326f2e83ec4c6fd8cd18786edfdbb69b415  - validity: 22 days, 17:11:00
+DEBUG 2025-02-06 23:01:12.886 UTC: 	 Retrieving username ...
+DEBUG 2025-02-06 23:01:12.886 UTC: 	 Retrieving username from CRIC...
+DEBUG 2025-02-06 23:01:13.647 UTC: 	 username is fnenna
+INFO 2025-02-06 23:01:15.130 UTC: 	 Rucio client intialized for account fnenna
+DEBUG 2025-02-06 23:01:15.131 UTC: 	 Command use: status
+DEBUG 2025-02-06 23:01:15.131 UTC: 	 Options use: ['-d', 'crab_projects/crab_140X_mcPhase2_DsTau3Mu_newMINIAOD_ANA']
+DEBUG 2025-02-06 23:01:15.131 UTC: 	 Encoded data for curl request: subresource=version
+DEBUG 2025-02-06 23:01:15.281 UTC: 	 CRABClient version: v3.241125
+DEBUG 2025-02-06 23:01:15.281 UTC: 	 Instance is prod
+DEBUG 2025-02-06 23:01:15.281 UTC: 	 Server base url is cmsweb.cern.ch
+DEBUG 2025-02-06 23:01:15.281 UTC: 	 Command api workflow
+DEBUG 2025-02-06 23:01:15.281 UTC: 	 Encoded data for curl request: subresource=search&workflow=250206_230059%3Afnenna_crab_140X_mcPhase2_DsTau3Mu_newMINIAOD_ANA
+DEBUG 2025-02-06 23:01:15.440 UTC: 	 Got information from server oracle database: {'desc': {'columns': ['tm_taskname', 'tm_activity', 'tm_task_status', 'tm_task_command', 'tm_start_time', 'tm_start_injection', 'tm_end_injection', 'tm_task_failure', 'tm_job_sw', 'tm_job_arch', 'tm_input_dataset', 'tm_nonvalid_input_dataset', 'tm_use_parent', 'tm_site_whitelist', 'tm_site_blacklist', 'tm_split_algo', 'tm_split_args', 'tm_user_sandbox', 'tm_cache_url', 'tm_username', 'tm_user_dn', 'tm_user_vo', 'tm_user_role', 'tm_user_group', 'tm_publish_name', 'tm_publish_groupname', 'tm_asyncdest', 'tm_dbs_url', 'tm_publish_dbs_url', 'tm_publication', 'tm_outfiles', 'tm_tfile_outfiles', 'tm_edm_outfiles', 'tm_job_type', 'tm_generator', 'tm_events_per_lumi', 'tm_arguments', 'tm_save_logs', 'tw_name', 'tm_user_infiles', 'tm_maxjobruntime', 'tm_numcores', 'tm_maxmemory', 'tm_priority', 'tm_output_dataset', 'tm_task_warnings', 'tm_user_webdir', 'tm_scriptexe', 'tm_scriptargs', 'tm_extrajdl', 'tm_collector', 'tm_schedd', 'tm_dry_run', 'tm_user_files', 'tm_transfer_outputs', 'tm_output_lfn', 'tm_ignore_locality', 'tm_fail_limit', 'tm_one_event_mode', 'tm_secondary_input_dataset', 'tm_primary_dataset', 'tm_last_publication', 'tm_debug_files', 'clusterid', 'tm_ignore_global_blacklist', 'tm_submitter_ip_addr', 'tm_totalunits', 'tm_ddm_reqid', 'tm_user_config', 'tm_transfer_container', 'tm_transfer_rule', 'tm_publish_rule', 'tm_multipub_rule', 'tm_job_min_microarch']}, 'result': ['250206_230059:fnenna_crab_140X_mcPhase2_DsTau3Mu_newMINIAOD_ANA', 'None', 'WAITING', 'SUBMIT', '2025-02-06 23:00:59.598562', 'None', 'None', 'None', 'CMSSW_14_0_17', 'slc7_amd64_gcc12', '/DsTau3Mu_pythia8_Phase2/fnenna-140X_mcPhase2_DsTau3Mu_RECO_RECOSIM_PAT_VALIDATION_DQM-431bb83c87cdc1aa9929b4654a1dd7c1/USER', 'F', '0', '[]', '[]', 'FileBased', "{'halt_job_on_file_boundaries': False, 'splitOnRun': False, 'files_per_job': 100, 'runs': [], 'lumis': []}", '1a1f3683d4aad896d8127e637814a864c465cb161c4daecb170466a4c1b543dd.tar.gz', 'https://cmsweb.cern.ch/S3/crabcache_prod', 'fnenna', '/DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=fnenna/CN=868185/CN=Felice Nenna', 'cms', 'None', 'None', '140X_mcPhase2_DsTau3Mu_newMINIAOD_ANA-00000000000000000000000000000000', 'F', 'T2_IT_Bari', 'https://cmsweb.cern.ch/dbs/prod/phys03/DBSReader', 'https://cmsweb.cern.ch/dbs/prod/phys03/DBSWriter', 'T', '[]', "['TreeMC_RtM.root']", '[]', 'Analysis', 'pythia', 'None', '{}', 'T', 'NotKnownYet', '[]', '1250', '1', '2000', '10', 'None', '[]', 'None', 'None', '[]', '[]', 'cmsgwms-collector-global.cern.ch:9620,cmsgwms-collector-global.fnal.gov:9620', 'None', 'F', '[]', 'T', '/store/user/fnenna/', 'F', 'None', 'F', 'None', 'DsTau3Mu_pythia8_Phase2', 'None', 'ae320fbb43abf21cf7bdbe74819a16d20b05f07c449d7c7996c7d8ddb8733f4e.tar.gz', 'None', 'T', '188.184.73.32', '0.0', 'None', '{"partialdataset": false, "requireaccelerator": false, "acceleratorparams": null, "inputblocks": null}', 'None', 'None', 'None', 'None', 'None']}
+INFO 2025-02-06 23:01:15.441 UTC: 	 CRAB project directory:		/lustrehome/felicenenna/tau3mu/CMSSW_14_0_17/src/GenAnalyser/GenAnalyzer/CrabSubmission/crab_projects/crab_140X_mcPhase2_DsTau3Mu_newMINIAOD_ANA
+INFO 2025-02-06 23:01:15.441 UTC: 	 Task name:			250206_230059:fnenna_crab_140X_mcPhase2_DsTau3Mu_newMINIAOD_ANA
+INFO 2025-02-06 23:01:15.441 UTC: 	 Grid scheduler - Task Worker:	N/A yet - NotKnownYet
+INFO 2025-02-06 23:01:15.441 UTC: 	 Status on the CRAB server:	WAITING on command SUBMIT
+INFO 2025-02-06 23:01:15.441 UTC: 	 Task URL to use for HELP:	https://cmsweb.cern.ch/crabserver/ui/task/250206_230059%3Afnenna_crab_140X_mcPhase2_DsTau3Mu_newMINIAOD_ANA
+INFO 2025-02-06 23:01:15.456 UTC: 	 Dashboard monitoring URL:	https://monit-grafana.cern.ch/d/cmsTMDetail/cms-task-monitoring-task-view?orgId=11&var-user=fnenna&var-task=250206_230059%3Afnenna_crab_140X_mcPhase2_DsTau3Mu_newMINIAOD_ANA&from=1738879259000&to=now
+DEBUG 2025-02-06 23:01:15.456 UTC: 	 The task has not been submitted to the Grid scheduler yet. Not printing job information.
+INFO 2025-02-06 23:01:15.459 UTC: 	 Log file is /lustrehome/felicenenna/tau3mu/CMSSW_14_0_17/src/GenAnalyser/GenAnalyzer/CrabSubmission/crab_projects/crab_140X_mcPhase2_DsTau3Mu_newMINIAOD_ANA/crab.log
+DEBUG 2025-02-06 23:01:42.227 UTC: 	 CRAB Client version: v3.241125
+DEBUG 2025-02-06 23:01:42.228 UTC: 	 Running on: Linux ui02.recas.ba.infn.it 3.10.0-1160.80.1.el7.x86_64 #1 SMP Tue Nov 8 15:48:59 UTC 2022 x86_64 x86_64 x86_64 GNU/Linux
+DEBUG 2025-02-06 23:01:42.228 UTC: 	 Not using Singularity
+DEBUG 2025-02-06 23:01:42.228 UTC: 	 Operating System: CentOS Linux 7 (Core)
+DEBUG 2025-02-06 23:01:42.228 UTC: 	 Executing command: 'status'
+DEBUG 2025-02-06 23:01:42.228 UTC: 	 Found CRAB cache file /lustrehome/felicenenna/.crab3
+DEBUG 2025-02-06 23:01:42.232 UTC: 	 Checking credentials
+DEBUG 2025-02-06 23:01:42.232 UTC: 	 Found proxy file /tmp/x509up_u881416
+DEBUG 2025-02-06 23:01:42.232 UTC: 	 Making sure it has proper VOMS extension
+DEBUG 2025-02-06 23:01:42.232 UTC: 	 Executing command :
+ voms-proxy-info --vo --file /tmp/x509up_u881416
+DEBUG 2025-02-06 23:01:43.218 UTC: 	 output : cms
+
+ error: 
+ retcode : 0
+DEBUG 2025-02-06 23:01:43.218 UTC: 	 Getting proxy life time left
+DEBUG 2025-02-06 23:01:43.219 UTC: 	 Executing command :
+ voms-proxy-info --actimeleft --timeleft --file /tmp/x509up_u881416
+DEBUG 2025-02-06 23:01:44.212 UTC: 	 output : 207034
+207034
+
+ error: 
+ retcode : 0
+DEBUG 2025-02-06 23:01:44.212 UTC: 	 Proxy valid for 57:30:34 hours
+DEBUG 2025-02-06 23:01:44.213 UTC: 	 Encoded data for curl request: subresource=delegatedn
+DEBUG 2025-02-06 23:01:44.369 UTC: 	 Registering user credentials on myproxy for /DC=ch/DC=cern/OU=computers/CN=crab-(preprod|prod)-tw(01|02).cern.ch|/DC=ch/DC=cern/OU=computers/CN=crab-dev-tw(01|02|03|04).cern.ch|/DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=cmscrab/CN=(817881|373708)/CN=Robot: cms crab|/DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=crabint1/CN=373708/CN=Robot: CMS CRAB Integration 1
+DEBUG 2025-02-06 23:01:44.369 UTC: 	 Executing command :
+ voms-proxy-info --identity --file /tmp/x509up_u881416
+DEBUG 2025-02-06 23:01:45.412 UTC: 	 output : /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=fnenna/CN=868185/CN=Felice Nenna
+
+ error: 
+ retcode : 0
+DEBUG 2025-02-06 23:01:45.413 UTC: 	 Getting myproxy life time left for a133b326f2e83ec4c6fd8cd18786edfdbb69b415
+DEBUG 2025-02-06 23:01:45.413 UTC: 	 Executing command :
+ myproxy-info -s myproxy.cern.ch -l a133b326f2e83ec4c6fd8cd18786edfdbb69b415
+DEBUG 2025-02-06 23:01:45.984 UTC: 	 output : username: a133b326f2e83ec4c6fd8cd18786edfdbb69b415
+owner: /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=fnenna/CN=868185/CN=Felice Nenna
+  renewal policy: /DC=ch/DC=cern/OU=computers/CN=crab-(preprod|prod)-tw(01|02).cern.ch|/DC=ch/DC=cern/OU=computers/CN=crab-dev-tw(01|02|03|04).cern.ch|/DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=cmscrab/CN=(817881|373708)/CN=Robot: cms crab|/DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=crabint1/CN=373708/CN=Robot: CMS CRAB Integration 1
+  trusted retrieval policy: /DC=ch/DC=cern/OU=computers/CN=crab-(preprod|prod)-tw(01|02).cern.ch|/DC=ch/DC=cern/OU=computers/CN=crab-dev-tw(01|02|03|04).cern.ch|/DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=cmscrab/CN=(817881|373708)/CN=Robot: cms crab|/DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=crabint1/CN=373708/CN=Robot: CMS CRAB Integration 1
+  timeleft: 545:11:12  (22.7 days)
+
+ error: 
+ retcode : 0
+DEBUG 2025-02-06 23:01:45.984 UTC: 	 Myproxy is valid: 1962660
+DEBUG 2025-02-06 23:01:45.984 UTC: 	 Result of myproxy credential check:
+  Credential exists on myproxy: username: a133b326f2e83ec4c6fd8cd18786edfdbb69b415  - validity: 22 days, 17:11:00
+DEBUG 2025-02-06 23:01:45.984 UTC: 	 Retrieving username ...
+DEBUG 2025-02-06 23:01:45.984 UTC: 	 Retrieving username from CRIC...
+DEBUG 2025-02-06 23:01:46.710 UTC: 	 username is fnenna
+INFO 2025-02-06 23:01:48.208 UTC: 	 Rucio client intialized for account fnenna
+DEBUG 2025-02-06 23:01:48.209 UTC: 	 Command use: status
+DEBUG 2025-02-06 23:01:48.209 UTC: 	 Options use: ['-d', 'crab_projects/crab_140X_mcPhase2_DsTau3Mu_newMINIAOD_ANA']
+DEBUG 2025-02-06 23:01:48.209 UTC: 	 Encoded data for curl request: subresource=version
+DEBUG 2025-02-06 23:01:48.353 UTC: 	 CRABClient version: v3.241125
+DEBUG 2025-02-06 23:01:48.353 UTC: 	 Instance is prod
+DEBUG 2025-02-06 23:01:48.353 UTC: 	 Server base url is cmsweb.cern.ch
+DEBUG 2025-02-06 23:01:48.353 UTC: 	 Command api workflow
+DEBUG 2025-02-06 23:01:48.353 UTC: 	 Encoded data for curl request: subresource=search&workflow=250206_230059%3Afnenna_crab_140X_mcPhase2_DsTau3Mu_newMINIAOD_ANA
+DEBUG 2025-02-06 23:01:48.510 UTC: 	 Got information from server oracle database: {'desc': {'columns': ['tm_taskname', 'tm_activity', 'tm_task_status', 'tm_task_command', 'tm_start_time', 'tm_start_injection', 'tm_end_injection', 'tm_task_failure', 'tm_job_sw', 'tm_job_arch', 'tm_input_dataset', 'tm_nonvalid_input_dataset', 'tm_use_parent', 'tm_site_whitelist', 'tm_site_blacklist', 'tm_split_algo', 'tm_split_args', 'tm_user_sandbox', 'tm_cache_url', 'tm_username', 'tm_user_dn', 'tm_user_vo', 'tm_user_role', 'tm_user_group', 'tm_publish_name', 'tm_publish_groupname', 'tm_asyncdest', 'tm_dbs_url', 'tm_publish_dbs_url', 'tm_publication', 'tm_outfiles', 'tm_tfile_outfiles', 'tm_edm_outfiles', 'tm_job_type', 'tm_generator', 'tm_events_per_lumi', 'tm_arguments', 'tm_save_logs', 'tw_name', 'tm_user_infiles', 'tm_maxjobruntime', 'tm_numcores', 'tm_maxmemory', 'tm_priority', 'tm_output_dataset', 'tm_task_warnings', 'tm_user_webdir', 'tm_scriptexe', 'tm_scriptargs', 'tm_extrajdl', 'tm_collector', 'tm_schedd', 'tm_dry_run', 'tm_user_files', 'tm_transfer_outputs', 'tm_output_lfn', 'tm_ignore_locality', 'tm_fail_limit', 'tm_one_event_mode', 'tm_secondary_input_dataset', 'tm_primary_dataset', 'tm_last_publication', 'tm_debug_files', 'clusterid', 'tm_ignore_global_blacklist', 'tm_submitter_ip_addr', 'tm_totalunits', 'tm_ddm_reqid', 'tm_user_config', 'tm_transfer_container', 'tm_transfer_rule', 'tm_publish_rule', 'tm_multipub_rule', 'tm_job_min_microarch']}, 'result': ['250206_230059:fnenna_crab_140X_mcPhase2_DsTau3Mu_newMINIAOD_ANA', 'None', 'WAITING', 'SUBMIT', '2025-02-06 23:00:59.598562', 'None', 'None', 'None', 'CMSSW_14_0_17', 'slc7_amd64_gcc12', '/DsTau3Mu_pythia8_Phase2/fnenna-140X_mcPhase2_DsTau3Mu_RECO_RECOSIM_PAT_VALIDATION_DQM-431bb83c87cdc1aa9929b4654a1dd7c1/USER', 'F', '0', '[]', '[]', 'FileBased', "{'halt_job_on_file_boundaries': False, 'splitOnRun': False, 'files_per_job': 100, 'runs': [], 'lumis': []}", '1a1f3683d4aad896d8127e637814a864c465cb161c4daecb170466a4c1b543dd.tar.gz', 'https://cmsweb.cern.ch/S3/crabcache_prod', 'fnenna', '/DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=fnenna/CN=868185/CN=Felice Nenna', 'cms', 'None', 'None', '140X_mcPhase2_DsTau3Mu_newMINIAOD_ANA-00000000000000000000000000000000', 'F', 'T2_IT_Bari', 'https://cmsweb.cern.ch/dbs/prod/phys03/DBSReader', 'https://cmsweb.cern.ch/dbs/prod/phys03/DBSWriter', 'T', '[]', "['TreeMC_RtM.root']", '[]', 'Analysis', 'pythia', 'None', '{}', 'T', 'NotKnownYet', '[]', '1250', '1', '2000', '10', 'None', '[]', 'None', 'None', '[]', '[]', 'cmsgwms-collector-global.cern.ch:9620,cmsgwms-collector-global.fnal.gov:9620', 'None', 'F', '[]', 'T', '/store/user/fnenna/', 'F', 'None', 'F', 'None', 'DsTau3Mu_pythia8_Phase2', 'None', 'ae320fbb43abf21cf7bdbe74819a16d20b05f07c449d7c7996c7d8ddb8733f4e.tar.gz', 'None', 'T', '188.184.73.32', '0.0', 'None', '{"partialdataset": false, "requireaccelerator": false, "acceleratorparams": null, "inputblocks": null}', 'None', 'None', 'None', 'None', 'None']}
+INFO 2025-02-06 23:01:48.511 UTC: 	 CRAB project directory:		/lustrehome/felicenenna/tau3mu/CMSSW_14_0_17/src/GenAnalyser/GenAnalyzer/CrabSubmission/crab_projects/crab_140X_mcPhase2_DsTau3Mu_newMINIAOD_ANA
+INFO 2025-02-06 23:01:48.511 UTC: 	 Task name:			250206_230059:fnenna_crab_140X_mcPhase2_DsTau3Mu_newMINIAOD_ANA
+INFO 2025-02-06 23:01:48.511 UTC: 	 Grid scheduler - Task Worker:	N/A yet - NotKnownYet
+INFO 2025-02-06 23:01:48.511 UTC: 	 Status on the CRAB server:	WAITING on command SUBMIT
+INFO 2025-02-06 23:01:48.511 UTC: 	 Task URL to use for HELP:	https://cmsweb.cern.ch/crabserver/ui/task/250206_230059%3Afnenna_crab_140X_mcPhase2_DsTau3Mu_newMINIAOD_ANA
+INFO 2025-02-06 23:01:48.521 UTC: 	 Dashboard monitoring URL:	https://monit-grafana.cern.ch/d/cmsTMDetail/cms-task-monitoring-task-view?orgId=11&var-user=fnenna&var-task=250206_230059%3Afnenna_crab_140X_mcPhase2_DsTau3Mu_newMINIAOD_ANA&from=1738879259000&to=now
+DEBUG 2025-02-06 23:01:48.522 UTC: 	 The task has not been submitted to the Grid scheduler yet. Not printing job information.
+INFO 2025-02-06 23:01:48.524 UTC: 	 Log file is /lustrehome/felicenenna/tau3mu/CMSSW_14_0_17/src/GenAnalyser/GenAnalyzer/CrabSubmission/crab_projects/crab_140X_mcPhase2_DsTau3Mu_newMINIAOD_ANA/crab.log
+DEBUG 2025-02-06 23:02:44.322 UTC: 	 CRAB Client version: v3.241125
+DEBUG 2025-02-06 23:02:44.323 UTC: 	 Running on: Linux ui02.recas.ba.infn.it 3.10.0-1160.80.1.el7.x86_64 #1 SMP Tue Nov 8 15:48:59 UTC 2022 x86_64 x86_64 x86_64 GNU/Linux
+DEBUG 2025-02-06 23:02:44.323 UTC: 	 Not using Singularity
+DEBUG 2025-02-06 23:02:44.323 UTC: 	 Operating System: CentOS Linux 7 (Core)
+DEBUG 2025-02-06 23:02:44.323 UTC: 	 Executing command: 'status'
+DEBUG 2025-02-06 23:02:44.323 UTC: 	 Found CRAB cache file /lustrehome/felicenenna/.crab3
+DEBUG 2025-02-06 23:02:44.326 UTC: 	 Checking credentials
+DEBUG 2025-02-06 23:02:44.327 UTC: 	 Found proxy file /tmp/x509up_u881416
+DEBUG 2025-02-06 23:02:44.327 UTC: 	 Making sure it has proper VOMS extension
+DEBUG 2025-02-06 23:02:44.327 UTC: 	 Executing command :
+ voms-proxy-info --vo --file /tmp/x509up_u881416
+DEBUG 2025-02-06 23:02:45.327 UTC: 	 output : cms
+
+ error: 
+ retcode : 0
+DEBUG 2025-02-06 23:02:45.328 UTC: 	 Getting proxy life time left
+DEBUG 2025-02-06 23:02:45.328 UTC: 	 Executing command :
+ voms-proxy-info --actimeleft --timeleft --file /tmp/x509up_u881416
+DEBUG 2025-02-06 23:02:46.402 UTC: 	 output : 206972
+206972
+
+ error: 
+ retcode : 0
+DEBUG 2025-02-06 23:02:46.403 UTC: 	 Proxy valid for 57:29:32 hours
+DEBUG 2025-02-06 23:02:46.403 UTC: 	 Encoded data for curl request: subresource=delegatedn
+DEBUG 2025-02-06 23:02:46.559 UTC: 	 Registering user credentials on myproxy for /DC=ch/DC=cern/OU=computers/CN=crab-(preprod|prod)-tw(01|02).cern.ch|/DC=ch/DC=cern/OU=computers/CN=crab-dev-tw(01|02|03|04).cern.ch|/DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=cmscrab/CN=(817881|373708)/CN=Robot: cms crab|/DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=crabint1/CN=373708/CN=Robot: CMS CRAB Integration 1
+DEBUG 2025-02-06 23:02:46.560 UTC: 	 Executing command :
+ voms-proxy-info --identity --file /tmp/x509up_u881416
+DEBUG 2025-02-06 23:02:47.605 UTC: 	 output : /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=fnenna/CN=868185/CN=Felice Nenna
+
+ error: 
+ retcode : 0
+DEBUG 2025-02-06 23:02:47.605 UTC: 	 Getting myproxy life time left for a133b326f2e83ec4c6fd8cd18786edfdbb69b415
+DEBUG 2025-02-06 23:02:47.605 UTC: 	 Executing command :
+ myproxy-info -s myproxy.cern.ch -l a133b326f2e83ec4c6fd8cd18786edfdbb69b415
+DEBUG 2025-02-06 23:02:48.020 UTC: 	 output : username: a133b326f2e83ec4c6fd8cd18786edfdbb69b415
+owner: /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=fnenna/CN=868185/CN=Felice Nenna
+  renewal policy: /DC=ch/DC=cern/OU=computers/CN=crab-(preprod|prod)-tw(01|02).cern.ch|/DC=ch/DC=cern/OU=computers/CN=crab-dev-tw(01|02|03|04).cern.ch|/DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=cmscrab/CN=(817881|373708)/CN=Robot: cms crab|/DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=crabint1/CN=373708/CN=Robot: CMS CRAB Integration 1
+  trusted retrieval policy: /DC=ch/DC=cern/OU=computers/CN=crab-(preprod|prod)-tw(01|02).cern.ch|/DC=ch/DC=cern/OU=computers/CN=crab-dev-tw(01|02|03|04).cern.ch|/DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=cmscrab/CN=(817881|373708)/CN=Robot: cms crab|/DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=crabint1/CN=373708/CN=Robot: CMS CRAB Integration 1
+  timeleft: 545:10:09  (22.7 days)
+
+ error: 
+ retcode : 0
+DEBUG 2025-02-06 23:02:48.020 UTC: 	 Myproxy is valid: 1962600
+DEBUG 2025-02-06 23:02:48.020 UTC: 	 Result of myproxy credential check:
+  Credential exists on myproxy: username: a133b326f2e83ec4c6fd8cd18786edfdbb69b415  - validity: 22 days, 17:10:00
+DEBUG 2025-02-06 23:02:48.021 UTC: 	 Retrieving username ...
+DEBUG 2025-02-06 23:02:48.021 UTC: 	 Retrieving username from CRIC...
+DEBUG 2025-02-06 23:02:48.777 UTC: 	 username is fnenna
+INFO 2025-02-06 23:02:50.460 UTC: 	 Rucio client intialized for account fnenna
+DEBUG 2025-02-06 23:02:50.462 UTC: 	 Command use: status
+DEBUG 2025-02-06 23:02:50.462 UTC: 	 Options use: ['-d', 'crab_projects/crab_140X_mcPhase2_DsTau3Mu_newMINIAOD_ANA']
+DEBUG 2025-02-06 23:02:50.463 UTC: 	 Encoded data for curl request: subresource=version
+DEBUG 2025-02-06 23:02:50.626 UTC: 	 CRABClient version: v3.241125
+DEBUG 2025-02-06 23:02:50.627 UTC: 	 Instance is prod
+DEBUG 2025-02-06 23:02:50.627 UTC: 	 Server base url is cmsweb.cern.ch
+DEBUG 2025-02-06 23:02:50.627 UTC: 	 Command api workflow
+DEBUG 2025-02-06 23:02:50.627 UTC: 	 Encoded data for curl request: subresource=search&workflow=250206_230059%3Afnenna_crab_140X_mcPhase2_DsTau3Mu_newMINIAOD_ANA
+DEBUG 2025-02-06 23:02:50.792 UTC: 	 Got information from server oracle database: {'desc': {'columns': ['tm_taskname', 'tm_activity', 'tm_task_status', 'tm_task_command', 'tm_start_time', 'tm_start_injection', 'tm_end_injection', 'tm_task_failure', 'tm_job_sw', 'tm_job_arch', 'tm_input_dataset', 'tm_nonvalid_input_dataset', 'tm_use_parent', 'tm_site_whitelist', 'tm_site_blacklist', 'tm_split_algo', 'tm_split_args', 'tm_user_sandbox', 'tm_cache_url', 'tm_username', 'tm_user_dn', 'tm_user_vo', 'tm_user_role', 'tm_user_group', 'tm_publish_name', 'tm_publish_groupname', 'tm_asyncdest', 'tm_dbs_url', 'tm_publish_dbs_url', 'tm_publication', 'tm_outfiles', 'tm_tfile_outfiles', 'tm_edm_outfiles', 'tm_job_type', 'tm_generator', 'tm_events_per_lumi', 'tm_arguments', 'tm_save_logs', 'tw_name', 'tm_user_infiles', 'tm_maxjobruntime', 'tm_numcores', 'tm_maxmemory', 'tm_priority', 'tm_output_dataset', 'tm_task_warnings', 'tm_user_webdir', 'tm_scriptexe', 'tm_scriptargs', 'tm_extrajdl', 'tm_collector', 'tm_schedd', 'tm_dry_run', 'tm_user_files', 'tm_transfer_outputs', 'tm_output_lfn', 'tm_ignore_locality', 'tm_fail_limit', 'tm_one_event_mode', 'tm_secondary_input_dataset', 'tm_primary_dataset', 'tm_last_publication', 'tm_debug_files', 'clusterid', 'tm_ignore_global_blacklist', 'tm_submitter_ip_addr', 'tm_totalunits', 'tm_ddm_reqid', 'tm_user_config', 'tm_transfer_container', 'tm_transfer_rule', 'tm_publish_rule', 'tm_multipub_rule', 'tm_job_min_microarch']}, 'result': ['250206_230059:fnenna_crab_140X_mcPhase2_DsTau3Mu_newMINIAOD_ANA', 'None', 'UPLOADED', 'SUBMIT', '2025-02-06 23:00:59.598562', 'None', 'None', 'None', 'CMSSW_14_0_17', 'slc7_amd64_gcc12', '/DsTau3Mu_pythia8_Phase2/fnenna-140X_mcPhase2_DsTau3Mu_RECO_RECOSIM_PAT_VALIDATION_DQM-431bb83c87cdc1aa9929b4654a1dd7c1/USER', 'F', '0', '[]', '[]', 'FileBased', "{'halt_job_on_file_boundaries': False, 'splitOnRun': False, 'files_per_job': 100, 'runs': [], 'lumis': []}", '1a1f3683d4aad896d8127e637814a864c465cb161c4daecb170466a4c1b543dd.tar.gz', 'https://cmsweb.cern.ch/S3/crabcache_prod', 'fnenna', '/DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=fnenna/CN=868185/CN=Felice Nenna', 'cms', 'None', 'None', '140X_mcPhase2_DsTau3Mu_newMINIAOD_ANA-00000000000000000000000000000000', 'F', 'T2_IT_Bari', 'https://cmsweb.cern.ch/dbs/prod/phys03/DBSReader', 'https://cmsweb.cern.ch/dbs/prod/phys03/DBSWriter', 'T', '[]', "['TreeMC_RtM.root']", '[]', 'Analysis', 'pythia', 'None', '{}', 'T', 'crab-prod-tw01', '[]', '1250', '1', '2000', '10', 'None', '[]', 'None', 'None', '[]', '[]', 'cmsgwms-collector-global.cern.ch:9620,cmsgwms-collector-global.fnal.gov:9620', 'None', 'F', '[]', 'T', '/store/user/fnenna/', 'F', 'None', 'F', 'None', 'DsTau3Mu_pythia8_Phase2', 'None', 'ae320fbb43abf21cf7bdbe74819a16d20b05f07c449d7c7996c7d8ddb8733f4e.tar.gz', 'None', 'T', '188.184.73.32', '0.0', 'None', '{"partialdataset": false, "requireaccelerator": false, "acceleratorparams": null, "inputblocks": null}', 'None', 'None', 'None', 'None', 'None']}
+INFO 2025-02-06 23:02:50.792 UTC: 	 CRAB project directory:		/lustrehome/felicenenna/tau3mu/CMSSW_14_0_17/src/GenAnalyser/GenAnalyzer/CrabSubmission/crab_projects/crab_140X_mcPhase2_DsTau3Mu_newMINIAOD_ANA
+INFO 2025-02-06 23:02:50.793 UTC: 	 Task name:			250206_230059:fnenna_crab_140X_mcPhase2_DsTau3Mu_newMINIAOD_ANA
+INFO 2025-02-06 23:02:50.793 UTC: 	 Grid scheduler - Task Worker:	N/A yet - crab-prod-tw01
+INFO 2025-02-06 23:02:50.793 UTC: 	 Status on the CRAB server:	UPLOADED
+INFO 2025-02-06 23:02:50.793 UTC: 	 Task URL to use for HELP:	https://cmsweb.cern.ch/crabserver/ui/task/250206_230059%3Afnenna_crab_140X_mcPhase2_DsTau3Mu_newMINIAOD_ANA
+INFO 2025-02-06 23:02:50.805 UTC: 	 Dashboard monitoring URL:	https://monit-grafana.cern.ch/d/cmsTMDetail/cms-task-monitoring-task-view?orgId=11&var-user=fnenna&var-task=250206_230059%3Afnenna_crab_140X_mcPhase2_DsTau3Mu_newMINIAOD_ANA&from=1738879259000&to=now
+DEBUG 2025-02-06 23:02:50.805 UTC: 	 The task has not been submitted to the Grid scheduler yet. Not printing job information.
+INFO 2025-02-06 23:02:50.808 UTC: 	 Log file is /lustrehome/felicenenna/tau3mu/CMSSW_14_0_17/src/GenAnalyser/GenAnalyzer/CrabSubmission/crab_projects/crab_140X_mcPhase2_DsTau3Mu_newMINIAOD_ANA/crab.log
+DEBUG 2025-02-06 23:04:53.218 UTC: 	 CRAB Client version: v3.241125
+DEBUG 2025-02-06 23:04:53.219 UTC: 	 Running on: Linux ui02.recas.ba.infn.it 3.10.0-1160.80.1.el7.x86_64 #1 SMP Tue Nov 8 15:48:59 UTC 2022 x86_64 x86_64 x86_64 GNU/Linux
+DEBUG 2025-02-06 23:04:53.219 UTC: 	 Not using Singularity
+DEBUG 2025-02-06 23:04:53.219 UTC: 	 Operating System: CentOS Linux 7 (Core)
+DEBUG 2025-02-06 23:04:53.219 UTC: 	 Executing command: 'status'
+DEBUG 2025-02-06 23:04:53.219 UTC: 	 Found CRAB cache file /lustrehome/felicenenna/.crab3
+DEBUG 2025-02-06 23:04:53.221 UTC: 	 Checking credentials
+DEBUG 2025-02-06 23:04:53.221 UTC: 	 Found proxy file /tmp/x509up_u881416
+DEBUG 2025-02-06 23:04:53.221 UTC: 	 Making sure it has proper VOMS extension
+DEBUG 2025-02-06 23:04:53.222 UTC: 	 Executing command :
+ voms-proxy-info --vo --file /tmp/x509up_u881416
+DEBUG 2025-02-06 23:04:54.112 UTC: 	 output : cms
+
+ error: 
+ retcode : 0
+DEBUG 2025-02-06 23:04:54.112 UTC: 	 Getting proxy life time left
+DEBUG 2025-02-06 23:04:54.112 UTC: 	 Executing command :
+ voms-proxy-info --actimeleft --timeleft --file /tmp/x509up_u881416
+DEBUG 2025-02-06 23:04:55.022 UTC: 	 output : 206843
+206843
+
+ error: 
+ retcode : 0
+DEBUG 2025-02-06 23:04:55.023 UTC: 	 Proxy valid for 57:27:23 hours
+DEBUG 2025-02-06 23:04:55.023 UTC: 	 Encoded data for curl request: subresource=delegatedn
+DEBUG 2025-02-06 23:04:55.172 UTC: 	 Registering user credentials on myproxy for /DC=ch/DC=cern/OU=computers/CN=crab-(preprod|prod)-tw(01|02).cern.ch|/DC=ch/DC=cern/OU=computers/CN=crab-dev-tw(01|02|03|04).cern.ch|/DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=cmscrab/CN=(817881|373708)/CN=Robot: cms crab|/DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=crabint1/CN=373708/CN=Robot: CMS CRAB Integration 1
+DEBUG 2025-02-06 23:04:55.172 UTC: 	 Executing command :
+ voms-proxy-info --identity --file /tmp/x509up_u881416
+DEBUG 2025-02-06 23:04:56.029 UTC: 	 output : /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=fnenna/CN=868185/CN=Felice Nenna
+
+ error: 
+ retcode : 0
+DEBUG 2025-02-06 23:04:56.029 UTC: 	 Getting myproxy life time left for a133b326f2e83ec4c6fd8cd18786edfdbb69b415
+DEBUG 2025-02-06 23:04:56.029 UTC: 	 Executing command :
+ myproxy-info -s myproxy.cern.ch -l a133b326f2e83ec4c6fd8cd18786edfdbb69b415
+DEBUG 2025-02-06 23:04:56.519 UTC: 	 output : username: a133b326f2e83ec4c6fd8cd18786edfdbb69b415
+owner: /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=fnenna/CN=868185/CN=Felice Nenna
+  renewal policy: /DC=ch/DC=cern/OU=computers/CN=crab-(preprod|prod)-tw(01|02).cern.ch|/DC=ch/DC=cern/OU=computers/CN=crab-dev-tw(01|02|03|04).cern.ch|/DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=cmscrab/CN=(817881|373708)/CN=Robot: cms crab|/DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=crabint1/CN=373708/CN=Robot: CMS CRAB Integration 1
+  trusted retrieval policy: /DC=ch/DC=cern/OU=computers/CN=crab-(preprod|prod)-tw(01|02).cern.ch|/DC=ch/DC=cern/OU=computers/CN=crab-dev-tw(01|02|03|04).cern.ch|/DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=cmscrab/CN=(817881|373708)/CN=Robot: cms crab|/DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=crabint1/CN=373708/CN=Robot: CMS CRAB Integration 1
+  timeleft: 545:08:01  (22.7 days)
+
+ error: 
+ retcode : 0
+DEBUG 2025-02-06 23:04:56.519 UTC: 	 Myproxy is valid: 1962480
+DEBUG 2025-02-06 23:04:56.519 UTC: 	 Result of myproxy credential check:
+  Credential exists on myproxy: username: a133b326f2e83ec4c6fd8cd18786edfdbb69b415  - validity: 22 days, 17:08:00
+DEBUG 2025-02-06 23:04:56.519 UTC: 	 Retrieving username ...
+DEBUG 2025-02-06 23:04:56.519 UTC: 	 Retrieving username from CRIC...
+DEBUG 2025-02-06 23:04:57.326 UTC: 	 username is fnenna
+INFO 2025-02-06 23:04:58.568 UTC: 	 Rucio client intialized for account fnenna
+DEBUG 2025-02-06 23:04:58.569 UTC: 	 Command use: status
+DEBUG 2025-02-06 23:04:58.569 UTC: 	 Options use: ['-d', 'crab_projects/crab_140X_mcPhase2_DsTau3Mu_newMINIAOD_ANA']
+DEBUG 2025-02-06 23:04:58.569 UTC: 	 Encoded data for curl request: subresource=version
+DEBUG 2025-02-06 23:04:58.711 UTC: 	 CRABClient version: v3.241125
+DEBUG 2025-02-06 23:04:58.711 UTC: 	 Instance is prod
+DEBUG 2025-02-06 23:04:58.711 UTC: 	 Server base url is cmsweb.cern.ch
+DEBUG 2025-02-06 23:04:58.711 UTC: 	 Command api workflow
+DEBUG 2025-02-06 23:04:58.711 UTC: 	 Encoded data for curl request: subresource=search&workflow=250206_230059%3Afnenna_crab_140X_mcPhase2_DsTau3Mu_newMINIAOD_ANA
+DEBUG 2025-02-06 23:04:58.862 UTC: 	 Got information from server oracle database: {'desc': {'columns': ['tm_taskname', 'tm_activity', 'tm_task_status', 'tm_task_command', 'tm_start_time', 'tm_start_injection', 'tm_end_injection', 'tm_task_failure', 'tm_job_sw', 'tm_job_arch', 'tm_input_dataset', 'tm_nonvalid_input_dataset', 'tm_use_parent', 'tm_site_whitelist', 'tm_site_blacklist', 'tm_split_algo', 'tm_split_args', 'tm_user_sandbox', 'tm_cache_url', 'tm_username', 'tm_user_dn', 'tm_user_vo', 'tm_user_role', 'tm_user_group', 'tm_publish_name', 'tm_publish_groupname', 'tm_asyncdest', 'tm_dbs_url', 'tm_publish_dbs_url', 'tm_publication', 'tm_outfiles', 'tm_tfile_outfiles', 'tm_edm_outfiles', 'tm_job_type', 'tm_generator', 'tm_events_per_lumi', 'tm_arguments', 'tm_save_logs', 'tw_name', 'tm_user_infiles', 'tm_maxjobruntime', 'tm_numcores', 'tm_maxmemory', 'tm_priority', 'tm_output_dataset', 'tm_task_warnings', 'tm_user_webdir', 'tm_scriptexe', 'tm_scriptargs', 'tm_extrajdl', 'tm_collector', 'tm_schedd', 'tm_dry_run', 'tm_user_files', 'tm_transfer_outputs', 'tm_output_lfn', 'tm_ignore_locality', 'tm_fail_limit', 'tm_one_event_mode', 'tm_secondary_input_dataset', 'tm_primary_dataset', 'tm_last_publication', 'tm_debug_files', 'clusterid', 'tm_ignore_global_blacklist', 'tm_submitter_ip_addr', 'tm_totalunits', 'tm_ddm_reqid', 'tm_user_config', 'tm_transfer_container', 'tm_transfer_rule', 'tm_publish_rule', 'tm_multipub_rule', 'tm_job_min_microarch']}, 'result': ['250206_230059:fnenna_crab_140X_mcPhase2_DsTau3Mu_newMINIAOD_ANA', 'None', 'SUBMITTED', 'SUBMIT', '2025-02-06 23:00:59.598562', 'None', '2025-02-06 23:02:52.998912', 'None', 'CMSSW_14_0_17', 'slc7_amd64_gcc12', '/DsTau3Mu_pythia8_Phase2/fnenna-140X_mcPhase2_DsTau3Mu_RECO_RECOSIM_PAT_VALIDATION_DQM-431bb83c87cdc1aa9929b4654a1dd7c1/USER', 'F', '0', '[]', '[]', 'FileBased', "{'halt_job_on_file_boundaries': False, 'splitOnRun': False, 'files_per_job': 100, 'runs': [], 'lumis': []}", '1a1f3683d4aad896d8127e637814a864c465cb161c4daecb170466a4c1b543dd.tar.gz', 'https://cmsweb.cern.ch/S3/crabcache_prod', 'fnenna', '/DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=fnenna/CN=868185/CN=Felice Nenna', 'cms', 'None', 'None', '140X_mcPhase2_DsTau3Mu_newMINIAOD_ANA-00000000000000000000000000000000', 'F', 'T2_IT_Bari', 'https://cmsweb.cern.ch/dbs/prod/phys03/DBSReader', 'https://cmsweb.cern.ch/dbs/prod/phys03/DBSWriter', 'T', '[]', "['TreeMC_RtM.root']", '[]', 'Analysis', 'pythia', 'None', '{}', 'T', 'crab-prod-tw01', '[]', '1250', '1', '2000', '10', 'None', '[]', 'http://vocms0144.cern.ch/mon/fnenna/250206_230059:fnenna_crab_140X_mcPhase2_DsTau3Mu_newMINIAOD_ANA', 'None', '[]', '[]', 'cmsgwms-collector-global.cern.ch:9620,cmsgwms-collector-global.fnal.gov:9620', 'crab3@vocms0144.cern.ch', 'F', '[]', 'T', '/store/user/fnenna/', 'F', 'None', 'F', 'None', 'DsTau3Mu_pythia8_Phase2', 'None', 'ae320fbb43abf21cf7bdbe74819a16d20b05f07c449d7c7996c7d8ddb8733f4e.tar.gz', '118714278', 'T', '188.184.73.32', '0.0', 'None', '{"partialdataset": false, "requireaccelerator": false, "acceleratorparams": null, "inputblocks": null}', 'None', 'None', 'None', 'None', 'None']}
+INFO 2025-02-06 23:04:58.862 UTC: 	 CRAB project directory:		/lustrehome/felicenenna/tau3mu/CMSSW_14_0_17/src/GenAnalyser/GenAnalyzer/CrabSubmission/crab_projects/crab_140X_mcPhase2_DsTau3Mu_newMINIAOD_ANA
+INFO 2025-02-06 23:04:58.862 UTC: 	 Task name:			250206_230059:fnenna_crab_140X_mcPhase2_DsTau3Mu_newMINIAOD_ANA
+INFO 2025-02-06 23:04:58.862 UTC: 	 Grid scheduler - Task Worker:	crab3@vocms0144.cern.ch - crab-prod-tw01
+INFO 2025-02-06 23:04:58.863 UTC: 	 Status on the CRAB server:	SUBMITTED
+INFO 2025-02-06 23:04:58.863 UTC: 	 Task URL to use for HELP:	https://cmsweb.cern.ch/crabserver/ui/task/250206_230059%3Afnenna_crab_140X_mcPhase2_DsTau3Mu_newMINIAOD_ANA
+INFO 2025-02-06 23:04:58.873 UTC: 	 Dashboard monitoring URL:	https://monit-grafana.cern.ch/d/cmsTMDetail/cms-task-monitoring-task-view?orgId=11&var-user=fnenna&var-task=250206_230059%3Afnenna_crab_140X_mcPhase2_DsTau3Mu_newMINIAOD_ANA&from=1738879259000&to=now
+DEBUG 2025-02-06 23:04:58.873 UTC: 	 The CRAB server submitted your task to the Grid scheduler (cluster ID: 118714278)
+DEBUG 2025-02-06 23:04:58.873 UTC: 	 Webdir is located at http://vocms0144.cern.ch/mon/fnenna/250206_230059:fnenna_crab_140X_mcPhase2_DsTau3Mu_newMINIAOD_ANA
+DEBUG 2025-02-06 23:04:58.874 UTC: 	 Encoded data for curl request: subresource=webdirprx&workflow=250206_230059%3Afnenna_crab_140X_mcPhase2_DsTau3Mu_newMINIAOD_ANA
+DEBUG 2025-02-06 23:04:59.014 UTC: 	 Proxied webdir is located at https://cmsweb.cern.ch:8443/scheddmon/0144/fnenna/250206_230059:fnenna_crab_140X_mcPhase2_DsTau3Mu_newMINIAOD_ANA
+DEBUG 2025-02-06 23:04:59.015 UTC: 	 Retrieving 'status_cache' file from https://cmsweb.cern.ch:8443/scheddmon/0144/fnenna/250206_230059:fnenna_crab_140X_mcPhase2_DsTau3Mu_newMINIAOD_ANA/status_cache.pkl
+DEBUG 2025-02-06 23:04:59.015 UTC: 	 Will execute:
+curl -sS --capath /etc/grid-security/certificates --cert /tmp/x509up_u881416 --key /tmp/x509up_u881416 -o /tmp/crab_status-cache-lm6uv6pr.pkl -w %"{http_code}" "https://cmsweb.cern.ch:8443/scheddmon/0144/fnenna/250206_230059:fnenna_crab_140X_mcPhase2_DsTau3Mu_newMINIAOD_ANA/status_cache.pkl"
+DEBUG 2025-02-06 23:04:59.015 UTC: 	 Executing command :
+ curl -sS --capath /etc/grid-security/certificates --cert /tmp/x509up_u881416 --key /tmp/x509up_u881416 -o /tmp/crab_status-cache-lm6uv6pr.pkl -w %"{http_code}" "https://cmsweb.cern.ch:8443/scheddmon/0144/fnenna/250206_230059:fnenna_crab_140X_mcPhase2_DsTau3Mu_newMINIAOD_ANA/status_cache.pkl"
+DEBUG 2025-02-06 23:04:59.150 UTC: 	 output : 200
+ error: 
+ retcode : 0
+DEBUG 2025-02-06 23:04:59.150 UTC: 	 exitcode: 0
+stdout: 200
+stderr: 
+error details: 
+DEBUG 2025-02-06 23:04:59.151 UTC: 	 Got information from status cache file: {'1': {'Retries': 0, 'Restarts': 0, 'SiteHistory': ['Unknown'], 'ResidentSetSize': [0], 'SubmitTimes': [1738883037.0], 'StartTimes': [], 'EndTimes': [], 'TotalUserCpuTimeHistory': [0.0], 'TotalSysCpuTimeHistory': [0.0], 'WallDurations': [0], 'JobIds': ['118714283.0'], 'State': 'idle', 'RecordedSite': False}, '2': {'Retries': 0, 'Restarts': 0, 'SiteHistory': ['Unknown'], 'ResidentSetSize': [0], 'SubmitTimes': [1738883037.0], 'StartTimes': [], 'EndTimes': [], 'TotalUserCpuTimeHistory': [0.0], 'TotalSysCpuTimeHistory': [0.0], 'WallDurations': [0], 'JobIds': ['118714284.0'], 'State': 'idle', 'RecordedSite': False}}
+INFO 2025-02-06 23:04:59.151 UTC: 	 Status on the scheduler:	SUBMITTED
+INFO 2025-02-06 23:04:59.151 UTC: 	 
+Jobs status:                    idle         		100.0% (2/2)
+INFO 2025-02-06 23:04:59.151 UTC: 	 
+No publication information available yet
+INFO 2025-02-06 23:04:59.154 UTC: 	 Log file is /lustrehome/felicenenna/tau3mu/CMSSW_14_0_17/src/GenAnalyser/GenAnalyzer/CrabSubmission/crab_projects/crab_140X_mcPhase2_DsTau3Mu_newMINIAOD_ANA/crab.log
